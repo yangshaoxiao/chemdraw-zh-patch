@@ -1,0 +1,518 @@
+File	文件
+Edit	编辑
+View	视图
+Object	对象
+Structure	结构
+Text	文本
+Curves	曲线
+Colors	颜色
+Window	窗口
+Windows	窗口
+WIndows	窗口
+Help	帮助
+New	新建
+New Document	新建文档
+Open	打开
+Close	关闭
+Save	保存
+Save As	另存为
+Save Copy As	副本另存为
+Save Style Sheet	保存样式表
+New Templates	新建模板
+Open Templates	打开模板
+Open Samples	打开示例
+Open Style Sheets	打开样式表
+New from Stationery	从样式表新建
+Exit ChemDraw	退出 ChemDraw
+Quit ChemDraw	退出 ChemDraw
+Print	打印
+Page Setup	页面设置
+Page Definition	页面定义
+Preferences	偏好设置
+Document Settings	文档设置
+Document Properties	文档属性
+Document Annotations	文档注释
+Object Settings	对象设置
+Undo	撤销
+Redo	重做
+Cut	剪切
+Copy	复制
+Copy As	复制为
+Paste	粘贴
+Paste Special	选择性粘贴
+Clear	清除
+Clear All	全部清除
+Clear Contents	清除内容
+Select All	全选
+Invert Selection	反选
+Select	选择
+Repeat	重复
+Revert	还原
+Move	移动
+Remove	移除
+Delete	删除
+Add	添加
+Add New	新增
+Restore	恢复
+Restore Defaults	恢复默认值
+Use Defaults	使用默认值
+OK	确定
+Cancel	取消
+Yes	是
+No	否
+Done	完成
+Stop	停止
+All	全部
+None	无
+Other	其他
+Custom	自定义
+Ignore	忽略
+Ignore All	全部忽略
+Delete All	全部删除
+Browse	浏览
+Preview	预览
+Update	更新
+About ChemDraw	关于 ChemDraw
+Licensing	许可证管理
+Check For Updates	检查更新
+Contents	帮助内容
+Getting Started	入门指南
+Tutorials	教程
+Contact Support	联系支持
+Hotkeys Cheat Sheet	热键速查表
+Shortcuts Cheat Sheet	快捷键速查表
+Add-in Developer Guide	插件开发指南
+ChemDraw Basics	ChemDraw 基础
+ChemDraw Help	ChemDraw 帮助
+Add-ins	插件
+Scripts	脚本
+Run ChemScript	运行 ChemScript
+Re-run Previously Selected ChemScript	重新运行上次选择的 ChemScript
+Sign In	登录
+Sign Out	退出登录
+Download	下载
+Upload As	上传为
+Search	搜索
+Search Reaxys	搜索 Reaxys
+Clipboard	剪贴板
+Show Clipboard	显示剪贴板
+Float Toolbar	浮动工具栏
+Dock Toolbar	停靠工具栏
+Other Toolbars	其他工具栏
+Tools	工具
+General	常用
+General Commands	常用命令
+Accessories	辅助工具
+Show General Toolbar	显示常用工具栏
+Show Main Toolbar	显示主工具栏
+Show Object Toolbar	显示对象工具栏
+Show Structure Toolbar	显示结构工具栏
+Show Style Toolbar	显示样式工具栏
+Show Add-ins Toolbar	显示插件工具栏
+Show BioDraw Toolbar	显示 BioDraw 工具栏
+Show HELM Monomer Toolbar	显示 HELM 单体工具栏
+Show Highlight Colors Toolbar	显示高亮颜色工具栏
+Show Ring Fill Colors Toolbar	显示环填充颜色工具栏
+Show Crosshair	显示十字线
+Show Rulers	显示标尺
+Show Document	显示文档
+Show All	显示全部
+Show Analysis Window	显示分析窗口
+Show Chemical Properties Window	显示化学性质窗口
+Show Info Window	显示信息窗口
+Show Periodic Table Window	显示元素周期表窗口
+Show Character Map Window	显示字符映射窗口
+Show Chem3D HotLink Window	显示 Chem3D 关联窗口
+Show Chemical Warnings	显示化学警告
+Show Reaction Interpretation	显示反应解释
+Show Atom Number	显示原子编号
+Show Query Indicator	显示查询标记
+Show Reaction Indicator	显示反应标记
+Show Reaction Indicators	显示反应标记
+Show Reaction Map	显示反应映射
+Show Stereochemistry	显示立体化学
+Show Enhanced Stereochemistry	显示增强立体化学
+Show Terminal Carbon Labels	显示末端碳标签
+Show Bonds	显示化学键
+Show Base Pairs	显示碱基对
+Show DNA/RNA	显示 DNA/RNA
+Show Termini	显示端基
+Show Unlinked Branches	显示未连接支链
+Show Residue ID	显示残基 ID
+Show Lane Labels	显示泳道标签
+Show Scale	显示刻度
+Show Size	显示尺寸
+Show Origin	显示原点
+Show Solvent Front	显示溶剂前沿
+Show Rf	显示 Rf
+Show Borders	显示边框
+Show Side Ticks	显示侧刻度
+Actual Size	实际大小
+Magnify	放大
+Reduce	缩小
+Magnification	缩放比例
+Zoom	缩放
+Group	组合
+Ungroup	取消组合
+Join	连接
+Bring to Front	置于顶层
+Send to Back	置于底层
+Bring All to Front	全部置于前方
+Align	对齐
+Alignment	对齐
+Distribute	分布
+Center on Page	在页面居中
+Left edges	左边缘对齐
+Right edges	右边缘对齐
+Top edges	上边缘对齐
+Bottom edges	下边缘对齐
+L/R centers	水平居中对齐
+T/B centers	垂直居中对齐
+Horizontally	水平方向
+Vertically	垂直方向
+Flip Horizontal	水平翻转
+Flip Vertical	垂直翻转
+Flip Selection	翻转选区
+Rotate Selection	旋转选区
+Rotate 180° Horizontal	水平旋转 180°
+Rotate 180° Vertical	垂直旋转 180°
+Rotate	旋转
+Rotate Objects	旋转对象
+Scale	缩放
+Scale Objects	缩放对象
+Flatten	平面化
+Add Frame	添加边框
+Font	字体
+Style	样式
+Size	字号
+Plain	常规
+Bold	粗体
+Italic	斜体
+Underline	下划线
+Outline	轮廓
+Shadow	阴影
+Shadowed	阴影
+Subscript	下标
+Superscript	上标
+Flush Left	左对齐
+Flush Right	右对齐
+Centered	居中
+Center	居中
+Justified	两端对齐
+Stacked Above	上方堆叠
+Automatic	自动
+Line Spacing	行距
+Current Document	当前文档
+Apply Document Settings from	应用文档设置，来源
+Apply Object Settings from	应用对象设置，来源
+Atom	原子
+Bond	化学键
+Atom Properties	原子属性
+Bond Properties	化学键属性
+Bracket Properties	括号属性
+Check Structure	检查结构
+Clean Up Structure	整理结构
+Clean Up Reaction	整理反应
+Clean Up Biopolymer	整理生物聚合物
+3D Clean Up	整理三维结构
+Convert Name to Structure	名称转结构
+Convert Structure to Name	结构转名称
+Name as Structure	将名称作为结构
+Paste Name as Structure	将名称粘贴为结构
+Paste SMILES	粘贴 SMILES
+Paste InChI	粘贴 InChI
+Paste MOL/CDXML Text	粘贴 MOL/CDXML 文本
+Paste FASTA DNA	粘贴 FASTA DNA
+Paste FASTA RNA	粘贴 FASTA RNA
+Paste FASTA Peptide	粘贴 FASTA 肽序列
+Paste Biopolymer	粘贴生物聚合物
+MOL Text	MOL 文本
+MOL/CDXML Text	MOL/CDXML 文本
+MOL V2000 Text	MOL V2000 文本
+CDXML Text	CDXML 文本
+FASTA Peptide	FASTA 肽序列
+Expand Label	展开标签
+Contract Label	收缩标签
+Expand Generic Structure	展开通用结构
+Define Nickname	定义简称
+List Nicknames	列出简称
+Choose Nickname	选择简称
+Define Average Molecular Weight	定义平均分子量
+Add Structure to Dictionary	添加结构到词典
+Look Up in Dictionary	在词典中查找
+Edit Label	编辑标签
+Edit Text	编辑文本
+Insert File	插入文件
+Insert Object	插入对象
+Insert Generic Label	插入通用标签
+Insert Table	插入表格
+Add Multi-Center Attachment	添加多中心连接
+Add Variable Attachment	添加可变连接
+Add 3D Property	添加三维属性
+Map Reaction Atoms	映射反应原子
+Clear Reaction Map	清除反应映射
+Autonumber Reaction	自动编号反应
+Clear Reaction Numbers	清除反应编号
+Analyze Stoichiometry	分析化学计量
+Select Reaction Component	选择反应组分
+Select Linked Objects	选择关联对象
+Make Spectrum-Structure Assignment	建立谱图与结构指认
+Clear Spectrum-Structure Assignment	清除谱图与结构指认
+Predict ¹H-NMR Shifts	预测 ¹H-NMR 化学位移
+Predict ¹³C-NMR Shifts	预测 ¹³C-NMR 化学位移
+Attach Data	附加数据
+Edit Attached Data	编辑附加数据
+Chemical Properties	化学性质
+Analysis	分析
+Chemical Formula	化学式
+Formula	化学式
+Molecular Weight	分子量
+Exact Mass	精确质量
+Elemental Analysis	元素分析
+Isotopic Abundance	同位素丰度
+Enhanced Stereochemistry	增强立体化学
+Interpret Chemically	按化学含义解释
+Mark as Absolute	标记为绝对构型
+Display Warnings	显示警告
+Explain Warnings	解释警告
+Explain This Warning	解释此警告
+Drawing Elements	绘图元素
+Arrows	箭头
+Arcs	圆弧
+Orbitals	轨道
+Brackets	括号
+Braces	花括号
+Parentheses	圆括号
+Chemical Symbols	化学符号
+Multiple Bonds	多重键
+Chains	链
+Query Tools	查询工具
+Fragmentation Tools	碎片工具
+Chromatography Tools	色谱工具
+Pen Tools	画笔工具
+Pens	画笔
+Curve Styles	曲线样式
+Dotted/Dashed Bonds	点线／虚线键
+Dotted/Dashed Bond Tools	点线／虚线键工具
+Highlight Colors	高亮颜色
+Ring Fill Colors	环填充颜色
+Chromatography	色谱
+Fragmentation	碎片
+Biopolymer	生物聚合物
+TLC Plate	薄层色谱板
+TLC Spots	薄层色谱斑点
+GEP Bands	凝胶电泳条带
+Rectangle	矩形
+Rounded Rectangle	圆角矩形
+Rectangle with Shadow	带阴影矩形
+Rounded Rectangle with Shadow	带阴影圆角矩形
+Dashed	虚线
+Doubled	双线
+Closed	闭合
+Filled	填充
+Shaded	着色
+Faded	淡化
+Transparent	透明
+Full Arrow at End	末端完整箭头
+Full Arrow at Start	起点完整箭头
+Half Arrow at End Left	末端左半箭头
+Half Arrow at End Right	末端右半箭头
+Half Arrow at Start Left	起点左半箭头
+Half Arrow at Start Right	起点右半箭头
+Fixed Lengths	固定长度
+Fixed Angles	固定角度
+Cascade	层叠窗口
+Tile Horizontal	水平平铺
+Tile Vertical	垂直平铺
+Arrange Icons	排列图标
+Minimize	最小化
+Position	位置
+Position Indicators	设置标记位置
+Font Name	字体名称
+Font Size	字号
+Font Style	字体样式
+Font Name:	字体名称：
+Font Size:	字号：
+Font Style:	字体样式：
+Font:	字体：
+Size:	尺寸：
+Line Spacing:	行距：
+Style:	样式：
+Color:	颜色：
+Colors:	颜色：
+Background	背景
+Foreground	前景
+Background Color:	背景颜色：
+Foreground Color:	前景颜色：
+Default Style Sheet	默认样式表
+Default Tool:	默认工具：
+Document Size	文档尺寸
+Document Type	文档类型
+Margins	页边距
+Left:	左：
+Right:	右：
+Top:	上：
+Bottom:	下：
+Width:	宽度：
+Height:	高度：
+Angle:	角度：
+Position:	位置：
+Spacing:	间距：
+Line Width:	线宽：
+Bold Width:	粗线宽：
+Fixed Length:	固定键长：
+Hash Spacing:	楔线间距：
+Margin Width:	边距宽度：
+Tolerance:	容差：
+Bond Type:	键类型：
+Bond Quality:	键质量：
+Atoms:	原子：
+Bonds:	化学键：
+Charge:	电荷：
+Isotope:	同位素：
+Radical:	自由基：
+Units:	单位：
+Display Units:	显示单位：
+Resolution:	分辨率：
+Compression:	压缩：
+Pages	页面
+Rows:	行数：
+Columns:	列数：
+Name:	名称：
+Label:	标签：
+Nickname:	简称：
+Comment	备注
+Comment:	备注：
+Header	页眉
+Footer	页脚
+Content:	内容：
+Text:	文本：
+Enter Name:	输入名称：
+Field name:	字段名称：
+Enable Autosave	启用自动保存
+Enable Autorecovery	启用自动恢复
+Save Files Every	保存间隔
+Minutes	分钟
+Location for Autosave and Autorecovery files:	自动保存与恢复文件位置：
+Opening Files	打开文件
+Saving Files	保存文件
+End of Line Character	换行符
+Text File Options	文本文件选项
+PNG Options	PNG 选项
+GIF Options	GIF 选项
+TIFF Options	TIFF 选项
+EPS Options	EPS 选项
+Use Antialiasing	使用抗锯齿
+Anti-aliased	抗锯齿
+Include Default Footer	包含默认页脚
+Print Background Color	打印背景颜色
+Print Registration Marks	打印定位标记
+Fractional Widths	小数宽度
+Show 35mm Slide Boundary Guides	显示 35mm 幻灯片边界参考线
+Graphics Export Border:	图形导出边距：
+Opening Any Style Sheet Changes Default	打开样式表时设为默认值
+Check File Extensions When Launching	启动时检查文件扩展名
+Show warnings about possible data loss	显示可能丢失数据的警告
+Warn about Data Loss	警告数据丢失
+Check Structure When Copying to Clipboard or Exporting	复制或导出时检查结构
+Require ALT+ENTER to Create New Line in Atom Labels	原子标签中使用 ALT+ENTER 换行
+Require ALT+ENTER to Create New Line in Captions	说明文字中使用 ALT+ENTER 换行
+Automatically Rectify Hydrogens in Atom Labels	自动校正原子标签中的氢
+Automatic Atom Label Alignment	自动对齐原子标签
+Automatic Reaction Mapping	自动反应映射
+Always Display and Print Reaction Mapping	始终显示并打印反应映射
+Hide Implicit Hydrogens	隐藏隐式氢
+Show Labels On Terminal Carbons	显示末端碳标签
+Include Parentheses When Showing Stereochemistry	立体化学标记使用括号
+Implicit Hydrogens:	隐式氢：
+Show Atom Numbers	显示原子编号
+Show Query Indicators	显示查询标记
+Show Stereochemistry	显示立体化学
+Rotate Atom Labels	旋转原子标签
+Scale Atom Labels and Settings	缩放原子标签和设置
+Change Settings	更改设置
+Don't Change Settings	保留原设置
+Don't Save	不保存
+Don’t Save	不保存
+Modify Existing	修改现有对象
+Don’t Modify Existing	保留现有对象
+Use Default File Format:	默认文件格式：
+Use Documents Location:	文档保存位置：
+Theme:	主题：
+Save Failed	保存失败
+Possible Error in Drawing	绘图中可能存在错误
+Set Document Defaults	设置文档默认值
+Change File Associations	更改文件关联
+untitled	未命名
+Untitled	未命名
+not available	不可用
+No Generic Nicknames Found	未找到通用简称
+No Recent Documents Found	没有最近文档
+No Stationery Found	未找到样式表
+No Templates Found	未找到模板
+No Samples Found	未找到示例
+No ChemScript Scripts Found	未找到 ChemScript 脚本
+Repeat not available	无法重复
+Repeat Last Label	重复上一个标签
+Repeat “^0” Label	重复“^0”标签
+Close and Return to ^0	关闭并返回 ^0
+Exit and Return to ^0	退出并返回 ^0
+The “^0” font is not available.  Using “^1” instead.	字体“^0”不可用。将使用“^1”。
+The value “^0” is too small.	数值“^0”太小。
+The value “^0” is too large.	数值“^0”太大。
+The ^0 value must be between ^1 and ^2.	^0 的值必须介于 ^1 和 ^2 之间。
+The range is invalid, please verify you have entered correct values.	范围无效，请检查输入的数值。
+Do you want to save the changes you made in the template “^0”?	是否保存对模板“^0”的修改？
+Don’t Modify Existing	不修改现有对象
+Memory Low!	内存不足！
+Updating...	正在更新...
+Copying...	正在复制...
+Pasting...	正在粘贴...
+Printing...	正在打印...
+Saving...	正在保存...
+Cutting...	正在剪切...
+Computing...	正在计算...
+Drawing	绘图
+Resize	调整大小
+Duplicate	复制对象
+Typing	输入文本
+Atom Label Change	修改原子标签
+Bond Change	修改化学键
+Arrow Change	修改箭头
+Style Change	修改样式
+Grouping	组合
+Ungrouping	取消组合
+Color Change	修改颜色
+Structure Clean Up	整理结构
+Atom Numbering	原子编号
+Add Row	添加行
+Delete Row	删除行
+Add Column	添加列
+Delete Column	删除列
+Add Row Before	在前面插入行
+Add Row After	在后面插入行
+Add Column Before	在前面插入列
+Add Column After	在后面插入列
+Hide Row	隐藏行
+Hide Column	隐藏列
+Add Lane	添加泳道
+Delete Lane	删除泳道
+Add Spot	添加斑点
+Delete Spot	删除斑点
+Add Bands	添加条带
+Delete Band	删除条带
+Edit in ChemDraw	在 ChemDraw 中编辑
+Open in ChemDraw+	在 ChemDraw+ 中打开
+Units	单位
+Mass	质量
+Mass Spec Analysis	质谱分析
+Linear Peptide	线性肽
+Select Biopolymer Backbone	选择生物聚合物主链
+Merge Sidechains With Residue	将侧链与残基合并
+Table	表格
+Table Borders	表格边框
+Borders	边框
+Markers	标记
+Regions	区域
+Options	选项
+Signals	Signals

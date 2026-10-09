@@ -1,0 +1,5318 @@
+[
+  [
+    "Main Tools",
+    8
+  ],
+  [
+    "Click an atom or press and drag to add a bond; draw over an existing bond to double or triple",
+    7
+  ],
+  [
+    "Unspecified",
+    7
+  ],
+  [
+    "App Launcher",
+    6
+  ],
+  [
+    "Any",
+    5
+  ],
+  [
+    "About ChemDraw Plugin...",
+    4
+  ],
+  [
+    "Text font and alignment",
+    4
+  ],
+  [
+    "Structure commands",
+    3
+  ],
+  [
+    "Multiple Bonds Tools",
+    3
+  ],
+  [
+    "Immunoglobulin",
+    3
+  ],
+  [
+    "Ion Channel",
+    3
+  ],
+  [
+    "Receptor",
+    3
+  ],
+  [
+    "Attachment Point",
+    3
+  ],
+  [
+    "DNA/RNA",
+    3
+  ],
+  [
+    "Microorganisms",
+    3
+  ],
+  [
+    "BioDraw",
+    3
+  ],
+  [
+    "ChemDraw Plugin Help",
+    2
+  ],
+  [
+    "You should restart your browser to complete the registration process.",
+    2
+  ],
+  [
+    "Activate ChemDraw Plugin...",
+    2
+  ],
+  [
+    "Copy the settings from a file into the current document",
+    2
+  ],
+  [
+    "Change Enhanced Stereochemistry: Mark As Absolute",
+    2
+  ],
+  [
+    "Structure Perspective",
+    2
+  ],
+  [
+    "Double Dagger",
+    2
+  ],
+  [
+    "Parenthesis",
+    2
+  ],
+  [
+    "Bracket",
+    2
+  ],
+  [
+    "Line",
+    2
+  ],
+  [
+    "Set the font of the selected text",
+    2
+  ],
+  [
+    "Set the size of the selected text",
+    2
+  ],
+  [
+    "Click or press and drag to add a Chair Cyclohexane. Click a bond to fuse the ring.",
+    2
+  ],
+  [
+    "dz2 (Shaded)",
+    2
+  ],
+  [
+    "dz2 (Solid)",
+    2
+  ],
+  [
+    "sp3 (Solid)",
+    2
+  ],
+  [
+    "sp3 lobe (Shaded)",
+    2
+  ],
+  [
+    "Click or drag to select, shift-click to select more, double-click to select molecule or group",
+    2
+  ],
+  [
+    "Reposition the selected reaction components",
+    2
+  ],
+  [
+    "Augmented Clean Up Reaction",
+    2
+  ],
+  [
+    "Generate the name corresponding to a chemical structure",
+    2
+  ],
+  [
+    "Opens an existing document",
+    2
+  ],
+  [
+    "Add another column to a templates document",
+    2
+  ],
+  [
+    "Add another row to a templates document",
+    2
+  ],
+  [
+    "Show (hide) the General toolbar",
+    2
+  ],
+  [
+    "Show (hide) the BioDraw toolbar",
+    2
+  ],
+  [
+    "Make Annotations of the document",
+    2
+  ],
+  [
+    "Choose a color",
+    2
+  ],
+  [
+    "Arranges the windows as nonoverlapping tiles",
+    2
+  ],
+  [
+    "Set GEP Bands Value",
+    2
+  ],
+  [
+    "Set Bond Type Single Plain",
+    2
+  ],
+  [
+    "Change the custom ring fill color",
+    2
+  ],
+  [
+    "Remove the ring fill color",
+    2
+  ],
+  [
+    "Apply the custom highlight color",
+    2
+  ],
+  [
+    "Change the custom highlight color",
+    2
+  ],
+  [
+    "Remove the highlight color",
+    2
+  ],
+  [
+    "Enzyme",
+    2
+  ],
+  [
+    "G-Protein",
+    2
+  ],
+  [
+    "Nuclear Pore",
+    2
+  ],
+  [
+    "Membranes",
+    2
+  ],
+  [
+    "Golgi",
+    2
+  ],
+  [
+    "ER",
+    2
+  ],
+  [
+    "Organelles",
+    2
+  ],
+  [
+    "Ribosomes",
+    2
+  ],
+  [
+    "Cloud/Misc",
+    2
+  ],
+  [
+    "Query",
+    2
+  ],
+  [
+    "Not Allowed",
+    2
+  ],
+  [
+    "Allowed",
+    2
+  ],
+  [
+    "Distance",
+    2
+  ],
+  [
+    "&HELM",
+    2
+  ],
+  [
+    "BioDraw Ordering and Alignment",
+    2
+  ],
+  [
+    "Signals",
+    1
+  ],
+  [
+    "Choose a highlight color",
+    1
+  ],
+  [
+    "Arrows [E]",
+    1
+  ],
+  [
+    "Press and drag to add an arrow",
+    1
+  ],
+  [
+    "Arc Tools",
+    1
+  ],
+  [
+    "Press and drag to add arcs",
+    1
+  ],
+  [
+    "Orbitals [Shift+G]",
+    1
+  ],
+  [
+    "Press and drag to add an orbital",
+    1
+  ],
+  [
+    "Press and drag to add boxes or lines",
+    1
+  ],
+  [
+    "Brackets [Shift+T]",
+    1
+  ],
+  [
+    "Press and drag to add brackets, braces, or parentheses",
+    1
+  ],
+  [
+    "Chemical Symbols [Shift+E]",
+    1
+  ],
+  [
+    "Click to add a chemical symbol, shift-drag to move it",
+    1
+  ],
+  [
+    "Press and drag to add objects useful when creating chemical queries",
+    1
+  ],
+  [
+    "Chromatography Tools [G]",
+    1
+  ],
+  [
+    "Press and drag to add Gel Electrophoresis or TLC Plates",
+    1
+  ],
+  [
+    "Multiple Bonds: [2] or [3] or [Shift+B] on bond",
+    1
+  ],
+  [
+    "Click an atom or press and drag to add a bond; draw over an existing bond to change order",
+    1
+  ],
+  [
+    "Press and drag to make separate fragments by breaking bonds in structures",
+    1
+  ],
+  [
+    "Chain Tools [Shift+X]",
+    1
+  ],
+  [
+    "Press and drag to draw a chain",
+    1
+  ],
+  [
+    "Press and drag to draw a freehand curve",
+    1
+  ],
+  [
+    "Set the color of the selected object(s)",
+    1
+  ],
+  [
+    "Add 3D Angle",
+    1
+  ],
+  [
+    "Add 3D Centroid",
+    1
+  ],
+  [
+    "Add 3D Dihedral",
+    1
+  ],
+  [
+    "Add 3D Distance",
+    1
+  ],
+  [
+    "Add 3D Exclusion Sphere",
+    1
+  ],
+  [
+    "Add 3D Line",
+    1
+  ],
+  [
+    "Add 3D Normal",
+    1
+  ],
+  [
+    "Add 3D Plane",
+    1
+  ],
+  [
+    "Add 3D Point",
+    1
+  ],
+  [
+    "Add a pair of braces around the selected objects",
+    1
+  ],
+  [
+    "Add a pair of brackets around the selected objects",
+    1
+  ],
+  [
+    "Add a pair of parentheses around the selected objects",
+    1
+  ],
+  [
+    "Add a rectangle around the selected objects",
+    1
+  ],
+  [
+    "Add a rounded rectangle around the selected objects",
+    1
+  ],
+  [
+    "Add a shadowed rectangle around the selected objects",
+    1
+  ],
+  [
+    "Add a shadowed, rounded rectangle around the selected objects",
+    1
+  ],
+  [
+    "Add a node which represents a multi-center attachment (e.g. pi-aryl)",
+    1
+  ],
+  [
+    "Add a node which represents a variable attachment (i.e. mixture of isomers)",
+    1
+  ],
+  [
+    "Align Bottom Edges",
+    1
+  ],
+  [
+    "Move the objects vertically to align the bottom edges",
+    1
+  ],
+  [
+    "Align Left Edges",
+    1
+  ],
+  [
+    "Move the objects horizontally to align the left edges",
+    1
+  ],
+  [
+    "Align Left-Right Centers",
+    1
+  ],
+  [
+    "Move the objects horizontally to align the centers",
+    1
+  ],
+  [
+    "Align Right Edges",
+    1
+  ],
+  [
+    "Move the objects horizontally to align the right edges",
+    1
+  ],
+  [
+    "Align Top-Bottom Centers",
+    1
+  ],
+  [
+    "Move the objects vertically to align the centers",
+    1
+  ],
+  [
+    "Align Top Edges",
+    1
+  ],
+  [
+    "Move the objects vertically to align the top edges",
+    1
+  ],
+  [
+    "Stoichiometry",
+    1
+  ],
+  [
+    "Creates a stoichiometry analysis grid for the selected reaction",
+    1
+  ],
+  [
+    "Automatically number the components in a reaction",
+    1
+  ],
+  [
+    "Clear numbering of the components in a reaction",
+    1
+  ],
+  [
+    "Apply Document Settings",
+    1
+  ],
+  [
+    "RTIS Available Dummy",
+    1
+  ],
+  [
+    "Text Has Chemical Properties Dummy",
+    1
+  ],
+  [
+    "Page Definition Center",
+    1
+  ],
+  [
+    "Page Definition TL4",
+    1
+  ],
+  [
+    "Page Definition Term",
+    1
+  ],
+  [
+    "Page Definition Flush Left",
+    1
+  ],
+  [
+    "Page Definition Flush Right",
+    1
+  ],
+  [
+    "Page Definition Reaction 1",
+    1
+  ],
+  [
+    "Page Definition Reaction 2",
+    1
+  ],
+  [
+    "Page Definition Multi Column TL4",
+    1
+  ],
+  [
+    "Page Definition Multi Column Non TL4",
+    1
+  ],
+  [
+    "Page Definition User Defined",
+    1
+  ],
+  [
+    "Individual Definition Center",
+    1
+  ],
+  [
+    "Individual Definition TL4",
+    1
+  ],
+  [
+    "Individual Definition Term",
+    1
+  ],
+  [
+    "Individual Definition Flush Left",
+    1
+  ],
+  [
+    "Individual Definition Flush Right",
+    1
+  ],
+  [
+    "Individual Definition User Defined",
+    1
+  ],
+  [
+    "Copy Settings From File",
+    1
+  ],
+  [
+    "Copy the settings from a file into the selected objects",
+    1
+  ],
+  [
+    "Copy Settings From File To Objects",
+    1
+  ],
+  [
+    "Inserts graphic from a file",
+    1
+  ],
+  [
+    "Copy the settings from a chosen file into the current document",
+    1
+  ],
+  [
+    "Copy Settings From Chosen File",
+    1
+  ],
+  [
+    "Inserts an object from an other application",
+    1
+  ],
+  [
+    "Verb supported by the embedded object",
+    1
+  ],
+  [
+    "Associate data with the selected objects",
+    1
+  ],
+  [
+    "Bring To Front",
+    1
+  ],
+  [
+    "Brings the selected object(s) in front of all other objects",
+    1
+  ],
+  [
+    "Center On Page",
+    1
+  ],
+  [
+    "Centers the selected object(s) on the page",
+    1
+  ],
+  [
+    "Change Enhanced Stereochemistry: Clear All",
+    1
+  ],
+  [
+    "Change Enhanced Stereochemistry: Create And Group",
+    1
+  ],
+  [
+    "Create And Group",
+    1
+  ],
+  [
+    "Create Or Group",
+    1
+  ],
+  [
+    "Change Enhanced Stereochemistry: Create Or Group",
+    1
+  ],
+  [
+    "Mark As Absolute",
+    1
+  ],
+  [
+    "Search the Reaxys database",
+    1
+  ],
+  [
+    "Do Online Extension",
+    1
+  ],
+  [
+    "Call Script",
+    1
+  ],
+  [
+    "Check for Updates",
+    1
+  ],
+  [
+    "Browse RevvitySignals",
+    1
+  ],
+  [
+    "Checks the selected structure(s)",
+    1
+  ],
+  [
+    "Acyclic Chain [Shift+X]",
+    1
+  ],
+  [
+    "Press and drag to add a chain of bonds, or click to specify the number of atoms",
+    1
+  ],
+  [
+    "Snaking Chain",
+    1
+  ],
+  [
+    "Press and drag to add a non-linear chain of bonds, or click to specify the number of atoms",
+    1
+  ],
+  [
+    "120° 2 Headed",
+    1
+  ],
+  [
+    "120° Single CCW",
+    1
+  ],
+  [
+    "120° Single CW",
+    1
+  ],
+  [
+    "120° CCW",
+    1
+  ],
+  [
+    "120° CW",
+    1
+  ],
+  [
+    "180° CCW",
+    1
+  ],
+  [
+    "180° CW",
+    1
+  ],
+  [
+    "180° 2 Headed",
+    1
+  ],
+  [
+    "180° Single CCW",
+    1
+  ],
+  [
+    "180° Single CW",
+    1
+  ],
+  [
+    "270° CCW",
+    1
+  ],
+  [
+    "270° CW",
+    1
+  ],
+  [
+    "270° Eliptical CCW",
+    1
+  ],
+  [
+    "270° Eliptical CW",
+    1
+  ],
+  [
+    "270° Single CCW",
+    1
+  ],
+  [
+    "270° Single CW",
+    1
+  ],
+  [
+    "270° 2 Headed",
+    1
+  ],
+  [
+    "90° CCW",
+    1
+  ],
+  [
+    "90° CW",
+    1
+  ],
+  [
+    "90° 2 Headed",
+    1
+  ],
+  [
+    "90° Single CCW",
+    1
+  ],
+  [
+    "90° Single CW",
+    1
+  ],
+  [
+    "Bold (Large)",
+    1
+  ],
+  [
+    "Dashed (Large)",
+    1
+  ],
+  [
+    "Equilibrium (Large)",
+    1
+  ],
+  [
+    "Hollow (Large)",
+    1
+  ],
+  [
+    "No Go (Cross) (Large)",
+    1
+  ],
+  [
+    "No Go (Hash) (Large)",
+    1
+  ],
+  [
+    "One-Sided (Left) (Large)",
+    1
+  ],
+  [
+    "One-Sided (Right) (Large)",
+    1
+  ],
+  [
+    "Resonance (Large)",
+    1
+  ],
+  [
+    "Retrosynthetic (Large)",
+    1
+  ],
+  [
+    "Solid (Large)",
+    1
+  ],
+  [
+    "Unbalanced Equilibrium (Large)",
+    1
+  ],
+  [
+    "Bold (Medium)",
+    1
+  ],
+  [
+    "Dashed (Medium)",
+    1
+  ],
+  [
+    "Equilibrium (Medium)",
+    1
+  ],
+  [
+    "Hollow (Medium)",
+    1
+  ],
+  [
+    "No Go (Cross) (Medium)",
+    1
+  ],
+  [
+    "No Go (Hash) (Medium)",
+    1
+  ],
+  [
+    "One-Sided (Left) (Medium)",
+    1
+  ],
+  [
+    "One-Sided (Right) (Medium)",
+    1
+  ],
+  [
+    "Resonance (Medium)",
+    1
+  ],
+  [
+    "Solid (Medium)",
+    1
+  ],
+  [
+    "Unbalanced Equilibrium (Medium)",
+    1
+  ],
+  [
+    "Bold (Small)",
+    1
+  ],
+  [
+    "Dashed (Small)",
+    1
+  ],
+  [
+    "Equilibrium (Small)",
+    1
+  ],
+  [
+    "No Go (Cross) (Small)",
+    1
+  ],
+  [
+    "No Go (Hash) (Small)",
+    1
+  ],
+  [
+    "One-Sided (Left) (Small)",
+    1
+  ],
+  [
+    "One-Sided (Right) (Small)",
+    1
+  ],
+  [
+    "Resonance (Small)",
+    1
+  ],
+  [
+    "Retrosynthetic (Small)",
+    1
+  ],
+  [
+    "Solid (Small)",
+    1
+  ],
+  [
+    "Unbalanced Equilibrium (Small)",
+    1
+  ],
+  [
+    "1-Substrate Enzyme",
+    1
+  ],
+  [
+    "Click and drag to create or edit a single substrate enzyme.",
+    1
+  ],
+  [
+    "2-Substrate Enzyme",
+    1
+  ],
+  [
+    "Click and drag to create or edit a double substrate enzyme.",
+    1
+  ],
+  [
+    "Cloud",
+    1
+  ],
+  [
+    "Click and drag to create or edit a cloud.",
+    1
+  ],
+  [
+    "DNA",
+    1
+  ],
+  [
+    "Click and drag to create or edit a DNA.",
+    1
+  ],
+  [
+    "Endoplasmic Reticulum",
+    1
+  ],
+  [
+    "Click and drag to create or edit an endoplasmic reticulum.",
+    1
+  ],
+  [
+    "Golgi Body",
+    1
+  ],
+  [
+    "Click and drag to create or edit a Golgi element.",
+    1
+  ],
+  [
+    "G-Protein (alpha Subunit)",
+    1
+  ],
+  [
+    "Click and drag to create or edit an alpha G-protein.",
+    1
+  ],
+  [
+    "G-Protein (beta Subunit)",
+    1
+  ],
+  [
+    "Click and drag to create or edit a beta G-protein.",
+    1
+  ],
+  [
+    "G-Protein (gamma Subunit)",
+    1
+  ],
+  [
+    "Click and drag to create or edit a gamma G-protein.",
+    1
+  ],
+  [
+    "Helix Protein",
+    1
+  ],
+  [
+    "Click and drag to create or edit a helix protein.",
+    1
+  ],
+  [
+    "Click and drag to create or edit an immunoglobulin.",
+    1
+  ],
+  [
+    "Click and drag to create or edit an ion channel.",
+    1
+  ],
+  [
+    "Membrane (ellipse)",
+    1
+  ],
+  [
+    "Click and drag to create or edit an ellipse membrane.",
+    1
+  ],
+  [
+    "Micelle",
+    1
+  ],
+  [
+    "Click and drag to create or edit a micelle.",
+    1
+  ],
+  [
+    "Membrane (Arc)",
+    1
+  ],
+  [
+    "Click and drag to create or edit a arc membrane.",
+    1
+  ],
+  [
+    "Membrane (Line)",
+    1
+  ],
+  [
+    "Click and drag to create or edit a line membrane.",
+    1
+  ],
+  [
+    "Mitochondrion",
+    1
+  ],
+  [
+    "Click and drag to create or edit a mitochondrion.",
+    1
+  ],
+  [
+    "Plasmid Map",
+    1
+  ],
+  [
+    "Click and drag to create or edit a plasmid map.",
+    1
+  ],
+  [
+    "Click and drag to create or edit a receptor.",
+    1
+  ],
+  [
+    "Ribosome A",
+    1
+  ],
+  [
+    "Click and drag to create or edit a ribosome A.",
+    1
+  ],
+  [
+    "Ribosome B",
+    1
+  ],
+  [
+    "Click and drag to create or edit a ribosome B.",
+    1
+  ],
+  [
+    "tRNA (Cloverleaf)",
+    1
+  ],
+  [
+    "Click and drag to create or edit a tRNA cloverleaf.",
+    1
+  ],
+  [
+    "Click or drag to select, shift-click to select more, double-click to select molecule or group, then drag to change the perspective from which the structure is viewed",
+    1
+  ],
+  [
+    "Solid Bond [X]: [1] or [0] on atom",
+    1
+  ],
+  [
+    "Bold Bond: [B] on bond",
+    1
+  ],
+  [
+    "Hydrogen bond and dashed bond tools",
+    1
+  ],
+  [
+    "Hashed Wedged Bond: [H] or [Shift+W] on bond",
+    1
+  ],
+  [
+    "Hashed Bond: [Shift+H] on bond",
+    1
+  ],
+  [
+    "Hollow Wedged Bond",
+    1
+  ],
+  [
+    "Wavy Bond: [Y] on bond",
+    1
+  ],
+  [
+    "Wedged Bond: [W] on bond",
+    1
+  ],
+  [
+    "Any Bond",
+    1
+  ],
+  [
+    "Bold Double Bond: [Shift+B] on bond",
+    1
+  ],
+  [
+    "Dashed Double Bond: [Shift+D] on bond ",
+    1
+  ],
+  [
+    "Dative Bond",
+    1
+  ],
+  [
+    "Single or Aromatic Bond",
+    1
+  ],
+  [
+    "Double Bond",
+    1
+  ],
+  [
+    "Double Dashed Double Bond",
+    1
+  ],
+  [
+    "Double Either Bond",
+    1
+  ],
+  [
+    "Double or Aromatic Bond",
+    1
+  ],
+  [
+    "Quadruple Bond",
+    1
+  ],
+  [
+    "Single or Double Bond",
+    1
+  ],
+  [
+    "Triple Bond",
+    1
+  ],
+  [
+    "Brace",
+    1
+  ],
+  [
+    "Dagger",
+    1
+  ],
+  [
+    "Dashed 120",
+    1
+  ],
+  [
+    "Solid 120",
+    1
+  ],
+  [
+    "Dashed 180",
+    1
+  ],
+  [
+    "Solid 180",
+    1
+  ],
+  [
+    "Dashed 270",
+    1
+  ],
+  [
+    "Solid 270",
+    1
+  ],
+  [
+    "Dashed 90",
+    1
+  ],
+  [
+    "Solid 90",
+    1
+  ],
+  [
+    "Circle (Dashed)",
+    1
+  ],
+  [
+    "Circle (Hollow)",
+    1
+  ],
+  [
+    "Circle (Shaded)",
+    1
+  ],
+  [
+    "Circle (Shadowed)",
+    1
+  ],
+  [
+    "Circle (Solid)",
+    1
+  ],
+  [
+    "Oval (Dashed)",
+    1
+  ],
+  [
+    "Oval (Hollow)",
+    1
+  ],
+  [
+    "Oval (Shaded)",
+    1
+  ],
+  [
+    "Oval (Shadowed)",
+    1
+  ],
+  [
+    "Oval (Solid)",
+    1
+  ],
+  [
+    "Line (Bold)",
+    1
+  ],
+  [
+    "Line (Dashed)",
+    1
+  ],
+  [
+    "Line (Wavy)",
+    1
+  ],
+  [
+    "Round Rectangle (Dashed)",
+    1
+  ],
+  [
+    "Round Rectangle (Hollow)",
+    1
+  ],
+  [
+    "Round Rectangle (Shaded)",
+    1
+  ],
+  [
+    "Round Rectangle (Shadowed)",
+    1
+  ],
+  [
+    "Round Rectangle (Solid)",
+    1
+  ],
+  [
+    "Rectangle (Dashed)",
+    1
+  ],
+  [
+    "Rectangle (Hollow)",
+    1
+  ],
+  [
+    "Rectangle (Shaded)",
+    1
+  ],
+  [
+    "Rectangle (Shadowed)",
+    1
+  ],
+  [
+    "Rectangle (Solid)",
+    1
+  ],
+  [
+    "Eraser",
+    1
+  ],
+  [
+    "Click to delete an object",
+    1
+  ],
+  [
+    "Text Tool [T]: [Enter] on atom",
+    1
+  ],
+  [
+    "Click to add a caption; use formula style for chemically significant text",
+    1
+  ],
+  [
+    "Electron Pushing",
+    1
+  ],
+  [
+    "Click and drag to make electron pushing arrows",
+    1
+  ],
+  [
+    "Radical Pushing",
+    1
+  ],
+  [
+    "Click and drag to make radical pushing arrows",
+    1
+  ],
+  [
+    "Mass Fragmentation [K]",
+    1
+  ],
+  [
+    "Click and drag to make separate fragments by breaking bonds in structures",
+    1
+  ],
+  [
+    "Click and drag to create and analyze fragmentation sets in structures",
+    1
+  ],
+  [
+    "Retrosynthesis",
+    1
+  ],
+  [
+    "Click and drag between two atoms to create a retrosynthetic reaction in which that bond is broken",
+    1
+  ],
+  [
+    "Synthesis",
+    1
+  ],
+  [
+    "Click and drag between two atoms to create a reaction in which that bond is added",
+    1
+  ],
+  [
+    "Benzene [J]: [3] or [A] on atom or [A] on bond",
+    1
+  ],
+  [
+    "Click or press and drag to add a Benzene. Click a bond to fuse the ring.",
+    1
+  ],
+  [
+    "Chair Cyclohexane: [0] on bond",
+    1
+  ],
+  [
+    "Chair Cyclohexane: [9] on bond",
+    1
+  ],
+  [
+    "Cyclobutane: [U] on atom or [4] on bond",
+    1
+  ],
+  [
+    "Click or press and drag to add a Cyclobutane Ring. Click a bond to fuse the ring.",
+    1
+  ],
+  [
+    "Cycloheptane: [7] on bond",
+    1
+  ],
+  [
+    "Click or press and drag to add a Cycloheptane Ring. Click a bond to fuse the ring.",
+    1
+  ],
+  [
+    "Cyclohexane: [6] on atom or bond",
+    1
+  ],
+  [
+    "Click or press and drag to add a Cyclohexane Ring. Click a bond to fuse the ring.",
+    1
+  ],
+  [
+    "Cyclooctane: [8] on bond",
+    1
+  ],
+  [
+    "Click or press and drag to add a Cyclooctane Ring. Click a bond to fuse the ring.",
+    1
+  ],
+  [
+    "Cyclopentadiene [Shift+J]: [Z] on bond",
+    1
+  ],
+  [
+    "Click or press and drag to add a Cyclopentadiene Ring. Click a bond to fuse the ring.",
+    1
+  ],
+  [
+    "Cyclopentane: [7] on atom or [5] on bond",
+    1
+  ],
+  [
+    "Click or press and drag to add a Cyclopentane Ring. Click a bond to fuse the ring.",
+    1
+  ],
+  [
+    "Cyclopropane: [V] on atom or bond",
+    1
+  ],
+  [
+    "Click or press and drag to add a Cyclopropane Ring. Click a bond to fuse the ring.",
+    1
+  ],
+  [
+    "Cyclopentadiene Up",
+    1
+  ],
+  [
+    "Cyclopentadiene Down",
+    1
+  ],
+  [
+    "Cyclopentane Right Angle Up",
+    1
+  ],
+  [
+    "Cyclopentane Right Angle Down",
+    1
+  ],
+  [
+    "Cyclopentane Up",
+    1
+  ],
+  [
+    "Cyclopropane Up",
+    1
+  ],
+  [
+    "dxy (Solid)",
+    1
+  ],
+  [
+    "dxy (Shaded)",
+    1
+  ],
+  [
+    "p (Shaded)",
+    1
+  ],
+  [
+    "p (Solid)",
+    1
+  ],
+  [
+    "s (Open)",
+    1
+  ],
+  [
+    "s (Shaded)",
+    1
+  ],
+  [
+    "s (Solid)",
+    1
+  ],
+  [
+    "sigma (Open)",
+    1
+  ],
+  [
+    "sigma (Shaded)",
+    1
+  ],
+  [
+    "sigma (Solid)",
+    1
+  ],
+  [
+    "sp3 (Shaded)",
+    1
+  ],
+  [
+    "sp lobe (Open)",
+    1
+  ],
+  [
+    "sp lobe (Shaded)",
+    1
+  ],
+  [
+    "sp lobe (Solid)",
+    1
+  ],
+  [
+    "Hydrogen Bond",
+    1
+  ],
+  [
+    "Dashed Bond: [D] on bond",
+    1
+  ],
+  [
+    "Draw Curve",
+    1
+  ],
+  [
+    "Edit Curve",
+    1
+  ],
+  [
+    "Absolute Stereochemistry",
+    1
+  ],
+  [
+    "Alternative Group",
+    1
+  ],
+  [
+    "Free Site",
+    1
+  ],
+  [
+    "Racemic Stereochemistry",
+    1
+  ],
+  [
+    "Relative Stereochemistry",
+    1
+  ],
+  [
+    "Reaction Atom Map",
+    1
+  ],
+  [
+    "Lasso",
+    1
+  ],
+  [
+    "Marquee [Spacebar]",
+    1
+  ],
+  [
+    "Circle Minus",
+    1
+  ],
+  [
+    "Circle Plus",
+    1
+  ],
+  [
+    "Lone Pair",
+    1
+  ],
+  [
+    "H Dash",
+    1
+  ],
+  [
+    "H Dot",
+    1
+  ],
+  [
+    "Minus",
+    1
+  ],
+  [
+    "Plus",
+    1
+  ],
+  [
+    "Polymer Bead Attachment Point",
+    1
+  ],
+  [
+    "Radical",
+    1
+  ],
+  [
+    "Radical Anion",
+    1
+  ],
+  [
+    "Radical Cation",
+    1
+  ],
+  [
+    "Table Tool",
+    1
+  ],
+  [
+    "Press and drag to add a table",
+    1
+  ],
+  [
+    "Templates",
+    1
+  ],
+  [
+    "Click or press and drag to add a predefined drawing from a template",
+    1
+  ],
+  [
+    "TLC Plate tool [G]",
+    1
+  ],
+  [
+    "Click or press and drag to add a Thin Layer Chromatography Plate",
+    1
+  ],
+  [
+    "Gel Electrophoresis Plate",
+    1
+  ],
+  [
+    "Click or press and drag to add a Gel Electrophoresis Plate",
+    1
+  ],
+  [
+    "Sets the specific magnification level of the document",
+    1
+  ],
+  [
+    "Biopolymer Available Dummy",
+    1
+  ],
+  [
+    "Reposition the selected biopolymer",
+    1
+  ],
+  [
+    "Linear Peptide Display",
+    1
+  ],
+  [
+    "Change the display of the biopolymer to a linear style",
+    1
+  ],
+  [
+    "Select the backbone of the biopolymer",
+    1
+  ],
+  [
+    "Merge Sidechain With Residue",
+    1
+  ],
+  [
+    "Merge the sidechain with the residue",
+    1
+  ],
+  [
+    "Switch Amino Acid type",
+    1
+  ],
+  [
+    "Interconvert single and multi-letter amino acids",
+    1
+  ],
+  [
+    "Show or hide the termini on a biopolymer",
+    1
+  ],
+  [
+    "Show Biopolymer Unlinked Branches",
+    1
+  ],
+  [
+    "Show or hide the unlinked branches on a biopolymer",
+    1
+  ],
+  [
+    "Reposition the selected atom(s)",
+    1
+  ],
+  [
+    "3D clean up for the selected atoms",
+    1
+  ],
+  [
+    "Removes the selected objects",
+    1
+  ],
+  [
+    "Clears the reaction mapping for the selected atom(s)",
+    1
+  ],
+  [
+    "Clear Reaction Mapping",
+    1
+  ],
+  [
+    "Closes the document",
+    1
+  ],
+  [
+    "Contract the selected fragment into an atom label",
+    1
+  ],
+  [
+    "Name to Structure",
+    1
+  ],
+  [
+    "Generate the structure corresponding to a chemical name",
+    1
+  ],
+  [
+    "The dictionary saves the name and the SMILES string of the structure",
+    1
+  ],
+  [
+    "Structure to Name",
+    1
+  ],
+  [
+    "Copies the selection to the the clipboard",
+    1
+  ],
+  [
+    "Copy the selected structure(s) to the clipboard as an InChI string",
+    1
+  ],
+  [
+    "Copy the selected structure(s) to the clipboard as an InChI Key string",
+    1
+  ],
+  [
+    "Copy the selected structure(s) to the clipboard as a Sybyl Line Notation string",
+    1
+  ],
+  [
+    "Copy the selected structure(s) to the clipboard as a SMILES string",
+    1
+  ],
+  [
+    "Copy the selected structure(s) to the clipboard as HELM text",
+    1
+  ],
+  [
+    "Copy the selected structure(s) to the clipboard as FASTA text",
+    1
+  ],
+  [
+    "Copy as 3MF (Ball and Stick)",
+    1
+  ],
+  [
+    "Copy the selected structure(s) to the clipboard as 3MF (Ball and Stick)",
+    1
+  ],
+  [
+    "Copy as 3MF(Stick)",
+    1
+  ],
+  [
+    "Copy the selected structure(s) to the clipboard as 3MF(Stick)",
+    1
+  ],
+  [
+    "Copy the selected structure(s) to the clipboard as CDXML data",
+    1
+  ],
+  [
+    "Copy the selected structure(s) to the clipboard as Molfile data",
+    1
+  ],
+  [
+    "Copy the selected structure(s) to the clipboard as Mol V3000 data",
+    1
+  ],
+  [
+    "Copy the selected structure(s) to the clipboard as PNG",
+    1
+  ],
+  [
+    "Set Curve Style Bold",
+    1
+  ],
+  [
+    "Makes the selected\r\n            curve(s) thicker",
+    1
+  ],
+  [
+    "Set Curve Style Closed",
+    1
+  ],
+  [
+    "Connects the ends of the selected curve(s)",
+    1
+  ],
+  [
+    "Set Curve Style Dashed",
+    1
+  ],
+  [
+    "Makes the selected\r\n            curve(s) dashed",
+    1
+  ],
+  [
+    "Set Curve Style Doubled",
+    1
+  ],
+  [
+    "Makes the selected curve(s) drawn with a double line",
+    1
+  ],
+  [
+    "Set Curve Style Faded",
+    1
+  ],
+  [
+    "Fades the color of the selected graphic(s)",
+    1
+  ],
+  [
+    "Set Curve Style Filled",
+    1
+  ],
+  [
+    "Fills the selected\r\n            curve(s) with a solid color",
+    1
+  ],
+  [
+    "Set Curve Style Plain",
+    1
+  ],
+  [
+    "Makes the selected curve(s) plain open curves",
+    1
+  ],
+  [
+    "Set Curve Style Shaded",
+    1
+  ],
+  [
+    "Fills the selected curve(s) with a gradient blend",
+    1
+  ],
+  [
+    "Set Curve Style Shadowed",
+    1
+  ],
+  [
+    "Adds a shadow\r\n            to the selected curve(s)",
+    1
+  ],
+  [
+    "Set Curve Style Arrow End",
+    1
+  ],
+  [
+    "Draws an arrow at the end of the selected curve(s)",
+    1
+  ],
+  [
+    "Set Curve Style Arrow Start",
+    1
+  ],
+  [
+    "Draws an arrow at the start of the selected curve(s)",
+    1
+  ],
+  [
+    "Set Curve Style Half Arrow Left End",
+    1
+  ],
+  [
+    "Draws a half-arrow at the left side of the end of the selected curve(s)",
+    1
+  ],
+  [
+    "Set Curve Style Half Arrow Right End",
+    1
+  ],
+  [
+    "Draws a half-arrow at the right side of the end of the selected curve(s)",
+    1
+  ],
+  [
+    "Set Curve Style Half Left Arrow Start",
+    1
+  ],
+  [
+    "Draws a half-arrow at the left side of the start of the selected curve(s)",
+    1
+  ],
+  [
+    "Set Curve Style Half Right Arrow Start",
+    1
+  ],
+  [
+    "Draws a half-arrow at the right side of the start of the selected curve(s)",
+    1
+  ],
+  [
+    "Cuts the selection and puts it on the clipboard",
+    1
+  ],
+  [
+    "Distribute Vertically",
+    1
+  ],
+  [
+    "Arrange the selected objects so that they have identical vertical spacing",
+    1
+  ],
+  [
+    "Distribute Horizontally",
+    1
+  ],
+  [
+    "Arrange the selected objects so that they have identical horizontal spacing",
+    1
+  ],
+  [
+    "Expand alternative groups, anonymous alternative groups, and element lists into multiple molecules",
+    1
+  ],
+  [
+    "Expand alternative groups, anonymous alternative groups, and element lists into an SD file",
+    1
+  ],
+  [
+    "Toggle the aromatic representation of the selected rings",
+    1
+  ],
+  [
+    "Toggle display of explicit hydrogens on selected atoms",
+    1
+  ],
+  [
+    "Show the structure perspective",
+    1
+  ],
+  [
+    "Select the next structure found in the current document",
+    1
+  ],
+  [
+    "Select the previous structure found in the current document",
+    1
+  ],
+  [
+    "Expand the selected atom label(s) into individual atoms and bonds",
+    1
+  ],
+  [
+    "Strips the z-coordinate from the selected object(s), bringing them all into the same plane",
+    1
+  ],
+  [
+    "Flip Horizontally",
+    1
+  ],
+  [
+    "Flips the selected object(s) horizontally, inverting absolute stereochemistry",
+    1
+  ],
+  [
+    "Flip Vertically",
+    1
+  ],
+  [
+    "Flips the selected object(s) vertically, inverting absolute stereochemistry",
+    1
+  ],
+  [
+    "Joins the selected object(s)",
+    1
+  ],
+  [
+    "Associates the selected objects in a single group",
+    1
+  ],
+  [
+    "Removes the selected object(s) from their collected group",
+    1
+  ],
+  [
+    "Associate a structural fragment with a portion of a chemical spectrum",
+    1
+  ],
+  [
+    "Disassociate a structural fragment from a portion of a chemical spectrum",
+    1
+  ],
+  [
+    "Computes the mapping between the atoms of the products and reactants in the selected reaction",
+    1
+  ],
+  [
+    "Creates a new document",
+    1
+  ],
+  [
+    "Open Document",
+    1
+  ],
+  [
+    "Shows or hides a window containing a template toolbar",
+    1
+  ],
+  [
+    "Opens a file in the ChemDraw Items folder",
+    1
+  ],
+  [
+    "Opens a blank template document",
+    1
+  ],
+  [
+    "Run script",
+    1
+  ],
+  [
+    "Runs an existing ChemScript/Python script",
+    1
+  ],
+  [
+    "Re-run the previously selected ChemScript/Python script",
+    1
+  ],
+  [
+    "Run ChemScripts in the Scripts folder",
+    1
+  ],
+  [
+    "Copy the settings for the selected object(s) from a file",
+    1
+  ],
+  [
+    "Copy Objects Settings From File",
+    1
+  ],
+  [
+    "Pastes the clipboard contents into the document",
+    1
+  ],
+  [
+    "Paste the structure(s) from the clipboard, interpreting the text as a InChI string",
+    1
+  ],
+  [
+    "Paste the structure(s) from the clipboard, interpreting the text as a SMILES string",
+    1
+  ],
+  [
+    "Paste the structure(s) from the clipboard, interpreting the text as MOL/CDXML data",
+    1
+  ],
+  [
+    "Paste the structure(s) from the clipboard, interpreting the text as a Biopolymer string",
+    1
+  ],
+  [
+    "Paste the structure(s) from the clipboard, interpreting the text as a Peptide string",
+    1
+  ],
+  [
+    "Paste the structure(s) from the clipboard, interpreting the text as a DNA string",
+    1
+  ],
+  [
+    "Paste the structure(s) from the clipboard, interpreting the text as a RNA string",
+    1
+  ],
+  [
+    "Paste the structure(s) from the clipboard, interpreting the text as a HELM string",
+    1
+  ],
+  [
+    "Paste the structure(s) from the clipboard",
+    1
+  ],
+  [
+    "¹H-NMR",
+    1
+  ],
+  [
+    "Display a calculated ¹H NMR spectrum for the selected structure",
+    1
+  ],
+  [
+    "¹³C-NMR",
+    1
+  ],
+  [
+    "Display a calculated ¹³C NMR spectrum for the selected structure",
+    1
+  ],
+  [
+    "Print Document",
+    1
+  ],
+  [
+    "Prints the document",
+    1
+  ],
+  [
+    "Quits the application; prompts to save documents",
+    1
+  ],
+  [
+    "Redoes the previously undone action",
+    1
+  ],
+  [
+    "Repeats the previous action",
+    1
+  ],
+  [
+    "Discards changes made since the document was last saved",
+    1
+  ],
+  [
+    "Rotates 180 Horizontally",
+    1
+  ],
+  [
+    "Rotates the selected object(s) horizontally, preserving absolute stereochemistry",
+    1
+  ],
+  [
+    "Rotate 180 vertically",
+    1
+  ],
+  [
+    "Rotates the selected object(s) vertically, preserving absolute stereochemistry",
+    1
+  ],
+  [
+    "Save Document",
+    1
+  ],
+  [
+    "Saves the document",
+    1
+  ],
+  [
+    "Saves the document with a new name",
+    1
+  ],
+  [
+    "Selects every object in the document",
+    1
+  ],
+  [
+    "Invert the selection state of every object in the document",
+    1
+  ],
+  [
+    "Places the selected object(s) behind all other objects",
+    1
+  ],
+  [
+    "Change the selected text to 5 points in size",
+    1
+  ],
+  [
+    "Set Text Size To 5",
+    1
+  ],
+  [
+    "Change the selected text to 6 points in size",
+    1
+  ],
+  [
+    "Set Text Size To 6",
+    1
+  ],
+  [
+    "Change the selected text to 7 points in size",
+    1
+  ],
+  [
+    "Set Text Size To 7",
+    1
+  ],
+  [
+    "Change the selected text to 8 points in size",
+    1
+  ],
+  [
+    "Set Text Size To 8",
+    1
+  ],
+  [
+    "Change the selected text to 9 points in size",
+    1
+  ],
+  [
+    "Set Text Size To 9",
+    1
+  ],
+  [
+    "Change the selected text to 10 points in size",
+    1
+  ],
+  [
+    "Set Text Size To 10",
+    1
+  ],
+  [
+    "Change the selected text to 12 points in size",
+    1
+  ],
+  [
+    "Set Text Size To 12",
+    1
+  ],
+  [
+    "Change the selected text to 14 points in size",
+    1
+  ],
+  [
+    "Set Text Size To 14",
+    1
+  ],
+  [
+    "Change the selected text to 16 points in size",
+    1
+  ],
+  [
+    "Set Text Size To 16",
+    1
+  ],
+  [
+    "Change the selected text to 18 points in size",
+    1
+  ],
+  [
+    "Set Text Size To 18",
+    1
+  ],
+  [
+    "Change the selected text to 24 points in size",
+    1
+  ],
+  [
+    "Set Text Size To 24",
+    1
+  ],
+  [
+    "Change the selected text to the last specified font size",
+    1
+  ],
+  [
+    "Set Font Size To Last One",
+    1
+  ],
+  [
+    "Delete the column containing the current template from a templates document",
+    1
+  ],
+  [
+    "Delete the row containing the current template from a templates document",
+    1
+  ],
+  [
+    "Set line color of the selected objects to the foreground color",
+    1
+  ],
+  [
+    "Set line color of the selected objects to the background color",
+    1
+  ],
+  [
+    "Set line color of the selected objects to palette color 1",
+    1
+  ],
+  [
+    "Set line color of the selected objects to palette color 2",
+    1
+  ],
+  [
+    "Set line color of the selected objects to palette color 3",
+    1
+  ],
+  [
+    "Set line color of the selected objects to palette color 4",
+    1
+  ],
+  [
+    "Set line color of the selected objects to palette color 5",
+    1
+  ],
+  [
+    "Set line color of the selected objects to palette color 6",
+    1
+  ],
+  [
+    "Set line color of the selected objects to palette color 7",
+    1
+  ],
+  [
+    "Set line color of the selected objects to palette color 8",
+    1
+  ],
+  [
+    "Set line color of the selected objects to palette color 9",
+    1
+  ],
+  [
+    "Set line color of the selected objects to palette color 10",
+    1
+  ],
+  [
+    "Set line color of the selected objects to palette color 11",
+    1
+  ],
+  [
+    "Set line color of the selected objects to palette color 12",
+    1
+  ],
+  [
+    "Set line color of the selected objects to palette color 13",
+    1
+  ],
+  [
+    "Set line color of the selected objects to palette color 14",
+    1
+  ],
+  [
+    "Set line color of the selected objects to palette color 15",
+    1
+  ],
+  [
+    "Set line color of the selected objects to palette color 16",
+    1
+  ],
+  [
+    "Set line color of the selected objects to palette color 17",
+    1
+  ],
+  [
+    "Set line color of the selected objects to palette color 18",
+    1
+  ],
+  [
+    "Set line color of the selected objects to palette color 19",
+    1
+  ],
+  [
+    "Set line color of the selected objects to palette color 20",
+    1
+  ],
+  [
+    "Set line color of the selected objects to palette color 21",
+    1
+  ],
+  [
+    "Set line color of the selected objects to palette color 22",
+    1
+  ],
+  [
+    "Set line color of the selected objects to element color",
+    1
+  ],
+  [
+    "Set the font of the selected text to the last selected",
+    1
+  ],
+  [
+    "Set the font of the selected text to a standard san serif font",
+    1
+  ],
+  [
+    "Set the font of the selected text to the Symbol font",
+    1
+  ],
+  [
+    "Set the font of the selected text to a standard serif font",
+    1
+  ],
+  [
+    "Scale the view of the document to 12%",
+    1
+  ],
+  [
+    "Scale the view of the document to 25%",
+    1
+  ],
+  [
+    "Scale the view of the document to 50%",
+    1
+  ],
+  [
+    "Scale the view of the document to 75%",
+    1
+  ],
+  [
+    "Scale the view of the document to 100%",
+    1
+  ],
+  [
+    "Scale the view of the document to 150%",
+    1
+  ],
+  [
+    "Scale the view of the document to 200%",
+    1
+  ],
+  [
+    "Scale the view of the document to 400%",
+    1
+  ],
+  [
+    "Scale the view of the document to 800%",
+    1
+  ],
+  [
+    "Scale the view of the document to 600%",
+    1
+  ],
+  [
+    "Scale the view of the document to a user entered value",
+    1
+  ],
+  [
+    "Minimize the frontmost window",
+    1
+  ],
+  [
+    "Left",
+    1
+  ],
+  [
+    "Aligns the left edges of the text in each label or caption",
+    1
+  ],
+  [
+    "Aligns the centers of the lines of text in each label or caption",
+    1
+  ],
+  [
+    "Right",
+    1
+  ],
+  [
+    "Aligns the right edges of the text in each label or caption",
+    1
+  ],
+  [
+    "Aligns the left and right edges of the text in each label or caption",
+    1
+  ],
+  [
+    "Attaches a multi-line atom label to the first atom in the last line",
+    1
+  ],
+  [
+    "Display chemically meaningful labels in an appropriate orientation",
+    1
+  ],
+  [
+    "Adjust Label Orientation",
+    1
+  ],
+  [
+    "Remove all styles from the selected text",
+    1
+  ],
+  [
+    "Makes the selection bold (toggle)",
+    1
+  ],
+  [
+    "Makes the selection italic (toggle)",
+    1
+  ],
+  [
+    "Underlines the selection (toggle)",
+    1
+  ],
+  [
+    "Makes the selection in outline style (toggle)",
+    1
+  ],
+  [
+    "Makes the selection in shadow style (toggle)",
+    1
+  ],
+  [
+    "Subscripts the selection (toggle)",
+    1
+  ],
+  [
+    "Superscripts the selection (toggle)",
+    1
+  ],
+  [
+    "Subscripts digits in the selection (toggle)",
+    1
+  ],
+  [
+    "When checked, fixes the sizes of objects",
+    1
+  ],
+  [
+    "When checked, fixes the angles at which objects are drawn",
+    1
+  ],
+  [
+    "Rotates the selected object(s)",
+    1
+  ],
+  [
+    "Changes the size of the selected object(s)",
+    1
+  ],
+  [
+    "Shows or hides a crosshair over the document",
+    1
+  ],
+  [
+    "Shows or hides rulers along the edges of the document",
+    1
+  ],
+  [
+    "Display the document at its actual size",
+    1
+  ],
+  [
+    "Shrink the view, if necessary, to display the entire document",
+    1
+  ],
+  [
+    "Magnify the view of the document",
+    1
+  ],
+  [
+    "Reduce the view of the document",
+    1
+  ],
+  [
+    "Add Splitter",
+    1
+  ],
+  [
+    "Add a splitter to the document",
+    1
+  ],
+  [
+    "Undoes the last action",
+    1
+  ],
+  [
+    "Show (hide) the Amino Acid toolbar",
+    1
+  ],
+  [
+    "Show (hide) the Dotted/Dashed Bond toolbar",
+    1
+  ],
+  [
+    "Show (hide) the Pen toolbar",
+    1
+  ],
+  [
+    "Show (hide) the Chain toolbar",
+    1
+  ],
+  [
+    "Show (hide) the Chromatography toolbar",
+    1
+  ],
+  [
+    "Show (hide) the Colors toolbar",
+    1
+  ],
+  [
+    "Show (hide) the Ring Fill Colors toolbar",
+    1
+  ],
+  [
+    "Show (hide) the Highlight Colors toolbar",
+    1
+  ],
+  [
+    "Show (hide) the Fragmentation toolbar",
+    1
+  ],
+  [
+    "Show (hide) the Query toolbar",
+    1
+  ],
+  [
+    "Show (hide) the Chemical Symbols toolbar",
+    1
+  ],
+  [
+    "Show (hide) the Brackets toolbar",
+    1
+  ],
+  [
+    "Show (hide) the Drawing Elements toolbar",
+    1
+  ],
+  [
+    "Show (hide) the Orbitals toolbar",
+    1
+  ],
+  [
+    "Show (hide) the Curves toolbar",
+    1
+  ],
+  [
+    "Show (hide) the Structure toolbar",
+    1
+  ],
+  [
+    "Show (hide) the Windows toolbar",
+    1
+  ],
+  [
+    "Show (hide) the Add-ins toolbar",
+    1
+  ],
+  [
+    "Show (hide) the Accessories toolbar",
+    1
+  ],
+  [
+    "Show (hide) the Arrows toolbar",
+    1
+  ],
+  [
+    "Show (hide) the Chains toolbar",
+    1
+  ],
+  [
+    "Show (hide) the Arcs toolbar",
+    1
+  ],
+  [
+    "Show (hide) the Multiple Bonds toolbar",
+    1
+  ],
+  [
+    "Show (hide) the Objects toolbar",
+    1
+  ],
+  [
+    "Show (hide) the Text Styles toolbar",
+    1
+  ],
+  [
+    "Show (hide) the Tools toolbar",
+    1
+  ],
+  [
+    "Changes the page layout settings",
+    1
+  ],
+  [
+    "Changes user preferences",
+    1
+  ],
+  [
+    "Analysis Window",
+    1
+  ],
+  [
+    "Shows or hides a window with basic chemical properties",
+    1
+  ],
+  [
+    "Chemical Properties Window",
+    1
+  ],
+  [
+    "Shows or hides a window with advanced chemical properties",
+    1
+  ],
+  [
+    "Shows or hides a window with positional information",
+    1
+  ],
+  [
+    "Character Map Window",
+    1
+  ],
+  [
+    "Shows or hides a window listing all characters in each font",
+    1
+  ],
+  [
+    "When checked, highlights parts of the drawing which can not be perceived as chemically valid",
+    1
+  ],
+  [
+    "Reaction Interpretation",
+    1
+  ],
+  [
+    "When checked, highlights parts of the reaction which are reactants, products or conditions",
+    1
+  ],
+  [
+    "Periodic Table Window",
+    1
+  ],
+  [
+    "Shows or hides a window containing a periodic table",
+    1
+  ],
+  [
+    "HELM Monomer Toolbar Window",
+    1
+  ],
+  [
+    "Shows or hides a window containing HELM Monomer Toolbar",
+    1
+  ],
+  [
+    "3D Preview Window",
+    1
+  ],
+  [
+    "Shows or hides a preview of structures in Chem3D",
+    1
+  ],
+  [
+    "Displays the program information and copyright",
+    1
+  ],
+  [
+    "Brings up the activation dialog",
+    1
+  ],
+  [
+    "Annotate Object",
+    1
+  ],
+  [
+    "Sets properties of the selected atom(s)",
+    1
+  ],
+  [
+    "Sets properties of the selected bond(s)",
+    1
+  ],
+  [
+    "Sets properties of the selected bracket(s)",
+    1
+  ],
+  [
+    "Shows or hides a window showing the contents of the clipboard",
+    1
+  ],
+  [
+    "Replace clicked word with different spelling",
+    1
+  ],
+  [
+    "Looks up selected text using the OS X Spotlight service",
+    1
+  ],
+  [
+    "Looks up selected text in the System Dictionary",
+    1
+  ],
+  [
+    "Select a new color to be used for objects in this document",
+    1
+  ],
+  [
+    "Displays the list of defined nicknames",
+    1
+  ],
+  [
+    "Set properties of the document",
+    1
+  ],
+  [
+    "Show Help",
+    1
+  ],
+  [
+    "Displays the Table of Contents for the online documentation",
+    1
+  ],
+  [
+    "Displays information on basic concepts and usage",
+    1
+  ],
+  [
+    "Displays information on using tutorials",
+    1
+  ],
+  [
+    "Displays information on using the help system",
+    1
+  ],
+  [
+    "Displays information on using ChemScript",
+    1
+  ],
+  [
+    "Displays information on add-in development",
+    1
+  ],
+  [
+    "Displays information about recent additions included in this version",
+    1
+  ],
+  [
+    "Show Recent Additions",
+    1
+  ],
+  [
+    "Display information about hot keys",
+    1
+  ],
+  [
+    "Display Hot Keys Information",
+    1
+  ],
+  [
+    "Display information about shortcuts",
+    1
+  ],
+  [
+    "Display Shortcuts Information",
+    1
+  ],
+  [
+    "Open the Revvity Support Portal",
+    1
+  ],
+  [
+    "Define a nickname in terms of the selected fragment",
+    1
+  ],
+  [
+    "Change the size of and other settings relating to the drawing area",
+    1
+  ],
+  [
+    "Changes settings for objects in this document",
+    1
+  ],
+  [
+    "Create R-Logic queries",
+    1
+  ],
+  [
+    "Set the spacing of the lines in the selected text",
+    1
+  ],
+  [
+    "Arranges the windows to overlap",
+    1
+  ],
+  [
+    "Arrange the iconified windows",
+    1
+  ],
+  [
+    "Brings this window to the front",
+    1
+  ],
+  [
+    "Dock or undock a toolbar",
+    1
+  ],
+  [
+    "Edit the selected atom's label",
+    1
+  ],
+  [
+    "Assign the last custom atom label to the current selection",
+    1
+  ],
+  [
+    "Toggle Atom Query Indicator",
+    1
+  ],
+  [
+    "Toggle Bond Query Indicator",
+    1
+  ],
+  [
+    "Toggle Enhanced Stereochemistry",
+    1
+  ],
+  [
+    "Toggle Stereochemistry",
+    1
+  ],
+  [
+    "Toggle Stereochemistry View Only",
+    1
+  ],
+  [
+    "Toggle Atom Stereochemistry",
+    1
+  ],
+  [
+    "Toggle Bond Stereochemistry",
+    1
+  ],
+  [
+    "Toggle Showing Atom Number",
+    1
+  ],
+  [
+    "Toggle Showing Terminal Carbon Labels",
+    1
+  ],
+  [
+    "Insert Chemical Formula",
+    1
+  ],
+  [
+    "Insert Exact Mass",
+    1
+  ],
+  [
+    "Insert Molecular Weight",
+    1
+  ],
+  [
+    "Insert Mass To Charge",
+    1
+  ],
+  [
+    "Insert Elemental Analysis",
+    1
+  ],
+  [
+    "Insert Complete Analysis",
+    1
+  ],
+  [
+    "Cut Molecule",
+    1
+  ],
+  [
+    "Copy Molecule",
+    1
+  ],
+  [
+    "Clear Molecule",
+    1
+  ],
+  [
+    "Select Molecule",
+    1
+  ],
+  [
+    "Toggle TLC Origin",
+    1
+  ],
+  [
+    "Toggle TLC Solvent Front",
+    1
+  ],
+  [
+    "Toggle Plate Borders",
+    1
+  ],
+  [
+    "Toggle GEP Lane Labels",
+    1
+  ],
+  [
+    "Toggle TLC Side Ticks",
+    1
+  ],
+  [
+    "Toggle GEP Scale",
+    1
+  ],
+  [
+    "Set GEP Range",
+    1
+  ],
+  [
+    "Toggle Plate Transparency",
+    1
+  ],
+  [
+    "Add TLC Spot",
+    1
+  ],
+  [
+    "Add GEP Band",
+    1
+  ],
+  [
+    "Show Item Size",
+    1
+  ],
+  [
+    "Add Plate Add Lane",
+    1
+  ],
+  [
+    "Set GEP Plate ShowLog",
+    1
+  ],
+  [
+    "Show Mass",
+    1
+  ],
+  [
+    "Show Distance",
+    1
+  ],
+  [
+    "Duplicate Plate Lane",
+    1
+  ],
+  [
+    "Delete Plate Lane",
+    1
+  ],
+  [
+    "Show table borders dialog window",
+    1
+  ],
+  [
+    "Add row to table before selected row",
+    1
+  ],
+  [
+    "Add row to table after selected row",
+    1
+  ],
+  [
+    "Add column to table before",
+    1
+  ],
+  [
+    "Add column to table after",
+    1
+  ],
+  [
+    "Delete Row From Table",
+    1
+  ],
+  [
+    "Delete Column From Table",
+    1
+  ],
+  [
+    "Clear Table Contents",
+    1
+  ],
+  [
+    "Size Table To Fit Contents",
+    1
+  ],
+  [
+    "Set Brackets Variation Brackets",
+    1
+  ],
+  [
+    "Set Brackets Variation Parenthesis",
+    1
+  ],
+  [
+    "Set Brackets Variation Braces",
+    1
+  ],
+  [
+    "Defines an Average Molecular Weight for a bracket",
+    1
+  ],
+  [
+    "Show Chemical Warnings in Selection",
+    1
+  ],
+  [
+    "Show Chemical Warnings for Atoms in Selection",
+    1
+  ],
+  [
+    "Explain Chemical Warnings in Selection",
+    1
+  ],
+  [
+    "Window Zoom",
+    1
+  ],
+  [
+    "Set Atom Substituent Query Unspecified",
+    1
+  ],
+  [
+    "Set Atom Substituent Query Exactly 4",
+    1
+  ],
+  [
+    "Set Atom Substituent Query Exactly 3",
+    1
+  ],
+  [
+    "Set Atom Substituent Query Exactly 2",
+    1
+  ],
+  [
+    "Set Atom Substituent Query Exactly 1",
+    1
+  ],
+  [
+    "Set Atom Substituent Query Exactly 0",
+    1
+  ],
+  [
+    "Set Atom Substituent Query Up To 4",
+    1
+  ],
+  [
+    "Set Atom Substituent Query Up To 3",
+    1
+  ],
+  [
+    "Set Atom Substituent Query Up To 2",
+    1
+  ],
+  [
+    "Set Atom Substituent Query Up To 1",
+    1
+  ],
+  [
+    "Set Atom Substituent Query Up To 0",
+    1
+  ],
+  [
+    "Set Atom Substituent Query Free Site 4",
+    1
+  ],
+  [
+    "Set Atom Substituent Query Free Site 3",
+    1
+  ],
+  [
+    "Set Atom Substituent Query Free Site 2",
+    1
+  ],
+  [
+    "Set Atom Substituent Query Free Site 1",
+    1
+  ],
+  [
+    "Set Atom Substituent Query Free Site 0",
+    1
+  ],
+  [
+    "Set Reaction Change May Be Anything",
+    1
+  ],
+  [
+    "Set Reaction Change Must Be As Specified",
+    1
+  ],
+  [
+    "Group Integral",
+    1
+  ],
+  [
+    "Set Atom Query Implicit Hydrogen Not Allowed",
+    1
+  ],
+  [
+    "Set Atom Query Implicit Hydrogen Allowed",
+    1
+  ],
+  [
+    "Set Atom Query Ring Any",
+    1
+  ],
+  [
+    "Set Atom Query Ring Spiro Or Higher",
+    1
+  ],
+  [
+    "Set Atom Query Ring Fusion",
+    1
+  ],
+  [
+    "Set Atom Query Simple Ring",
+    1
+  ],
+  [
+    "Set Atom Query Ring As Drawn",
+    1
+  ],
+  [
+    "Set Atom Query No Ring Bonds",
+    1
+  ],
+  [
+    "Set Atom Query Unsaturation Unspecified",
+    1
+  ],
+  [
+    "Set Atom Query Unsaturation Must Be Absent",
+    1
+  ],
+  [
+    "Set Atom Query Unsaturation Must Be Present",
+    1
+  ],
+  [
+    "Set Atom Query Reaction Stereo Any",
+    1
+  ],
+  [
+    "Set Atom Query Reaction Stereo Inversion",
+    1
+  ],
+  [
+    "Set Atom Query Reaction Stereo Retention",
+    1
+  ],
+  [
+    "Set Atom Query Translation Any",
+    1
+  ],
+  [
+    "Set Atom Query Translation Equal",
+    1
+  ],
+  [
+    "Set Atom Query Translation Narrow",
+    1
+  ],
+  [
+    "Set Atom Query Translation Broad",
+    1
+  ],
+  [
+    "Set Atom Query Isotopic Abundance Unspecified",
+    1
+  ],
+  [
+    "Set Atom Query Isotopic Abundance Nonnatural",
+    1
+  ],
+  [
+    "Set Atom Query Isotopic Abundance Deficient",
+    1
+  ],
+  [
+    "Set Atom Query Isotopic Abundance Enriched",
+    1
+  ],
+  [
+    "Set Atom Query Isotopic Abundance Natural",
+    1
+  ],
+  [
+    "Set Atom Query Isotopic Abundance Any",
+    1
+  ],
+  [
+    "Set Atom Query Abnormal Valence Not Allowed",
+    1
+  ],
+  [
+    "Set Atom Query Abnormal Valence Allowed",
+    1
+  ],
+  [
+    "Set Atom Query Enhance Stereochemistry And",
+    1
+  ],
+  [
+    "Set Atom Query Enhance Stereochemistry Or",
+    1
+  ],
+  [
+    "Set Generic Queries",
+    1
+  ],
+  [
+    "Toggle Reaction Indicator",
+    1
+  ],
+  [
+    "Set Bond Type Single Hashed",
+    1
+  ],
+  [
+    "Set Bond Type Single Wedged",
+    1
+  ],
+  [
+    "Set Bond Type Single Bold",
+    1
+  ],
+  [
+    "Set Bond Type Single Bold Wedged",
+    1
+  ],
+  [
+    "Set Bond Type Single Hollow Wedged",
+    1
+  ],
+  [
+    "Set Bond Type Single Dative",
+    1
+  ],
+  [
+    "Set Bond Type Single Wavy: [Y] on bond",
+    1
+  ],
+  [
+    "Set Bond Type Double Plain: [2] on bond",
+    1
+  ],
+  [
+    "Set Bond Type Double Bold: [Shift+B] on bond",
+    1
+  ],
+  [
+    "Set Bond Type Double Either",
+    1
+  ],
+  [
+    "Set Bond Type Double Tautomeric: [Shift+B] on bond",
+    1
+  ],
+  [
+    "Set Bond Type Double Aromatic",
+    1
+  ],
+  [
+    "Set Bond Type Quadruple Plain",
+    1
+  ],
+  [
+    "Set Bond Type Triple Plain",
+    1
+  ],
+  [
+    "Set Bond Query D Or A",
+    1
+  ],
+  [
+    "Set Bond Query S Or A",
+    1
+  ],
+  [
+    "Set Bond Query S Or D",
+    1
+  ],
+  [
+    "Set Bond Query Any",
+    1
+  ],
+  [
+    "Set Bond Position Automatic",
+    1
+  ],
+  [
+    "Set Bond Position Left Top",
+    1
+  ],
+  [
+    "Set Bond Postion Centered",
+    1
+  ],
+  [
+    "Set Bond Position Right Bottom",
+    1
+  ],
+  [
+    "Set Bond Topology Ring Or Chain",
+    1
+  ],
+  [
+    "Set Bond Topology Ring",
+    1
+  ],
+  [
+    "Set Bond Topology Chain",
+    1
+  ],
+  [
+    "Set Bond Topology Unspecified",
+    1
+  ],
+  [
+    "Set Bond Reaction Center Unmapped",
+    1
+  ],
+  [
+    "Set Bond Reaction Center Not Modified",
+    1
+  ],
+  [
+    "Set Bond Reaction Center Not Center",
+    1
+  ],
+  [
+    "Set Bond Reaction Center Make And Change",
+    1
+  ],
+  [
+    "Set Bond Reaction Center Change",
+    1
+  ],
+  [
+    "Set Bond Reaction Center Center",
+    1
+  ],
+  [
+    "Set Bond Reaction Center Make Or Break",
+    1
+  ],
+  [
+    "Set Bond Reaction Center Unspecified",
+    1
+  ],
+  [
+    "Set Mass Spec Analysis Mode Combinatorial",
+    1
+  ],
+  [
+    "Set Mass Spec Analysis Mode Sequential",
+    1
+  ],
+  [
+    "Set Mass Spec Analysis Mode Simultaneous",
+    1
+  ],
+  [
+    "Set Bracket Usage Unspecified",
+    1
+  ],
+  [
+    "Set Bracket Usage Component",
+    1
+  ],
+  [
+    "Set Bracket Usage Alternate Copolymer",
+    1
+  ],
+  [
+    "Set Bracket Usage Copolymer",
+    1
+  ],
+  [
+    "Set Bracket Usage Block Copolymer",
+    1
+  ],
+  [
+    "Set Bracket Usage Random Copolymer",
+    1
+  ],
+  [
+    "Set Bracket Usage Crosslink",
+    1
+  ],
+  [
+    "Set Bracket Usage Any Polymer",
+    1
+  ],
+  [
+    "Set Bracket Usage Generic",
+    1
+  ],
+  [
+    "Set Bracket Usage Graft",
+    1
+  ],
+  [
+    "Set Bracket Usage Mer",
+    1
+  ],
+  [
+    "Set Bracket Usage Ordered Mixture",
+    1
+  ],
+  [
+    "Set Bracket Usage Unordered Mixture",
+    1
+  ],
+  [
+    "Set Bracket Usage Modification",
+    1
+  ],
+  [
+    "Set Bracket Usage Monomer",
+    1
+  ],
+  [
+    "Set Bracket Usage Multiple Group",
+    1
+  ],
+  [
+    "Set Bracket Usage Multiple Group Override",
+    1
+  ],
+  [
+    "Set Bracket Usage SRU",
+    1
+  ],
+  [
+    "Set Bracket Repeat Pattern Head To Tail",
+    1
+  ],
+  [
+    "Set Bracket Repeat Pattern Head To Head",
+    1
+  ],
+  [
+    "Set Bracket Repeat Pattern Either Or Uknown",
+    1
+  ],
+  [
+    "Set Bracket Flip Type Unspecified",
+    1
+  ],
+  [
+    "Set Bracket Flip Type No Flip",
+    1
+  ],
+  [
+    "Set Bracket Flip Type Flip",
+    1
+  ],
+  [
+    "Set Arrow Head To Solid",
+    1
+  ],
+  [
+    "Set Arrow Head Hollow",
+    1
+  ],
+  [
+    "Set Arrow Head Angled",
+    1
+  ],
+  [
+    "Set Arrow Head Cross",
+    1
+  ],
+  [
+    "Set Arrow Head Hash",
+    1
+  ],
+  [
+    "Set Arrow Head Dipole",
+    1
+  ],
+  [
+    "Set Custom Plate Item",
+    1
+  ],
+  [
+    "Remove Custom Plate Item",
+    1
+  ],
+  [
+    "Set Plate Item Solid",
+    1
+  ],
+  [
+    "Set Plate Item Dashed",
+    1
+  ],
+  [
+    "Set Plate Item Bold",
+    1
+  ],
+  [
+    "Set Plate Item Double",
+    1
+  ],
+  [
+    "Set Plate Item Delete",
+    1
+  ],
+  [
+    "Set TLC Spot RF",
+    1
+  ],
+  [
+    "Set GEP Band Size",
+    1
+  ],
+  [
+    "XXX",
+    1
+  ],
+  [
+    "Edits the document in an external window",
+    1
+  ],
+  [
+    "Set Text Auto Update",
+    1
+  ],
+  [
+    "Hide Tags",
+    1
+  ],
+  [
+    "Show Caption Position Dialog",
+    1
+  ],
+  [
+    "Set Plasmid Map Base Pairs",
+    1
+  ],
+  [
+    "Add Plasmid",
+    1
+  ],
+  [
+    "Delete Plasmid",
+    1
+  ],
+  [
+    "Add Plasmid Map Marker",
+    1
+  ],
+  [
+    "Delete Plasmid Map Marker",
+    1
+  ],
+  [
+    "Show Plasmid Map Base Pairs",
+    1
+  ],
+  [
+    "Toggle Reaction Map View Only",
+    1
+  ],
+  [
+    "Toggle Reaction Indicators View Only",
+    1
+  ],
+  [
+    "Copies the selection to the clipboard",
+    1
+  ],
+  [
+    "Hide Stoichiometry Grid Row",
+    1
+  ],
+  [
+    "Select Stoichiometry Grid Basis",
+    1
+  ],
+  [
+    "Set Stoichiometry Grid Limiting",
+    1
+  ],
+  [
+    "Show All Stoichiometry Grid",
+    1
+  ],
+  [
+    "Hide Stoichiometry Grid Column",
+    1
+  ],
+  [
+    "Apply custom fill color",
+    1
+  ],
+  [
+    "Apply custom ring fill color",
+    1
+  ],
+  [
+    "Visit URL",
+    1
+  ],
+  [
+    "Choose Residue",
+    1
+  ],
+  [
+    "Insert Generic Shape",
+    1
+  ],
+  [
+    "Press and drag to add generic shape",
+    1
+  ],
+  [
+    "Show (hide) the\r\n            BioDraw toolbar",
+    1
+  ],
+  [
+    "Press and drag to add an Enzyme",
+    1
+  ],
+  [
+    "Press and drag to add a G-Protein",
+    1
+  ],
+  [
+    "Press and drag to add a Receptor",
+    1
+  ],
+  [
+    "Press and drag to add an Ion Channel",
+    1
+  ],
+  [
+    "Press and drag to add an Immunoglobulin",
+    1
+  ],
+  [
+    "Press and drag to add a Nuclear Pore",
+    1
+  ],
+  [
+    "Helices",
+    1
+  ],
+  [
+    "Press and drag to add a Helix Protein",
+    1
+  ],
+  [
+    "Press and drag to add a DNA/RNA",
+    1
+  ],
+  [
+    "Press and drag to add a Membrane",
+    1
+  ],
+  [
+    "tRNA",
+    1
+  ],
+  [
+    "Press and drag to add a tRNA",
+    1
+  ],
+  [
+    "Press and drag to add a Golgi",
+    1
+  ],
+  [
+    "Press and drag to add an Endoplasmic Reticulum",
+    1
+  ],
+  [
+    "Press and drag to add an Microorganism",
+    1
+  ],
+  [
+    "Press and drag to add an Organelle",
+    1
+  ],
+  [
+    "Polygons",
+    1
+  ],
+  [
+    "Press and drag to add a Polygon",
+    1
+  ],
+  [
+    "Press and drag to add a Ribosome",
+    1
+  ],
+  [
+    "Press and drag to add a Cloud or Miscellaneous Shape",
+    1
+  ],
+  [
+    "Enzyme 3",
+    1
+  ],
+  [
+    "Press and drag to add Enzyme 3",
+    1
+  ],
+  [
+    "Enzyme 4",
+    1
+  ],
+  [
+    "Press and drag to add Enzyme 4",
+    1
+  ],
+  [
+    "Enzyme 5",
+    1
+  ],
+  [
+    "Press and drag to add Enzyme 5",
+    1
+  ],
+  [
+    "Enzyme 6",
+    1
+  ],
+  [
+    "Press and drag to add Enzyme 6",
+    1
+  ],
+  [
+    "Enzyme 7 Kinase 1",
+    1
+  ],
+  [
+    "Press and drag to add Enzyme 7 Kinase 1",
+    1
+  ],
+  [
+    "Enzyme 8 Kinase 2",
+    1
+  ],
+  [
+    "Press and drag to add Enzyme 8 Kinase 2",
+    1
+  ],
+  [
+    "G-Protein 4",
+    1
+  ],
+  [
+    "Press and drag to add G-Protein 4",
+    1
+  ],
+  [
+    "G-Protein 5",
+    1
+  ],
+  [
+    "Press and drag to add G-Protein 5",
+    1
+  ],
+  [
+    "G-Protein 6",
+    1
+  ],
+  [
+    "Press and drag to add G-Protein 6",
+    1
+  ],
+  [
+    "Receptor 2",
+    1
+  ],
+  [
+    "Press and drag to add Receptor 2",
+    1
+  ],
+  [
+    "Receptor 3",
+    1
+  ],
+  [
+    "Press and drag to add Receptor 3",
+    1
+  ],
+  [
+    "Receptor 4",
+    1
+  ],
+  [
+    "Press and drag to add Receptor 4",
+    1
+  ],
+  [
+    "Receptor 5",
+    1
+  ],
+  [
+    "Press and drag to add Receptor 5",
+    1
+  ],
+  [
+    "Receptor 6",
+    1
+  ],
+  [
+    "Press and drag to add Receptor 6",
+    1
+  ],
+  [
+    "Receptor 7",
+    1
+  ],
+  [
+    "Press and drag to add Receptor 7",
+    1
+  ],
+  [
+    "Receptor 8",
+    1
+  ],
+  [
+    "Press and drag to add Receptor 8",
+    1
+  ],
+  [
+    "Receptor 9",
+    1
+  ],
+  [
+    "Press and drag to add Receptor 9",
+    1
+  ],
+  [
+    "Receptor 10",
+    1
+  ],
+  [
+    "Press and drag to add Receptor 10",
+    1
+  ],
+  [
+    "Receptor 11",
+    1
+  ],
+  [
+    "Press and drag to add Receptor 11",
+    1
+  ],
+  [
+    "IonChannel 2",
+    1
+  ],
+  [
+    "Press and drag to add Ion Channel 2",
+    1
+  ],
+  [
+    "IonChannel 3",
+    1
+  ],
+  [
+    "Press and drag to add Ion Channel 3",
+    1
+  ],
+  [
+    "IonChannel 4",
+    1
+  ],
+  [
+    "Press and drag to add Ion Channel 4",
+    1
+  ],
+  [
+    "IonChannel 5",
+    1
+  ],
+  [
+    "Press and drag to add Ion Channel 5",
+    1
+  ],
+  [
+    "IonChannel 6",
+    1
+  ],
+  [
+    "Press and drag to add Ion Channel 6",
+    1
+  ],
+  [
+    "IonChannel 7",
+    1
+  ],
+  [
+    "Press and drag to add Ion Channel 7",
+    1
+  ],
+  [
+    "IonChannel 8",
+    1
+  ],
+  [
+    "Press and drag to add Ion Channel 8",
+    1
+  ],
+  [
+    "IonChannel 9",
+    1
+  ],
+  [
+    "Press and drag to add Ion Channel 9",
+    1
+  ],
+  [
+    "IonChannel 10",
+    1
+  ],
+  [
+    "Press and drag to add Ion Channel 10",
+    1
+  ],
+  [
+    "IonChannel 11",
+    1
+  ],
+  [
+    "Press and drag to add Ion Channel 11",
+    1
+  ],
+  [
+    "IonChannel 12",
+    1
+  ],
+  [
+    "Press and drag to add Ion Channel 12",
+    1
+  ],
+  [
+    "IonChannel 13",
+    1
+  ],
+  [
+    "Press and drag to add Ion Channel 13",
+    1
+  ],
+  [
+    "Immunoglobulin 2",
+    1
+  ],
+  [
+    "Press and drag to add Immunoglobulin 2",
+    1
+  ],
+  [
+    "Immunoglobulin 3",
+    1
+  ],
+  [
+    "Press and drag to add Immunoglobulin 3",
+    1
+  ],
+  [
+    "Immunoglobulin 4",
+    1
+  ],
+  [
+    "Press and drag to add Immunoglobulin 4",
+    1
+  ],
+  [
+    "Immunoglobulin 5",
+    1
+  ],
+  [
+    "Press and drag to add Immunoglobulin 5",
+    1
+  ],
+  [
+    "NuclearPore 1",
+    1
+  ],
+  [
+    "Press and drag to add Nuclear Pore 1",
+    1
+  ],
+  [
+    "NuclearPore 2",
+    1
+  ],
+  [
+    "Press and drag to add Nuclear Pore 2",
+    1
+  ],
+  [
+    "HelixProtein 2",
+    1
+  ],
+  [
+    "Press and drag to add Helix Protein 2",
+    1
+  ],
+  [
+    "HelixProtein 3",
+    1
+  ],
+  [
+    "Press and drag to add Helix Protein 3",
+    1
+  ],
+  [
+    "DNA 2",
+    1
+  ],
+  [
+    "Press and drag to add DNA 2",
+    1
+  ],
+  [
+    "DNA 3",
+    1
+  ],
+  [
+    "Press and drag to add DNA 3",
+    1
+  ],
+  [
+    "DNA 4",
+    1
+  ],
+  [
+    "Press and drag to add DNA 4",
+    1
+  ],
+  [
+    "Membrane_ ",
+    1
+  ],
+  [
+    "Press and drag to add Membrane 3",
+    1
+  ],
+  [
+    "Membrane 6",
+    1
+  ],
+  [
+    "Press and drag to add Membrane 6",
+    1
+  ],
+  [
+    "tRNA 2",
+    1
+  ],
+  [
+    "Press and drag to add tRNA 2",
+    1
+  ],
+  [
+    "mRNA",
+    1
+  ],
+  [
+    "Press and drag to add mRNA",
+    1
+  ],
+  [
+    "Golgi 2",
+    1
+  ],
+  [
+    "Press and drag to add Golgi 2",
+    1
+  ],
+  [
+    "Golgi 3",
+    1
+  ],
+  [
+    "Press and drag to add Golgi 3",
+    1
+  ],
+  [
+    "Golgi 4",
+    1
+  ],
+  [
+    "Press and drag to add Golgi 4",
+    1
+  ],
+  [
+    "ER 2",
+    1
+  ],
+  [
+    "Press and drag to add ER 2",
+    1
+  ],
+  [
+    "ER 3",
+    1
+  ],
+  [
+    "Press and drag to add ER 3",
+    1
+  ],
+  [
+    "ER 4",
+    1
+  ],
+  [
+    "Press and drag to add ER 4",
+    1
+  ],
+  [
+    "ER 5",
+    1
+  ],
+  [
+    "Press and drag to add ER 5",
+    1
+  ],
+  [
+    "Mitochondrion 2",
+    1
+  ],
+  [
+    "Press and drag to add Mitochondrion 2",
+    1
+  ],
+  [
+    "Centriole",
+    1
+  ],
+  [
+    "Press and drag to add Centriole",
+    1
+  ],
+  [
+    "Ribosome 3",
+    1
+  ],
+  [
+    "Press and drag to add Ribosome 3",
+    1
+  ],
+  [
+    "Ribosome 4",
+    1
+  ],
+  [
+    "Press and drag to add Ribosome 4",
+    1
+  ],
+  [
+    "Ribosome 5",
+    1
+  ],
+  [
+    "Press and drag to add Ribosome 5",
+    1
+  ],
+  [
+    "Ribosome 6",
+    1
+  ],
+  [
+    "Press and drag to add Ribosome 6",
+    1
+  ],
+  [
+    "Misc 2",
+    1
+  ],
+  [
+    "Press and drag to add Misc 2",
+    1
+  ],
+  [
+    "Misc 3",
+    1
+  ],
+  [
+    "Press and drag to add Misc 3",
+    1
+  ],
+  [
+    "Misc 4",
+    1
+  ],
+  [
+    "Press and drag to add Misc 4",
+    1
+  ],
+  [
+    "Misc 5",
+    1
+  ],
+  [
+    "Press and drag to add Misc 5",
+    1
+  ],
+  [
+    "Misc 6",
+    1
+  ],
+  [
+    "Press and drag to add Misc 6",
+    1
+  ],
+  [
+    "Misc 7",
+    1
+  ],
+  [
+    "Press and drag to add Misc 7",
+    1
+  ],
+  [
+    "Star",
+    1
+  ],
+  [
+    "Press and drag to add Star",
+    1
+  ],
+  [
+    "Ball",
+    1
+  ],
+  [
+    "Press and drag to add Ball",
+    1
+  ],
+  [
+    "Circle",
+    1
+  ],
+  [
+    "Press and drag to add Circle",
+    1
+  ],
+  [
+    "Triangle",
+    1
+  ],
+  [
+    "Press and drag to add Triangle",
+    1
+  ],
+  [
+    "Press and drag to add Rectangle",
+    1
+  ],
+  [
+    "Hexagon",
+    1
+  ],
+  [
+    "Press and drag to add Hexagon",
+    1
+  ],
+  [
+    "Octagon",
+    1
+  ],
+  [
+    "Press and drag to add Octagon",
+    1
+  ],
+  [
+    "Virus",
+    1
+  ],
+  [
+    "Press and drag to add Virus",
+    1
+  ],
+  [
+    "Virus2",
+    1
+  ],
+  [
+    "Press and drag to add Virus2",
+    1
+  ],
+  [
+    "Virus3",
+    1
+  ],
+  [
+    "Press and drag to add Virus3",
+    1
+  ],
+  [
+    "HIV",
+    1
+  ],
+  [
+    "Press and drag to add HIV",
+    1
+  ],
+  [
+    "Bacterium",
+    1
+  ],
+  [
+    "Press and drag to add Bacterium",
+    1
+  ],
+  [
+    "Bacterium2",
+    1
+  ],
+  [
+    "Press and drag to add Bacterium2",
+    1
+  ],
+  [
+    "Bacteriophage",
+    1
+  ],
+  [
+    "Press and drag to add Bacteriophage",
+    1
+  ],
+  [
+    "Paramecium",
+    1
+  ],
+  [
+    "Press and drag to add Paramecium",
+    1
+  ],
+  [
+    "Amoeba",
+    1
+  ],
+  [
+    "Press and drag to add Amoeba",
+    1
+  ],
+  [
+    "Re-run ",
+    1
+  ],
+  [
+    "Other # ",
+    1
+  ],
+  [
+    "Browse Revvity&Signals.com",
+    1
+  ],
+  [
+    "“^0” cannot be changed because that file is locked or cannot be written.  Do you want to proceed with a copy of “^1”?\\001Proceed\\001-1",
+    1
+  ],
+  [
+    "Discard changes to “^0”?\\001Revert\\001-1",
+    1
+  ],
+  [
+    "No such font: “^0”",
+    1
+  ],
+  [
+    "“^0” is an invalid units designation.\r\nValid designations are in, cm, pt, and iu.",
+    1
+  ],
+  [
+    "\"Do you want to change the Atom Label settings in the Text Settings Dialog box to ^0 as well?\\001Change Settings\\001Don’t Change Settings",
+    1
+  ],
+  [
+    "Set defaults for “^0”",
+    1
+  ],
+  [
+    "The modified settings will affect newly-drawn objects only.  Do you want to modify the existing objects as well?",
+    1
+  ],
+  [
+    "The selection will require multiple attachment points to be created. To unambiguously assign their order, please create a copy of the selection, and paste as a new structure. Assign attachment points explicitly using the Attachment Point tool.",
+    1
+  ],
+  [
+    "Sorry, this shape could not be draw because the associated file was not found.",
+    1
+  ],
+  [
+    "Sorry, this shape could not be draw because an error occured opening the associated file.",
+    1
+  ],
+  [
+    "Some objects extend outside of the document area. Do you wish to move them?\\001Yes\\001No",
+    1
+  ],
+  [
+    "Your changes will be lost if you don’t save them. Templates should be stored in the “Templates” folder in order to be used by ChemDraw.",
+    1
+  ],
+  [
+    "You should restart ChemDraw to complete the registration process.",
+    1
+  ],
+  [
+    "Add a frame\r\n            (box, brackets, etc) around the selected objects",
+    1
+  ],
+  [
+    "Solid Arrowhead",
+    1
+  ],
+  [
+    "Hollow Arrowhead",
+    1
+  ],
+  [
+    "Angled Arrowhead",
+    1
+  ],
+  [
+    "No-Go (Cross)",
+    1
+  ],
+  [
+    "No-Go (Hash)",
+    1
+  ],
+  [
+    "Dipole",
+    1
+  ],
+  [
+    "Set Rf",
+    1
+  ],
+  [
+    "Set Custom Spot",
+    1
+  ],
+  [
+    "Remove Custom Spot",
+    1
+  ],
+  [
+    "Set Size",
+    1
+  ],
+  [
+    "Set Custom Band",
+    1
+  ],
+  [
+    "Remove Custom Band",
+    1
+  ],
+  [
+    "Combinatorial",
+    1
+  ],
+  [
+    "Sequential",
+    1
+  ],
+  [
+    "Simultaneous",
+    1
+  ],
+  [
+    "Anypolymer (anyp)",
+    1
+  ],
+  [
+    "Component (c)",
+    1
+  ],
+  [
+    "Copolymer (co)",
+    1
+  ],
+  [
+    "Copolymer, alternating (alt)",
+    1
+  ],
+  [
+    "Copolymer, block (blk)",
+    1
+  ],
+  [
+    "Copolymer, random (ran)",
+    1
+  ],
+  [
+    "Crosslink (xl)",
+    1
+  ],
+  [
+    "Generic ()",
+    1
+  ],
+  [
+    "Graft (grf)",
+    1
+  ],
+  [
+    "Mer (mer)",
+    1
+  ],
+  [
+    "Mixture, ordered (f)",
+    1
+  ],
+  [
+    "Mixture, unordered (mix)",
+    1
+  ],
+  [
+    "Modification (mod)",
+    1
+  ],
+  [
+    "Monomer (mon)",
+    1
+  ],
+  [
+    "Multiple Group (#)",
+    1
+  ],
+  [
+    "Parameterizable(#/#-#/MW)",
+    1
+  ],
+  [
+    "SRU (n)",
+    1
+  ],
+  [
+    "Head-to-Tail",
+    1
+  ],
+  [
+    "Head-to-Head",
+    1
+  ],
+  [
+    "Either/Unknown",
+    1
+  ],
+  [
+    "No Flip",
+    1
+  ],
+  [
+    "Flip",
+    1
+  ],
+  [
+    "Make/Break",
+    1
+  ],
+  [
+    "Change",
+    1
+  ],
+  [
+    "Make and Change",
+    1
+  ],
+  [
+    "Not Center",
+    1
+  ],
+  [
+    "Not Modified",
+    1
+  ],
+  [
+    "Unmapped",
+    1
+  ],
+  [
+    "Ring",
+    1
+  ],
+  [
+    "Chain",
+    1
+  ],
+  [
+    "Ring or Chain",
+    1
+  ],
+  [
+    "Left/Top",
+    1
+  ],
+  [
+    "Right/Bottom",
+    1
+  ],
+  [
+    "S/D",
+    1
+  ],
+  [
+    "S/A",
+    1
+  ],
+  [
+    "D/A",
+    1
+  ],
+  [
+    "Double Either",
+    1
+  ],
+  [
+    "Tautomeric",
+    1
+  ],
+  [
+    "Aromatic",
+    1
+  ],
+  [
+    "Hashed",
+    1
+  ],
+  [
+    "Hashed Wedged",
+    1
+  ],
+  [
+    "Bold Wedged",
+    1
+  ],
+  [
+    "Hollow Wedged",
+    1
+  ],
+  [
+    "Dative",
+    1
+  ],
+  [
+    "Wavy",
+    1
+  ],
+  [
+    "Single",
+    1
+  ],
+  [
+    "Double",
+    1
+  ],
+  [
+    "Triple",
+    1
+  ],
+  [
+    "Quadruple",
+    1
+  ],
+  [
+    "Bond Position",
+    1
+  ],
+  [
+    "Topology",
+    1
+  ],
+  [
+    "Reaction Center",
+    1
+  ],
+  [
+    "Absolute",
+    1
+  ],
+  [
+    "Or",
+    1
+  ],
+  [
+    "And",
+    1
+  ],
+  [
+    "Natural",
+    1
+  ],
+  [
+    "Enriched",
+    1
+  ],
+  [
+    "Deficient",
+    1
+  ],
+  [
+    "Nonnatural",
+    1
+  ],
+  [
+    "Equal",
+    1
+  ],
+  [
+    "Broad",
+    1
+  ],
+  [
+    "Narrow",
+    1
+  ],
+  [
+    "Inversion",
+    1
+  ],
+  [
+    "Retention",
+    1
+  ],
+  [
+    "Must Be Absent",
+    1
+  ],
+  [
+    "Must Be Present",
+    1
+  ],
+  [
+    "No Ring Bonds",
+    1
+  ],
+  [
+    "As Drawn",
+    1
+  ],
+  [
+    "Simple Ring",
+    1
+  ],
+  [
+    "Fusion",
+    1
+  ],
+  [
+    "Spiro or Higher",
+    1
+  ],
+  [
+    "Free Sites:0",
+    1
+  ],
+  [
+    "Free Sites:1",
+    1
+  ],
+  [
+    "Free Sites:2",
+    1
+  ],
+  [
+    "Free Sites:3",
+    1
+  ],
+  [
+    "Free Sites:4",
+    1
+  ],
+  [
+    "Up To:0",
+    1
+  ],
+  [
+    "Up To:1",
+    1
+  ],
+  [
+    "Up To:2",
+    1
+  ],
+  [
+    "Up To:3",
+    1
+  ],
+  [
+    "Up To:4",
+    1
+  ],
+  [
+    "Exactly:0",
+    1
+  ],
+  [
+    "Exactly:1",
+    1
+  ],
+  [
+    "Exactly:2",
+    1
+  ],
+  [
+    "Exactly:3",
+    1
+  ],
+  [
+    "Exactly:4",
+    1
+  ],
+  [
+    "May Be Anything",
+    1
+  ],
+  [
+    "Must Be As Specified",
+    1
+  ],
+  [
+    "Integral",
+    1
+  ],
+  [
+    "Name",
+    1
+  ],
+  [
+    "m/z",
+    1
+  ],
+  [
+    "Set Range...",
+    1
+  ],
+  [
+    "Log(Mass)",
+    1
+  ],
+  [
+    "Duplicate Lane",
+    1
+  ],
+  [
+    "Size To Fit Contents",
+    1
+  ],
+  [
+    "Bracket Usage",
+    1
+  ],
+  [
+    "Repeat Pattern",
+    1
+  ],
+  [
+    "Flip Type",
+    1
+  ],
+  [
+    "Molecule",
+    1
+  ],
+  [
+    "Implicit Hydrogens",
+    1
+  ],
+  [
+    "Ring Bond Count",
+    1
+  ],
+  [
+    "Unsaturation",
+    1
+  ],
+  [
+    "Reaction Change",
+    1
+  ],
+  [
+    "Reaction Stereo",
+    1
+  ],
+  [
+    "Translation",
+    1
+  ],
+  [
+    "Abnormal Valence",
+    1
+  ],
+  [
+    "Show Explicit Termini Labels",
+    1
+  ],
+  [
+    "Tem&plates",
+    1
+  ],
+  [
+    "ChemScript",
+    1
+  ],
+  [
+    "&Recent Additions",
+    1
+  ],
+  [
+    "By &Element",
+    1
+  ],
+  [
+    "Auto-update",
+    1
+  ],
+  [
+    "Symbol",
+    1
+  ],
+  [
+    "Times",
+    1
+  ],
+  [
+    "Hide Indicator",
+    1
+  ],
+  [
+    "Toggle Standard Amino Acid Style",
+    1
+  ],
+  [
+    "Expand Generic Structure to SDF...",
+    1
+  ],
+  [
+    "Toggle Aromatic Display",
+    1
+  ],
+  [
+    "Toggle Hydrogen Display",
+    1
+  ],
+  [
+    "R-Lo&gic Query...",
+    1
+  ],
+  [
+    "Create &Or Group",
+    1
+  ],
+  [
+    "Create &And Group",
+    1
+  ],
+  [
+    "Angle",
+    1
+  ],
+  [
+    "Dihedral",
+    1
+  ],
+  [
+    "Plane",
+    1
+  ],
+  [
+    "Exclusion Sphere",
+    1
+  ],
+  [
+    "Normal",
+    1
+  ],
+  [
+    "Point",
+    1
+  ],
+  [
+    "Centroid",
+    1
+  ],
+  [
+    "Annotate...",
+    1
+  ],
+  [
+    "Add S&plitter",
+    1
+  ],
+  [
+    "S&LN",
+    1
+  ],
+  [
+    "I&nChI",
+    1
+  ],
+  [
+    "InChI &Key",
+    1
+  ],
+  [
+    "&FASTA",
+    1
+  ],
+  [
+    "&3MF (Ball and Stick)",
+    1
+  ],
+  [
+    "3MF (&Stick)",
+    1
+  ],
+  [
+    "&PNG",
+    1
+  ],
+  [
+    "&SMILES",
+    1
+  ],
+  [
+    "&InChI",
+    1
+  ],
+  [
+    "FASTA &DNA",
+    1
+  ],
+  [
+    "FASTA &RNA",
+    1
+  ],
+  [
+    "ChemScripts",
+    1
+  ],
+  [
+    "Individual Definition",
+    1
+  ],
+  [
+    "TL,&4",
+    1
+  ],
+  [
+    "&ID Term",
+    1
+  ],
+  [
+    "Reaction-&1-column",
+    1
+  ],
+  [
+    "Reaction-&2-column",
+    1
+  ],
+  [
+    "&Multi-Column: TL,4",
+    1
+  ],
+  [
+    "Multi-C&olumn: Non-TL,4",
+    1
+  ],
+  [
+    "&User Defined",
+    1
+  ],
+  [
+    "TL,4",
+    1
+  ],
+  [
+    "ID Term",
+    1
+  ],
+  [
+    "User Defined",
+    1
+  ],
+  [
+    "Delete Region",
+    1
+  ],
+  [
+    "Delete Marker",
+    1
+  ],
+  [
+    "Set Limiting",
+    1
+  ],
+  [
+    "Chemical Symbols Tools",
+    1
+  ],
+  [
+    "Dotted/Dashed Bond",
+    1
+  ],
+  [
+    "Hydrogen Bond and Dashed Bond Tools",
+    1
+  ],
+  [
+    "Drawing Elements Tools",
+    1
+  ],
+  [
+    "Biological Objects and Shapes",
+    1
+  ],
+  [
+    "Show Generic Shape Enzyme",
+    1
+  ],
+  [
+    "Generic Shape Enzyme",
+    1
+  ],
+  [
+    "Show Generic Shape G-Protein",
+    1
+  ],
+  [
+    "Generic Shape G-Protein",
+    1
+  ],
+  [
+    "Show Generic Shape Receptor",
+    1
+  ],
+  [
+    "Generic Shape Receptor",
+    1
+  ],
+  [
+    "Show Generic Shape Ion Channel",
+    1
+  ],
+  [
+    "Generic Shape Ion Channel",
+    1
+  ],
+  [
+    "Show Generic Shape Immunoglobulin",
+    1
+  ],
+  [
+    "Generic Shape Immunoglobulin",
+    1
+  ],
+  [
+    "Show Generic Shape Nuclear Pore",
+    1
+  ],
+  [
+    "Generic Shape Nuclear Pore",
+    1
+  ],
+  [
+    "Show Generic Shape Membranes",
+    1
+  ],
+  [
+    "Generic Shape Membranes",
+    1
+  ],
+  [
+    "Show Generic Shape Golgi",
+    1
+  ],
+  [
+    "Generic Shape Golgi",
+    1
+  ],
+  [
+    "Show Generic Shape ER",
+    1
+  ],
+  [
+    "Generic Shape ER",
+    1
+  ],
+  [
+    "Show Generic Shape Organelles",
+    1
+  ],
+  [
+    "Generic Shape Organelle",
+    1
+  ],
+  [
+    "Show Generic Shape Ribosomes",
+    1
+  ],
+  [
+    "Generic Shape Ribosomes",
+    1
+  ],
+  [
+    "Show Generic Shape",
+    1
+  ],
+  [
+    "Generic Shape",
+    1
+  ],
+  [
+    "Show Microorganism",
+    1
+  ],
+  [
+    "Object Ordering and Alignment",
+    1
+  ],
+  [
+    "Orbitals Tools",
+    1
+  ],
+  [
+    "Choose a ring fill color",
+    1
+  ],
+  [
+    "Windows commands",
+    1
+  ]
+]

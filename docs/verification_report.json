@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-09",
+  "files": 78,
+  "passed": [
+    "custom Unicode and space paths; full reconstruction preflight",
+    "install all 78 files using local source plus deltas",
+    "idempotent install",
+    "restore English through reverse deltas",
+    "idempotent restore",
+    "automatic ProgramFiles/ProgramData discovery on simulated different drive",
+    "reject unknown target edits before writes",
+    "reject corrupt differential files",
+    "reject destination traversal",
+    "reject delta path traversal",
+    "reject duplicate destinations",
+    "reject wrong software version",
+    "upgrade known v0.1 states through two differential routes",
+    "restore English after v0.1 upgrade",
+    "partial transaction rollback restores all before hashes",
+    "reject invalid delta opcode before software writes"
+  ],
+  "fixture_scope": "isolated custom Unicode/space paths; no production file writes",
+  "production_files_changed": false,
+  "version": "26.0.0.6141"
+}

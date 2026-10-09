@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-09",
+  "version": "26.0.0.6141 x64",
+  "installed_files": 78,
+  "checks": [
+    "安装完成后全部 78 个目标文件哈希与清单一致",
+    "ChemDraw Professional 成功启动并显示中文菜单、工具提示和空白文档",
+    "首选项窗口成功打开，常规和单体库页面可显示，未修改用户设置",
+    "插件管理窗口成功打开，名称/来源/描述/版本/启用列显示中文且插件数据存在",
+    "关闭检查窗口后返回主界面，未修改用户文档"
+  ],
+  "remaining": [
+    "Search、Add-ins、Add-in Manager 等动态菜单和窗口标题仍为英文",
+    "首选项侧栏 General、Building/Display、Warnings、Open/Save、Directories、Monomer Libraries 及部分表格状态仍为英文",
+    "部分在线插件名称、说明、来源状态及 Add 按钮仍为英文",
+    "首选项部分短标签可能显示不全，需逐窗口调整布局",
+    "STRI 自定义资源、原生程序内部字符串尚未验证其运行时编码，暂保留原文",
+    "模板内部名称、化学数据库、外部网站和 PDF 手册未全面翻译"
+  ],
+  "limitations": "本轮是启动和窗口显示检查，未全面验证绘图、化学计算、打印、云端服务及全部模块。不能据此认定整个软件已全部汉化。",
+  "translation_runtime_tested_version": "0.2",
+  "installer_version": "0.2.1",
+  "installer_live_preflight": "Passed on current installation (read-only), all 78 files matched known state.",
+  "v021_installation_scope": "Directory-copy integration tests; translation bytes identical to installed v0.2. No fresh v0.2.1 write to production was required."
+}

@@ -1,0 +1,26 @@
+# Proprietary originals and generated full-file packages must remain local.
+baseline/
+package/
+payload/
+originals/
+backup/
+backups/
+logs/
+test-*/
+verification-*/
+local-inputs/
+dist/
+__pycache__/
+*.pyc
+*.dll
+*.exe
+*.pdb
+*.zip
+managed_string_uses.json
+managed_user_strings.json
+managed_translation_audit.json
+translation_audit.json
+baseline_manifest.json
+coverage.json
+config.local.json
+.DS_Store
