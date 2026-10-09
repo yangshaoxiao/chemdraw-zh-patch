@@ -6,7 +6,7 @@
 
 ## 安装与还原
 
-1. 下载 Releases 中的 `ChemDraw26_中文补丁_v0.2.1_通用差分版.zip`，完整解压到可写目录。
+1. 下载 Releases 中的 `ChemDraw26_中文补丁_v0.2.1_通用差分版.zip`，完整解压到可写目录。也可以在仓库页面选择 **Code → Download ZIP**，完整解压源码包后直接运行下面的 CMD 文件。
 2. 保存文档并关闭 ChemDraw，双击 `一键安装汉化.cmd`。
 3. 安装器自动查询标准安装目录与注册表。找不到安装时，按提示粘贴含 `ChemDraw.exe` 的文件夹路径。默认数据目录来自 Windows 的 ProgramData；若数据安装在其他位置，按提示填写含 `GUI` 的数据目录。
 4. Windows 弹出管理员权限提示时选择“是”。显示全部文件校验通过后启动 ChemDraw。
