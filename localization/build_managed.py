@@ -14,18 +14,25 @@ def compressed(n):
     if n<0x4000:return bytes([0x80|(n>>8),n&255])
     return bytes([0xc0|(n>>24),(n>>16)&255,(n>>8)&255,n&255])
 sha=lambda b:hashlib.sha256(b).hexdigest()
-m=json.loads((PACK/'manifest.json').read_text('utf-8'));m['files']=[e for e in m['files'] if e['relative'] not in names]
+m=json.loads((PACK/'manifest.json').read_text('utf-8'));native_entries={e['relative']:e for e in m['files'] if e['group']=='bin' and e['relative'] in names};m['files']=[e for e in m['files'] if e['relative'] not in names]
 log=[];references=json.loads((HERE/'managed_string_uses.json').read_text('utf-8-sig'))
 def ui_reference(r):
     return bool(re.search(r'\b(?:set_Text|set_HeaderText|SetToolTip|SetCueText)\(',r['Next']))
 for name in names:
     baseline=HERE/'baseline/bin'/name
     if not baseline.exists():baseline.write_bytes((pathlib.Path(m['roots']['bin'])/name).read_bytes())
-    original=baseline.read_bytes();b=bytearray(original);changes=[];holes=[];deferred=[]
+    english=baseline.read_bytes()
+    native_entry=native_entries.get(name)
+    original=(PACK/'payload'/native_entry['payload']).read_bytes() if native_entry else english
+    if native_entry:
+        assert native_entry['before']==sha(english) and native_entry['after']==sha(original),'Native managed-module resources are not verified'
+    b=bytearray(original);changes=[];holes=[];deferred=[]
     records=list(user_strings(original));heap_base=records[0][3]-1
     refs=collections.defaultdict(list)
     for r in references:
         if r['File']==name:refs[r['Text']].append(r)
+    if not any(r['Text'] in mapping and ui_reference(r) for r in references if r['File']==name):
+        raise ValueError('Reference inventory is not from English assemblies; regenerate it before building managed translations')
     def encoded(t):
         enc=t.encode('utf-16le')+b'\x01';return compressed(len(enc))+enc
     for pos,n,s,start in records:
@@ -64,8 +71,8 @@ for name in names:
     for row in [x for x in log if x['file']==name]:assert after[row.get('target_string',row['start'])]==row['target']
     for s,t,safe,oldstart in deferred:assert after[oldstart]==s,'A data-binding key was changed'
     payload='bin/'+name
-    (PACK/'payload'/payload).write_bytes(b);(PACK/'originals'/payload).write_bytes(original)
-    m['files'].append(dict(group='bin',relative=name,payload=payload,before=sha(original),after=sha(b),legacy=None,kind='reviewed_clr_user_strings'))
+    (PACK/'payload'/payload).write_bytes(b);(PACK/'originals'/payload).write_bytes(english)
+    m['files'].append(dict(group='bin',relative=name,payload=payload,before=sha(english),after=sha(b),legacy=None,kind='reviewed_clr_user_strings'))
 m['statistics']['managed_ui_strings']=len(log)
 (PACK/'manifest.json').write_text(json.dumps(m,ensure_ascii=False,indent=2),'utf-8')
 (HERE/'managed_translation_audit.json').write_text(json.dumps(log,ensure_ascii=False,indent=2),'utf-8')

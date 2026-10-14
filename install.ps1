@@ -69,23 +69,38 @@ function Find-Bin([string]$version) {
 function Check-Package($manifest,$roots) {
     $seen = @{}
     $jobs = @()
+    $chem3dNames = @('Chem3D.exe','Chem3DCtl.ocx')
+    $chem3dPresent = @($chem3dNames | Where-Object { Test-Path -LiteralPath (Within $roots.bin $_) -PathType Leaf })
+    if ($chem3dPresent.Count -eq 1) { throw 'Chem3D 组件不完整，请先修复软件安装。' }
+    if ($chem3dPresent.Count -eq 2 -and -not (Version-OK-Chem3D $roots.bin $manifest.version)) { throw 'Chem3D 版本与此补丁不匹配。' }
     foreach ($entry in $manifest.files) {
         if (-not $roots.ContainsKey($entry.group)) { throw '未知文件组。' }
         $target = Within $roots[$entry.group] $entry.relative
         if ($seen.ContainsKey($target)) { throw "重复目标：$target" }; $seen[$target] = $true
-        if (-not (Test-Path -LiteralPath $target -PathType Leaf)) { throw "目标文件缺失：$target" }
-        $current = Digest $target
-        $allowed = @($entry.before,$entry.after) + @($entry.routes | ForEach-Object { $_.source })
-        if ($current -notin $allowed) { throw "文件版本不匹配或已被其他补丁修改：$target" }
         foreach ($route in $entry.routes) {
             $delta = Within $packageRoot $route.path
             if (-not $route.path.StartsWith('patches/')) { throw '差分文件目录错误。' }
             if ((Get-Item -LiteralPath $delta).Length -ne $route.size -or (Digest $delta) -ne $route.sha256) { throw "差分文件校验失败：$delta" }
         }
+        if ($entry.optional_component) {
+            if ($entry.optional_component -ne 'chem3d' -or $entry.group -ne 'bin' -or $entry.relative -notin $chem3dNames) { throw '未知可选组件。' }
+            if (-not $chem3dPresent.Count) { continue }
+        }
+        if (-not (Test-Path -LiteralPath $target -PathType Leaf)) { throw "目标文件缺失：$target" }
+        $current = Digest $target
+        $allowed = @($entry.before,$entry.after) + @($entry.routes | ForEach-Object { $_.source })
+        if ($current -notin $allowed) { throw "文件版本不匹配或已被其他补丁修改：$target" }
         $expected = if ($Mode -eq 'Restore') { $entry.before } else { $entry.after }
         $jobs += [pscustomobject]@{ Entry=$entry; Destination=$target; Current=$current; Expected=$expected }
     }
     return $jobs
+}
+
+function Version-OK-Chem3D([string]$folder,[string]$version) {
+    foreach ($name in @('Chem3D.exe','Chem3DCtl.ocx')) {
+        if ((Get-Item -LiteralPath (Join-Path $folder $name)).VersionInfo.FileVersion -ne $version) { return $false }
+    }
+    return $true
 }
 
 $transcribing = $false
@@ -118,7 +133,7 @@ try {
         $LogPath = Join-Path $logs ((Get-Date -Format 'yyyyMMdd-HHmmss')+'-'+[guid]::NewGuid().ToString('N').Substring(0,8)+'.txt')
     }
     if ($Mode -ne 'Validate' -and $pending.Count) {
-        if (Get-Process -Name 'ChemDraw','ChemDraw64','ChemDrawCtl','CAWPROP' -ErrorAction SilentlyContinue) { throw '请保存文档并退出 ChemDraw 和化学性质窗口。' }
+        if (Get-Process -Name 'ChemDraw','ChemDraw64','ChemDrawCtl','CAWPROP','Chem3D' -ErrorAction SilentlyContinue) { throw '请保存文档并退出 ChemDraw、Chem3D 和化学性质窗口。' }
         $admin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
         if (-not $admin -and -not $Elevated) {
             Write-Host '预检查通过，请在 Windows 管理员权限提示中选择“是”。'
@@ -210,7 +225,11 @@ public static class ChemDrawDelta {
         $data = $null
     }
     if ($Mode -eq 'Validate') { Write-Host '版本、差分文件和重建结果校验通过，未修改软件。'; $exitCode=0 }
-    elseif (-not $pending.Count) { Write-Host '已经是目标状态，无需重复处理。'; $exitCode=0 }
+    elseif (-not $pending.Count) {
+        Write-Host '已经是目标状态，无需重复处理。'
+        if ($Mode -eq 'Restore') { Write-Host '当前已处于英文状态。' } else { Write-Host '请启动 ChemDraw / Chem3D；若 Chem3D 菜单仍为英文，可单独运行菜单缓存重置工具。' }
+        $exitCode=0
+    }
     else {
         $journal | ConvertTo-Json -Depth 5 | Set-Content -LiteralPath (Join-Path $transaction 'journal.json') -Encoding UTF8
         $touched = [Collections.Generic.List[object]]::new()
@@ -237,7 +256,7 @@ public static class ChemDrawDelta {
             throw $failure
         }
         Write-Host "处理成功，全部文件校验通过。操作前备份：$transaction"
-        if ($Mode -eq 'Restore') { Write-Host '已恢复英文。' } else { Write-Host '已安装汉化，请启动 ChemDraw。' }
+        if ($Mode -eq 'Restore') { Write-Host '已恢复英文。' } else { Write-Host '已安装汉化，请启动 ChemDraw 和 Chem3D。' }
         $exitCode=0
     }
 } catch { Write-Host "操作失败：$_" -ForegroundColor Red }

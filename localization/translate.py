@@ -6,9 +6,13 @@ OLD = HERE.parent
 def norm(s):
     return re.sub(r'\s+', ' ', s.replace('&', '')).strip()
 D = {}
-for line in (HERE/'base_dictionary.tsv').read_text('utf-8-sig').splitlines():
-    if line.strip():
-        a,b=line.split('\t',1); D[norm(a)]=b
+for filename in ['base_dictionary.tsv', 'chem3d_dictionary.tsv']:
+    p = HERE / filename
+    if p.exists():
+        for line in p.read_text('utf-8-sig').splitlines():
+            if line.strip() and '\t' in line:
+                a, b = line.split('\t', 1)
+                D[norm(a)] = b
 for filename, catalog in [('xml_index.tsv',[x[0] for x in json.loads((HERE/'xml_catalog.json').read_text('utf-8'))]), ('binary_index.tsv',json.loads((HERE/'binary_catalog.json').read_text('utf-8'))), ('extra_index.tsv',json.loads((HERE/'extra_unique.json').read_text('utf-8')))]:
     for line in (HERE/filename).read_text('utf-8-sig').splitlines():
         if not line.strip(): continue
@@ -90,6 +94,11 @@ def translate(s):
     if not s:return s
     core=norm(s)
     t=D.get(core)
+    if t is None and '\t' in s:
+        parts=s.split('\t')
+        head=translate(parts[0])
+        if head!=parts[0]:
+            t=head+'\t'+'\t'.join(parts[1:])
     if t is None:
         tail=''
         for end in ['...', '…', ':']:

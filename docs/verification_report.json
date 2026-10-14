@@ -1,9 +1,10 @@
 {
-  "checked_at": "2026-10-09",
-  "files": 78,
+  "checked_at": "2026-10-14",
+  "patch": "0.2.2",
+  "files": 80,
   "passed": [
     "custom Unicode and space paths; full reconstruction preflight",
-    "install all 78 files using local source plus deltas",
+    "install all manifest files using local source plus deltas",
     "idempotent install",
     "restore English through reverse deltas",
     "idempotent restore",
@@ -16,7 +17,11 @@
     "reject wrong software version",
     "upgrade known v0.1 states through two differential routes",
     "restore English after v0.1 upgrade",
+    "upgrade prior v0.2/v0.2.1 state to current manifest",
+    "restore English after analysis-layout upgrade",
     "partial transaction rollback restores all before hashes",
+    "ChemDraw-only installation skips absent Chem3D and restores all core files",
+    "reject incomplete Chem3D installation before writes",
     "reject invalid delta opcode before software writes"
   ],
   "fixture_scope": "isolated custom Unicode/space paths; no production file writes",

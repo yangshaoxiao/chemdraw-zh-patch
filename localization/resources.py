@@ -98,3 +98,45 @@ def rebuild_dialog(b, mapping):
         out.extend(b[p:p+n]); p += n
     out.extend(b[p:])
     return bytes(out)
+
+def _menu_text_fields(blob):
+    if len(blob)<4:
+        raise ValueError('Truncated menu header')
+    version,offset=struct.unpack_from('<HH',blob,0)
+    if version!=0:
+        raise ValueError('Unsupported menu version')
+    pos=4+offset
+    if pos>len(blob) or pos%2:
+        raise ValueError('Invalid menu header offset')
+    result=[]
+    def word():
+        nonlocal pos
+        if pos+2>len(blob):raise ValueError('Truncated menu item')
+        value=struct.unpack_from('<H',blob,pos)[0];pos+=2;return value
+    def walk(depth=0):
+        nonlocal pos
+        if depth>64:raise ValueError('Menu nesting limit')
+        while True:
+            flags=word()
+            if not flags&0x10:word()
+            start=pos
+            while word():pass
+            result.append((start,pos,blob[start:pos-2].decode('utf-16le')))
+            if flags&0x10:walk(depth+1)
+            if flags&0x80:return
+    walk()
+    return result
+
+def menu_fields(blob):
+    for start,end,text in _menu_text_fields(blob):
+        yield start,end-2,text,'menu'
+
+def rebuild_menu(blob,mapping):
+    out=bytearray();cursor=0
+    for start,end,text in _menu_text_fields(blob):
+        out.extend(blob[cursor:start])
+        target=mapping.get(text,text)
+        if '\0' in target:raise ValueError('Embedded menu NUL')
+        out.extend((target+'\0').encode('utf-16le'));cursor=end
+    out.extend(blob[cursor:])
+    return bytes(out)

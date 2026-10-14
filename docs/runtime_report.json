@@ -21,5 +21,8 @@
   "translation_runtime_tested_version": "0.2",
   "installer_version": "0.2.1",
   "installer_live_preflight": "Passed on current installation (read-only), all 78 files matched known state.",
-  "v021_installation_scope": "Directory-copy integration tests; translation bytes identical to installed v0.2. No fresh v0.2.1 write to production was required."
+  "v021_installation_scope": "Directory-copy integration tests; translation bytes identical to installed v0.2. No fresh v0.2.1 write to production was required.",
+  "current_patch": "0.2.2",
+  "reviewed_at": "2026-10-14",
+  "current_runtime_scope": "No new UI automation during this review. Current revised Analysis/Chem3D resources and menus have static binary checks and isolated installer tests; previous startup/window observations apply to earlier bytes only."
 }

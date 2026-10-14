@@ -2,13 +2,14 @@
 """Build only from immutable, hashed English baseline. Never alter installed files."""
 import collections,ctypes,hashlib,html,json,pathlib,re,shutil,struct
 import xml.etree.ElementTree as ET
-from resources import resources,dialog_fields,rebuild_dialog
+from resources import resources,dialog_fields,rebuild_dialog,menu_fields,rebuild_menu
+from analysis_layout import adjust as adjust_analysis_layout
 from translate import translate,tokens
 HERE=pathlib.Path(__file__).resolve().parent
 BASE=HERE/'baseline';OUT=HERE/'package';OUT.mkdir(exist_ok=True)
 sha=lambda b:hashlib.sha256(b).hexdigest()
 base=json.loads((HERE/'baseline_manifest.json').read_text('utf-8'))
-manifest=dict(version=base['version'],patch='0.2',roots=base['roots'],files=[])
+manifest=dict(version=base['version'],patch='0.2.2',roots=base['roots'],files=[])
 log=[];stats=collections.Counter();custom=[]
 def tr(s,entry,resource,kind):
     target=translate(s)
@@ -16,7 +17,7 @@ def tr(s,entry,resource,kind):
         log.append(dict(file=entry['group']+'/'+entry['relative'],resource=resource,kind=kind,source=s,target=target,status='translated' if target!=s else 'retained'))
     if target!=s:stats[kind]+=1
     return target
-pattern=re.compile(r'(<(?P<tag>Title|Tooltip|Text)\b[^>]*>)(?P<body>.*?)(</(?P=tag)>)',re.S)
+pattern=re.compile(r'(<(?P<tag>Title|Tooltip|Text)\b[^>]*?(?<!/)>)(?P<body>.*?)(</(?P=tag)>)',re.S)
 k=ctypes.WinDLL('kernel32',use_last_error=True)
 k.BeginUpdateResourceW.argtypes=[ctypes.c_wchar_p,ctypes.c_int];k.BeginUpdateResourceW.restype=ctypes.c_void_p
 k.UpdateResourceW.argtypes=[ctypes.c_void_p,ctypes.c_void_p,ctypes.c_void_p,ctypes.c_ushort,ctypes.c_void_p,ctypes.c_uint];k.UpdateResourceW.restype=ctypes.c_int
@@ -54,14 +55,23 @@ for e in base['files']:
         a,c=ET.fromstring(s),ET.fromstring(result)
         assert [(x.tag,x.attrib) for x in a.iter()]==[(x.tag,x.attrib) for x in c.iter()]
         new=result.encode('utf-8') if result!=s else b
-    elif source.suffix.lower() in ['.dll','.exe']:
+    elif source.suffix.lower() in ['.dll','.exe','.ocx']:
         rr=resources(b);changes={}
         for key,blob in rr.items():
-            if key[0]==5:
+            if key[0]==4:
+                ff=list(menu_fields(blob));mapping={t:tr(t,e,list(key),'menu') for _,_,t,_ in ff if t}
+                if any(t!=v for t,v in mapping.items()):
+                    nb=rebuild_menu(blob,mapping)
+                    assert [mapping.get(t,t) for _,_,t,_ in ff]==[t for _,_,t,_ in menu_fields(nb)]
+                    assert rebuild_menu(blob,{})==blob,'Menu framing changed'
+                    changes[key]=nb
+            elif key[0]==5:
                 ff=list(dialog_fields(blob));mapping={t:tr(t,e,list(key),'dialog') for _,_,t,kind in ff if t and kind!='font'}
                 if any(t!=v for t,v in mapping.items()):
                     nb=rebuild_dialog(blob,mapping)
                     assert [(kind,mapping.get(t,t) if kind!='font' else 'Microsoft YaHei') for _,_,t,kind in ff]==[(kind,t) for _,_,t,kind in dialog_fields(nb)]
+                    if key[1]==50130:
+                        nb=adjust_analysis_layout(nb)
                     changes[key]=nb
             elif key[0]==6:
                 pos=0;out=bytearray()
