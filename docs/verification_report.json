@@ -1,6 +1,6 @@
 {
   "checked_at": "2026-10-14",
-  "patch": "0.2.2",
+  "patch": "0.2.3",
   "files": 80,
   "passed": [
     "custom Unicode and space paths; full reconstruction preflight",

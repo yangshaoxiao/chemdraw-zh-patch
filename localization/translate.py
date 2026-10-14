@@ -1,6 +1,7 @@
 # SPDX-License-Identifier: MIT
 """Deterministic UI translation only; no online service or chemical-data rewriting."""
 import json, pathlib, re, collections
+from chem3d_tooltips import TOOLTIPS
 HERE = pathlib.Path(__file__).resolve().parent
 OLD = HERE.parent
 def norm(s):
@@ -92,6 +93,11 @@ def tokens(s):
     return collections.Counter(re.findall(r'\^(?:\d+|-#)|&\d+|%(?:\d+\$)?[-+#0]*(?:\d+|\*)?(?:\.(?:\d+|\*))?(?:I64|ll|[hlLwT])?[diuoxXfFeEgGaAcCsSpn]|%\d+|\\001|\x01',s))
 def translate(s):
     if not s:return s
+    if s in TOOLTIPS:
+        target=TOOLTIPS[s]
+        assert s.count('\n')==target.count('\n') and s.startswith('\n')==target.startswith('\n')
+        assert tokens(s)==tokens(target)
+        return target
     core=norm(s)
     t=D.get(core)
     if t is None and '\t' in s:

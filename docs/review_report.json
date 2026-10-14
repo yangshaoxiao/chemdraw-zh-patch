@@ -1,11 +1,11 @@
 {
   "reviewed_at": "2026-10-14",
-  "patch": "0.2.2",
+  "patch": "0.2.3",
   "files": 80,
   "statistics": {
     "xml": 2073,
     "dialog": 2221,
-    "string": 2181,
+    "string": 2399,
     "addin": 13,
     "menu": 1108,
     "managed_ui_strings": 139
@@ -15,10 +15,11 @@
     "Chem3D is optional when entirely absent; incomplete or mismatched version rejected",
     "Native menu parser preserves header offset, command IDs, flags and trailing bytes",
     "Managed UI build preserves native resource translations; English reference inventory restored and 139 UI updates regenerated",
-    "Public archive excludes all proprietary full binaries, originals, backups, raw IL and unused deltas; documentation statistics updated"
+    "Public archive excludes all proprietary full binaries, originals, backups, raw IL and unused deltas; documentation statistics updated",
+    "Exact MFC status/tooltip translations preserve newline protocol, including empty status segments"
   ],
   "verification": {
-    "unit_checks": 6,
+    "unit_checks": 10,
     "integration_checks": 20,
     "current_machine_software_modified": false,
     "registry_cache_modified": false

@@ -1,0 +1,12 @@
+{
+  "reviewed_at": "2026-10-14",
+  "patch": "0.2.3",
+  "unique_status_tooltip_pairs": 106,
+  "cause": "MFC status/tooltip resources were unmatched by the dictionary; normalization also removed the leading newline from an empty status segment.",
+  "fix": "Translate exact full resource strings while preserving leading/newline separators, shortcuts, and unrelated PostScript resources.",
+  "regression": "Before fix: double bond, empty-status clear, and rotation checks failed. After fix: all 10 unit checks passed.",
+  "Windows_LoadStringW": "Chem3D.exe and Chem3DCtl.ocx both return 双键工具\\n双键 for resource 32519; single/triple bond and clear separator also verified.",
+  "integration_checks": 20,
+  "full_software_regression": false,
+  "runtime_tooltip_observation": "2026-10-14: v0.2.3 installed successfully; all 80 hashes verified. Live Chem3D blank document showed Chinese tooltip 双键, status 双键工具, and status 三键工具. Full software regression not performed."
+}
