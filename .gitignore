@@ -25,3 +25,6 @@ baseline_manifest.json
 coverage.json
 config.local.json
 .DS_Store
+
+localization/calculation_string_uses.json
+localization/calculation_translation_audit.json

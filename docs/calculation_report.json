@@ -1,0 +1,25 @@
+{
+  "patch": "0.2.4",
+  "checked_at": "2026-10-14",
+  "files": 86,
+  "statistics": {
+    "xml": 2073,
+    "dialog": 2230,
+    "string": 2401,
+    "addin": 13,
+    "menu": 1108,
+    "managed_ui_strings": 139,
+    "calculation_ui_strings": 377
+  },
+  "unit_tests": 17,
+  "embedded_resource_string_keys_preserved": 907,
+  "runtime": "Installed v0.2.4; all 86 hashes matched. Actual Chem3D menu showed Chinese Compute Properties and five interface names. User manually closed Chem3D after this check. Dialogs and third-party engines were not fully tested.",
+  "scope": "Menu captions and configuration UI; actual third-party engine computations not yet verified",
+  "total_replacements": 8341,
+  "integration_checks": 21,
+  "remaining_dynamic_English": [
+    "Buy Online or Learn More",
+    "About"
+  ],
+  "required_windows_ansi_code_page": 936
+}

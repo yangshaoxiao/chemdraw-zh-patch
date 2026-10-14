@@ -70,9 +70,17 @@ function Check-Package($manifest,$roots) {
     $seen = @{}
     $jobs = @()
     $chem3dNames = @('Chem3D.exe','Chem3DCtl.ocx')
+    $driverNames = @('AutoDockUI.dll','CambridgeSoft.ChemOffice.ConflexDriver.dll','CambridgeSoft.ChemOffice.GamessDriver.dll','CambridgeSoft.ChemOffice.GaussianDriver.dll','CambridgeSoft.ChemOffice.MopacDriver.dll','CambridgeSoft.ChemOffice.DriverShared.dll')
     $chem3dPresent = @($chem3dNames | Where-Object { Test-Path -LiteralPath (Within $roots.bin $_) -PathType Leaf })
     if ($chem3dPresent.Count -eq 1) { throw 'Chem3D 组件不完整，请先修复软件安装。' }
     if ($chem3dPresent.Count -eq 2 -and -not (Version-OK-Chem3D $roots.bin $manifest.version)) { throw 'Chem3D 版本与此补丁不匹配。' }
+    if ($chem3dPresent.Count -eq 2 -and $Mode -ne 'Restore' -and $manifest.calculation_ansi_code_page) {
+        if ($manifest.calculation_ansi_code_page -ne 936) { throw '未知的计算界面编码要求。' }
+        if (-not ('ChemDrawZhRuntimeCodePage' -as [type])) {
+            Add-Type -TypeDefinition 'using System.Runtime.InteropServices; public static class ChemDrawZhRuntimeCodePage { [DllImport("kernel32.dll")] public static extern uint GetACP(); }'
+        }
+        if ([ChemDrawZhRuntimeCodePage]::GetACP() -ne 936) { throw '本版 Chem3D 计算菜单需要 Windows ANSI 代码页 936；当前环境不兼容，未修改软件。还原英文不受此限制。' }
+    }
     foreach ($entry in $manifest.files) {
         if (-not $roots.ContainsKey($entry.group)) { throw '未知文件组。' }
         $target = Within $roots[$entry.group] $entry.relative
@@ -83,8 +91,12 @@ function Check-Package($manifest,$roots) {
             if ((Get-Item -LiteralPath $delta).Length -ne $route.size -or (Digest $delta) -ne $route.sha256) { throw "差分文件校验失败：$delta" }
         }
         if ($entry.optional_component) {
-            if ($entry.optional_component -ne 'chem3d' -or $entry.group -ne 'bin' -or $entry.relative -notin $chem3dNames) { throw '未知可选组件。' }
-            if (-not $chem3dPresent.Count) { continue }
+            if ($entry.group -ne 'bin') { throw '未知可选组件。' }
+            if ($entry.optional_component -eq 'chem3d' -and $entry.relative -in $chem3dNames) {
+                if (-not $chem3dPresent.Count) { continue }
+            } elseif ($entry.optional_component -eq 'chem3d_driver' -and $entry.relative -in $driverNames) {
+                if (-not (Test-Path -LiteralPath $target -PathType Leaf)) { continue }
+            } else { throw '未知可选组件。' }
         }
         if (-not (Test-Path -LiteralPath $target -PathType Leaf)) { throw "目标文件缺失：$target" }
         $current = Digest $target

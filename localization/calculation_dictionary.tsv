@@ -1,0 +1,250 @@
+CONFLEX Interface	CONFLEX 接口
+GAMESS Interface	GAMESS 接口
+Gaussian Interface	Gaussian 接口
+Mopac Interface	MOPAC 接口
+AutoDock Interface	AutoDock 接口
+Compute Properties ...	计算性质...
+Compute Properties	计算性质
+Run Input File	运行输入文件
+Create Input File	创建输入文件
+Parse Output File	解析输出文件
+Advanced Mode	高级模式
+Input Template	输入模板
+Save Job As	另存任务
+Select Properties	选择性质
+Select output file:	输出文件:
+Show Runtime Messages	显示运行消息
+Automatically Parse Results	自动解析结果
+Input File	输入文件
+Status	状态
+Reset	重置
+Create	创建
+Main	主要
+Import	导入
+Parameters	参数
+Path	路径
+Executable	程序
+Script	脚本
+Not Specified	未指定
+Prepare Receptor	准备受体
+Advanced Options	高级选项
+Preserve all input charges (i.e., do not add new charges)	保留输入电荷（不添加新电荷）
+Load Receptor	载入受体
+From Chem3D	来自 Chem3D
+Load from file	从文件载入
+Receptor not specified	尚未指定受体
+Prepare Ligand	准备配体
+List Ligands	列出配体
+Number of torsions	扭转数
+Load Ligand	载入配体
+Define Groups	定义分组
+Add New Group	新建分组
+Add New Group From Selected Atoms	用所选原子新建分组
+Atom Names(<=20)	原子名(<=20)
+Group Name(<=10)	组名(<=10)
+Radius(Å)	半径(Å)
+Exclusion Zone	排除区
+Inclusion Zone	包含区
+Delete Group?	删除分组?
+Prepare GPF	准备 GPF
+Grid Box	网格盒
+Display Grid Box	显示网格盒
+Spacing of Grids	网格间距
+Number of Grid Points	网格点数
+Autodock Default Values	AutoDock 默认值
+Set Grid Box to Receptor Size	按受体大小设置网格盒
+Centroid of the Grid Map	网格中心
+From Chem3D (Optionally)	来自 Chem3D（可选）
+Centroid of the Selection	所选内容中心
+Edit Template GPF File	编辑 GPF 模板
+Prepare DPF	准备 DPF
+Dockings	对接次数
+Energy Evaluations	能量评估次数
+Generations	代数
+No. of Individuals in Population	种群个体数
+Edit template.dpf file	编辑 template.dpf
+Docking	对接
+AutoDock (Advanced Option)	AutoDock（高级选项）
+Edit DPF	编辑 DPF
+AutoGrid (Advanced Option)	AutoGrid（高级选项）
+Edit GPF	编辑 GPF
+Run AutoDock	运行 AutoDock
+Change Directory	更改目录
+Specify the path of autodock and autogrid executables	设置 autodock 和 autogrid 程序路径
+Download AutoDock	下载 AutoDock
+Download AutoDock binaries	下载 AutoDock 程序
+Working Directory	工作目录
+Working Directory:	工作目录:
+Change Current Working Directory	更改当前工作目录
+Specify the directory for ADT scripts (Python)	设置 ADT 脚本目录（Python）
+Download AutoDockTools	下载 AutoDockTools
+Browse Work Folder	浏览工作目录
+Clear Log	清空日志
+Save Log	保存日志
+Advance Settings	高级设置
+Set AutoDock Path	设置 AutoDock 路径
+Set AutoDockTools Path	设置 AutoDockTools 路径
+Specify the folder of AutoDockTools scripts	指定 AutoDockTools 脚本目录
+Prepare Results	整理结果
+Prepare Result	整理结果
+Browse Results	浏览结果
+Kill Job	终止任务
+Docking Job Status	对接任务状态
+Previous Results	历史结果
+AutoDock Results	AutoDock 结果
+Kill Current Job	终止当前任务
+AutoDock Status	AutoDock 状态
+Kill Temporary Files	删除临时文件
+After Conflex job show output files in notepad:	CONFLEX 任务完成后用记事本显示输出:
+Results in:	结果目录:
+Keywords:	关键字:
+Backup Calculation Files	备份计算文件
+Job && Theory	任务与理论
+Job & Theory	任务与理论
+Conformation Search Limit:	构象搜索限值:
+Max Computation Time:	最长计算时间:
+Energy Potential:	势能函数:
+Optimization Method:	优化方法:
+Doubly-Occupied Orbitals:	双占据轨道数:
+Active Orbitals:	活性轨道数:
+Active Electrons:	活性电子数:
+Grid Based	基于网格
+Grid Free	无网格
+Method:	方法:
+Excited States	激发态
+States (NStates):	态数 (NStates):
+Singlets	单重态
+Triplets	三重态
+Wave Function:	波函数:
+Move Which:	移动对象:
+Time-Dependent Method	含时方法
+Internal Coordinate	内坐标
+Internal Coord.	内坐标
+Cartesian	笛卡尔坐标
+Coord. System:	坐标系:
+Net Charge:	净电荷:
+Use Formal Charge	使用形式电荷
+Spin Multiplicity:	自旋多重度:
+H:	氢:
+Diffuse:	弥散:
+Basis Set:	基组:
+Polarization:	极化:
+Exponent:	指数:
+Opt. Algorithm:	优化算法:
+Advanced-1	高级-1
+Advanced-2	高级-2
+Max SCF Iteration:	最大 SCF 迭代数:
+Guess:	初猜:
+Symmetry:	对称性:
+Max Steps:	最大步数:
+Convergence Tolerance:	收敛容差:
+Temperature:	温度:
+Mega Words	百万字
+Max Memory:	最大内存:
+Solvent Model:	溶剂模型:
+Integral Equation Formula:	积分方程形式:
+Dielectric Constant:	介电常数:
+Compensation Procedure:	补偿方法:
+Principal Axis (n):	主轴 (n):
+Angstroms	埃
+Solute Radius:	溶质半径:
+Direct SCF Calculation	直接 SCF 计算
+Level Shifting of The Fock Matrix	Fock 矩阵能级移动
+Pople Extrapolation of The Fock Matrix	Fock 矩阵 Pople 外推
+Davidson Damping of The Fock Matrix	Fock 矩阵 Davidson 阻尼
+Restriction of Orbital Interchanges	限制轨道互换
+Pulay's DIIS Interpolation	Pulay DIIS 插值
+Second Order SCF Orbital Optimization	二阶 SCF 轨道优化
+Direct Energy Minimization	直接能量最小化
+All Properties	全部性质
+Spectrum simulation...	光谱模拟...
+Display Every Iteration	显示每次迭代
+Show Output in NotePad	记事本显示输出
+Average Equivalent Hydrogens for 1H NMR	对氢谱等价氢取平均
+Send Back Output	传回输出
+Install	安装
+Install GAMESS	安装 GAMESS
+GAMESS 64-bit	GAMESS 64 位
+Chem3D supports the 64-bit version of GAMESS only	Chem3D 仅支持 64 位 GAMESS
+Requirements and Prerequisites	要求与先决条件
+MPI: Not Detected	MPI: 未检测到
+MPI Redistributable Package:	MPI 可再发行包:
+Not found	未找到
+Found	已找到
+Closed-Shell Orbitals:	闭壳层轨道数:
+Set of Open Shells:	开壳层集合:
+Geminal Pairs:	孪生电子对:
+Electrons:	电子数:
+Exchange Functional:	交换泛函:
+Correlation Functional:	相关泛函:
+Use Hybrid Functional	使用杂化泛函
+Exchange && Correlation Functional	交换与相关泛函
+Hybrid Functional:	杂化泛函:
+Perform Equilibrium PCM Solvation	平衡 PCM 溶剂化
+State Interested (Root):	目标态 (Root):
+Half Triplet && Half Singlet	各半单重态与三重态
+Sum-Over States Polarizabilities	态求和极化率
+IVO Guess	IVO 初猜
+Hartree-Fock IVOs	Hartree-Fock IVO
+IVO guess	IVO 初猜
+No (Canonical Single Excitations)	否（正则单激发）
+Links of a multi-step job	多步任务连接
+Jobs	任务
+Input Template:	输入模板:
+Remove current step	删除当前步骤
+NMR Reference	NMR 参照
+'%Mem' (MW):	'%Mem' (MW):
+Append a step	添加步骤
+Use Tight Convergence Criteria	严格收敛标准
+Pressure (Atmosphere):	压力 (atm):
+Population Analysis:	布居分析:
+Include Vibrational Analysis	包含振动分析
+Routine	常规
+Solvation Model:	溶剂化模型:
+NMR Method:	NMR 方法:
+Show/Hide DFT Window	显示/隐藏 DFT 窗口
+Force Constants:	力常数:
+Temperature (Kelvin):	温度 (K):
+Advanced	高级
+Shift the Virtual M.O. Energy Levels	移动虚分子轨道能级
+Optimizer:	优化器:
+Minimum RMS:	最小 RMS:
+Use keywords: MMOK, GEO-OK	使用 MMOK, GEO-OK
+Charges:	电荷:
+Use keyword: 1SCF	使用 1SCF
+Set the Dielectric constant	设置介电常数
+(Cannot Display Iterations)	（无法显示迭代）
+Use MOZYME	使用 MOZYME
+Use only for this time	仅本次使用
+Geometry of NMR Reference	NMR 参照几何结构
+Preview and modify the input file	预览并修改输入文件
+Save this job for later reusing	保存任务以便复用
+Delete this saved job	删除已存任务
+Function Type	函数类型
+Lorentzian	洛伦兹
+Wavelength	波长
+Electron Volts	电子伏特
+Wavenumbers	波数
+Spectrum peak width:	光谱峰宽:
+Normalization	归一化
+No normalization	不归一化
+Normalize to highest peak	按最高峰归一化
+Normalize to unity surface	按单位面积归一化
+Spectrum simulation	光谱模拟
+Version:	版本:
+Licensed To:	授权给:
+Expires:	到期:
+Feature:	功能:
+The keywords have been modified manually. If done incorrectly, this may cause the job to not be performed properly.	关键字已手动修改；修改有误可能导致任务无法正常运行。
+The input template has been modified manually. If done incorrectly, this may cause the job to not be performed properly.	输入模板已手动修改；修改有误可能导致任务无法正常运行。
+Kill Temporary Files (*.chk, *.fchk etc.)	删除临时文件 (*.chk, *.fchk 等)
+Kill Temporary Files (*.gpt, *.grd etc.)	删除临时文件 (*.gpt, *.grd 等)
+Use Advanced Mode	使用高级模式
+Minimize (Energy/Geometry)	最小化（能量/几何）
+Optimize to Transition State	优化至过渡态
+Run Frequency	计算频率
+Predict NMR Spectrum	预测 NMR 光谱
+Predict UV/Vis Spectrum	预测 UV/Vis 光谱
+Predict IR Spectrum	预测 IR 光谱
+Predict IR/Raman Spectrum	预测 IR/Raman 光谱
+Predict Spectra	预测光谱

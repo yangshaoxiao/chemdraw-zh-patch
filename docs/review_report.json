@@ -1,14 +1,15 @@
 {
   "reviewed_at": "2026-10-14",
-  "patch": "0.2.3",
-  "files": 80,
+  "patch": "0.2.4",
+  "files": 86,
   "statistics": {
     "xml": 2073,
-    "dialog": 2221,
-    "string": 2399,
+    "dialog": 2230,
+    "string": 2401,
     "addin": 13,
     "menu": 1108,
-    "managed_ui_strings": 139
+    "managed_ui_strings": 139,
+    "calculation_ui_strings": 377
   },
   "fixes": [
     "Removed registry deletion from install/restore launchers and installer; optional reset exports current-user cache before changes and restores backups on failure",
@@ -19,13 +20,22 @@
     "Exact MFC status/tooltip translations preserve newline protocol, including empty status segments"
   ],
   "verification": {
-    "unit_checks": 10,
-    "integration_checks": 20,
-    "current_machine_software_modified": false,
-    "registry_cache_modified": false
+    "unit_checks": 17,
+    "integration_checks": 21,
+    "current_machine_software_modified": true,
+    "registry_cache_modified": false,
+    "final_installed_hashes_verified": 86,
+    "final_delta_roundtrips": 172,
+    "incompatible_encoding_rejected_before_writes": true
   },
   "limitations": [
-    "No new GUI automation or full chemistry/printing/cloud functional regression in this review",
-    "Optional registry cache reset was syntax-reviewed, not executed against user registry"
-  ]
+    "Some dynamic submenus remain English by user request",
+    "Actual menu captions observed; not all dialogs or external calculations tested",
+    "Chem3D calculation captions require Windows ANSI code page 936",
+    "Optional registry cache reset not executed against user registry"
+  ],
+  "total_replacements": 8341,
+  "unit_tests": 17,
+  "calculation_scope": "Six optional calculation UI modules; .resources names and engine keywords preserved; primary driver captions localized. Full engine regression pending.",
+  "integration_checks": 21
 }

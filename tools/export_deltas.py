@@ -30,6 +30,8 @@ def export(package, output, legacy_package=None, previous_packages=(), patch_ver
         compatible.append((folder,{e['group']+'/'+e['relative']:e for e in old['files']}))
     result = {'format': 1, 'patch': patch_version, 'version': manifest['version'],
               'architecture': 'x64', 'statistics': manifest['statistics'], 'files': []}
+    if manifest['statistics'].get('calculation_ui_strings'):
+        result['calculation_ansi_code_page']=936
     for number, entry in enumerate(manifest['files']):
         before = (package / 'originals' / entry['payload']).read_bytes()
         after = (package / 'payload' / entry['payload']).read_bytes()
@@ -38,6 +40,8 @@ def export(package, output, legacy_package=None, previous_packages=(), patch_ver
         item = {k: entry[k] for k in ('group', 'relative', 'before', 'after')}
         if entry['group']=='bin' and entry['relative'] in ('Chem3D.exe','Chem3DCtl.ocx'):
             item['optional_component']='chem3d'
+        if entry['group']=='bin' and entry.get('kind')=='reviewed_calculation_ui':
+            item['optional_component']='chem3d_driver'
         item['before_size'], item['after_size'] = len(before), len(after)
         item['routes'] = []
         pairs = [('install', before, after), ('restore', after, before)]

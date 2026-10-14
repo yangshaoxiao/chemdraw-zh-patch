@@ -24,7 +24,7 @@ if __name__ == '__main__':
     entries = []
     prepared = []
     for e in manifest['files']:
-        if e.get('optional_component')=='chem3d' and not (roots[e['group']]/e['relative']).is_file():
+        if e.get('optional_component') in ('chem3d','chem3d_driver') and not (roots[e['group']]/e['relative']).is_file():
             continue
         data = (roots[e['group']]/e['relative']).read_bytes()
         state = sha(data)

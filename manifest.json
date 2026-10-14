@@ -1,15 +1,16 @@
 {
   "format": 1,
-  "patch": "0.2.3",
+  "patch": "0.2.4",
   "version": "26.0.0.6141",
   "architecture": "x64",
   "statistics": {
     "xml": 2073,
-    "dialog": 2221,
-    "string": 2399,
+    "dialog": 2230,
+    "string": 2401,
     "addin": 13,
     "menu": 1108,
-    "managed_ui_strings": 139
+    "managed_ui_strings": 139,
+    "calculation_ui_strings": 377
   },
   "files": [
     {
@@ -137,7 +138,7 @@
         {
           "source": "aab3537827ffeb03b26f898925229765d69817161dcb033b6bc299a58a98490f",
           "target": "4da8ed77e9b9569e4825835110deff6d0425b14ed8827ab849716255a4dd1b19",
-          "path": "patches/003-previous-2-to-original.cdp",
+          "path": "patches/003-previous-3-to-original.cdp",
           "sha256": "62f3714653f8555e0067a1ac2150d3cdf088485508418b003b35e4e0e163637a",
           "size": 798
         }
@@ -230,7 +231,7 @@
         {
           "source": "adabd175730f35e168840522b9b67202cb6b82d287e884377baaa98e9e6edf4f",
           "target": "04904f00500564cb1be5135181c92381e87fad60a6e21fc69f9a9dbd79645ec9",
-          "path": "patches/006-previous-2-to-original.cdp",
+          "path": "patches/006-previous-3-to-original.cdp",
           "sha256": "3d4741ce53f424b8fe23b2b3ffacf9a00f834ba03450af55f36b3ef4e4e1f75b",
           "size": 313
         }
@@ -392,7 +393,7 @@
         {
           "source": "8c335ba854becf65da35fe80edacf712c2e2165e20c055346a1915bd0fa3696e",
           "target": "ee454e807414382408f2ff793065310dfcafd20c3a25e80e4a07ecadf527c9ef",
-          "path": "patches/011-previous-2-to-original.cdp",
+          "path": "patches/011-previous-3-to-original.cdp",
           "sha256": "579a1277cf847a03387416c803227c583e1d9053017f15bbb8c10c43e2f1e009",
           "size": 842
         }
@@ -516,7 +517,7 @@
         {
           "source": "adabd175730f35e168840522b9b67202cb6b82d287e884377baaa98e9e6edf4f",
           "target": "04904f00500564cb1be5135181c92381e87fad60a6e21fc69f9a9dbd79645ec9",
-          "path": "patches/015-previous-2-to-original.cdp",
+          "path": "patches/015-previous-3-to-original.cdp",
           "sha256": "3d4741ce53f424b8fe23b2b3ffacf9a00f834ba03450af55f36b3ef4e4e1f75b",
           "size": 313
         }
@@ -1005,7 +1006,7 @@
         {
           "source": "81546021a55c791128d24a927f02702121efed87782806fc24fb02735d3ed309",
           "target": "9a719a01c3b63edd5eb781d5a77420c5973169f5262935295360f1a6a149a5bd",
-          "path": "patches/031-previous-2-to-original.cdp",
+          "path": "patches/031-previous-3-to-original.cdp",
           "sha256": "ea595e9dfeb8bdbc530d7c62a6769bf008fb4c1411cce923ae005598121282fe",
           "size": 547
         }
@@ -1043,7 +1044,7 @@
         {
           "source": "ef6563c5c6c77559ba6298187c7e4c5464f3d9110d19c695eb3701ddf0a1509d",
           "target": "0dd5313f0ac44ce5518ab9e16be49c3ceecdb9d59b0bb391be0a47dc9c57b5f7",
-          "path": "patches/032-previous-2-to-original.cdp",
+          "path": "patches/032-previous-3-to-original.cdp",
           "sha256": "ab42152b96dc8fea451b0540d7e989387e4ce7eef8dc125ce11041553dc73348",
           "size": 631
         }
@@ -1081,7 +1082,7 @@
         {
           "source": "a4fe243819cca7369d498f19320e072e370bc9313e88cdca2fcd6c68ffb52db4",
           "target": "90d86b2087838e928e92c77206b2f5e358f45888c663a53e8b409c17a8aab6db",
-          "path": "patches/033-previous-2-to-original.cdp",
+          "path": "patches/033-previous-3-to-original.cdp",
           "sha256": "a79ccca880d250a31309394e51762275d67d1ad8b14d52e9905dbb20e8843e6b",
           "size": 643
         }
@@ -1150,7 +1151,7 @@
         {
           "source": "fa7da950caaf892c6585bdeefef718bb800890348d86cfc4127542fe158fc1fa",
           "target": "683d422aede5e8bc29c69b37735dddf85edbb669049d3fa10c236700dbaa4e4a",
-          "path": "patches/035-previous-2-to-original.cdp",
+          "path": "patches/035-previous-3-to-original.cdp",
           "sha256": "a615e1a12fd5004068573c2ed0c9429744346310f6e8f5ec79faee2638d01883",
           "size": 128464
         }
@@ -1243,7 +1244,7 @@
         {
           "source": "2614a46713be54e7d946a4e77f68b10f321d2fe7a0d09a15b336ba784dfc3d5a",
           "target": "d13ae67e559919814ef7026958652d7c4466ace12933a47799f562345fdaf8be",
-          "path": "patches/038-previous-2-to-original.cdp",
+          "path": "patches/038-previous-3-to-original.cdp",
           "sha256": "065d152d26b74d34711f0faf1d3ebdfffda134a767e9ccbb6324de3073a67822",
           "size": 6113
         },
@@ -1288,7 +1289,7 @@
         {
           "source": "10b6fcee570ef3fe134e48e459b414c51d2a930e9c2d6f9bd20e02dbefa2a746",
           "target": "02938871b524e2e57c9793fb2f0a1f5fc860cb25285032709299162c9d2b340e",
-          "path": "patches/039-previous-2-to-original.cdp",
+          "path": "patches/039-previous-3-to-original.cdp",
           "sha256": "04d6005eddbf7632e3589e5f6091084c23f0f9739c678e83710d098a4fddfaa4",
           "size": 61513
         },
@@ -1742,7 +1743,7 @@
         {
           "source": "a4fe243819cca7369d498f19320e072e370bc9313e88cdca2fcd6c68ffb52db4",
           "target": "90d86b2087838e928e92c77206b2f5e358f45888c663a53e8b409c17a8aab6db",
-          "path": "patches/055-previous-2-to-original.cdp",
+          "path": "patches/055-previous-3-to-original.cdp",
           "sha256": "a79ccca880d250a31309394e51762275d67d1ad8b14d52e9905dbb20e8843e6b",
           "size": 643
         }
@@ -1990,7 +1991,7 @@
         {
           "source": "ff7f7a05f95fa087295402702509ef0ff79af17c19a911bbd636eb21d8f208d6",
           "target": "2fbbe500ef7bc1f81402244549871c439a848c9e2505a8738de2e291088559e1",
-          "path": "patches/063-previous-2-to-original.cdp",
+          "path": "patches/063-previous-3-to-original.cdp",
           "sha256": "4a8bb37e45d833bac40d515aa225b40e0c27898cfe868155b21954b357085767",
           "size": 312
         }
@@ -2062,35 +2063,42 @@
       "group": "bin",
       "relative": "ChemDraw.exe",
       "before": "fef346f6cd145224d46389ff3f35a620e45f5d7ca8e1bcf05392a133b973723a",
-      "after": "38ff96511a9eb9cce233823ccc45fb781eaa98d16f69d9b274d53fc50dcf80bf",
+      "after": "6c1810b7231d4f16710485a1d308de385ec16b1fdd7a60e7a730eb5823a2dea7",
       "before_size": 5479200,
       "after_size": 5416448,
       "routes": [
         {
           "source": "fef346f6cd145224d46389ff3f35a620e45f5d7ca8e1bcf05392a133b973723a",
-          "target": "38ff96511a9eb9cce233823ccc45fb781eaa98d16f69d9b274d53fc50dcf80bf",
+          "target": "6c1810b7231d4f16710485a1d308de385ec16b1fdd7a60e7a730eb5823a2dea7",
           "path": "patches/066-install.cdp",
-          "sha256": "7e708ef155e572e7e3c795cd996f0d90a77906d92f9c0dc3d1e583d0e6732fbb",
+          "sha256": "dd2880fb6dc1386fc0d6cdb4a340ed963e7785459369ae16f24f2ebc47e58d8b",
           "size": 100694
         },
         {
-          "source": "38ff96511a9eb9cce233823ccc45fb781eaa98d16f69d9b274d53fc50dcf80bf",
+          "source": "6c1810b7231d4f16710485a1d308de385ec16b1fdd7a60e7a730eb5823a2dea7",
           "target": "fef346f6cd145224d46389ff3f35a620e45f5d7ca8e1bcf05392a133b973723a",
           "path": "patches/066-restore.cdp",
           "sha256": "0400cf05e597cdac261b89506c658c61d6968307c4cc8b0ea2148fd7582ce963",
           "size": 162432
         },
         {
+          "source": "38ff96511a9eb9cce233823ccc45fb781eaa98d16f69d9b274d53fc50dcf80bf",
+          "target": "fef346f6cd145224d46389ff3f35a620e45f5d7ca8e1bcf05392a133b973723a",
+          "path": "patches/066-previous-1-to-original.cdp",
+          "sha256": "0400cf05e597cdac261b89506c658c61d6968307c4cc8b0ea2148fd7582ce963",
+          "size": 162432
+        },
+        {
           "source": "5e5a3c39e5b65602e901737fe60b8167bea86cd4674c314d9b39331d2c70366a",
           "target": "fef346f6cd145224d46389ff3f35a620e45f5d7ca8e1bcf05392a133b973723a",
-          "path": "patches/066-previous-2-to-original.cdp",
+          "path": "patches/066-previous-3-to-original.cdp",
           "sha256": "bb2613236ddb80e0039fc7588e1dfb4c45054a1028a9e6bb84b3bb154906f861",
           "size": 162548
         },
         {
           "source": "230100a8d539a47c23d9fa7d3a77d13a98fc0c5eaa68dafa321a38283a130bed",
           "target": "fef346f6cd145224d46389ff3f35a620e45f5d7ca8e1bcf05392a133b973723a",
-          "path": "patches/066-previous-3-to-original.cdp",
+          "path": "patches/066-previous-4-to-original.cdp",
           "sha256": "7ed9f811d3d0d74dc95358f31c0e0c1090ef32aebd34e07257d8ef24962d9357",
           "size": 162380
         },
@@ -2135,7 +2143,7 @@
         {
           "source": "57436a878cf84ff76d69f4fc9ffa09dfba43c56e7a2578631ce7035a9857bc6b",
           "target": "0bf203d7ddf0c700bf9d44fd156425d8df274277fdaea58fa511cfbddc51861a",
-          "path": "patches/067-previous-2-to-original.cdp",
+          "path": "patches/067-previous-3-to-original.cdp",
           "sha256": "53f706d5f81eefc9d925bff438b0d31d5018f17df23c7f1d6404d840aab8c49c",
           "size": 130679
         },
@@ -2152,35 +2160,42 @@
       "group": "bin",
       "relative": "ChemDrawUI.dll",
       "before": "6e2eceeb304de74635a10f99d1d67519487e53af56976da5f60e388ef629e0d9",
-      "after": "2b443c6e0e7bbe3048bc137a4a0dd6932f3f4af8d16db31051570da9eb4d4cd1",
+      "after": "56f6623a197400cc47d4dd36ff1ef9b2f5bf47fb594ca2b44ddd9cfac2863db6",
       "before_size": 8063264,
       "after_size": 8046080,
       "routes": [
         {
           "source": "6e2eceeb304de74635a10f99d1d67519487e53af56976da5f60e388ef629e0d9",
-          "target": "2b443c6e0e7bbe3048bc137a4a0dd6932f3f4af8d16db31051570da9eb4d4cd1",
+          "target": "56f6623a197400cc47d4dd36ff1ef9b2f5bf47fb594ca2b44ddd9cfac2863db6",
           "path": "patches/068-install.cdp",
-          "sha256": "eaa3cfbb89f31327f01a956298c754d7d0ad985a0ca315dbf8c93e36e61c2943",
+          "sha256": "5f35e383cb454ca4144debfa2cb9adaec03341c6a45ba3baf4310d80519beac6",
           "size": 28098
         },
         {
-          "source": "2b443c6e0e7bbe3048bc137a4a0dd6932f3f4af8d16db31051570da9eb4d4cd1",
+          "source": "56f6623a197400cc47d4dd36ff1ef9b2f5bf47fb594ca2b44ddd9cfac2863db6",
           "target": "6e2eceeb304de74635a10f99d1d67519487e53af56976da5f60e388ef629e0d9",
           "path": "patches/068-restore.cdp",
           "sha256": "eb14901e3659b81df4ee27a0886edcbae5e11dad060c8b847a2aebdd0c41579d",
           "size": 45511
         },
         {
+          "source": "2b443c6e0e7bbe3048bc137a4a0dd6932f3f4af8d16db31051570da9eb4d4cd1",
+          "target": "6e2eceeb304de74635a10f99d1d67519487e53af56976da5f60e388ef629e0d9",
+          "path": "patches/068-previous-1-to-original.cdp",
+          "sha256": "eb14901e3659b81df4ee27a0886edcbae5e11dad060c8b847a2aebdd0c41579d",
+          "size": 45511
+        },
+        {
           "source": "80e0c8a8633ac6d99bf59f792f34b1c233eec85e69eac1d8fa2fd7a03be2a813",
           "target": "6e2eceeb304de74635a10f99d1d67519487e53af56976da5f60e388ef629e0d9",
-          "path": "patches/068-previous-2-to-original.cdp",
+          "path": "patches/068-previous-3-to-original.cdp",
           "sha256": "20a9983199df91d9785931dd00b5252f958fd54a2c0bb1fe2d2102a1ec0f33ae",
           "size": 45345
         },
         {
           "source": "b1db769944b666a71f19e0bed4ce0c4d2fdac7aa0e091a0dee12a05c7a8bdbc2",
           "target": "6e2eceeb304de74635a10f99d1d67519487e53af56976da5f60e388ef629e0d9",
-          "path": "patches/068-previous-3-to-original.cdp",
+          "path": "patches/068-previous-4-to-original.cdp",
           "sha256": "e269c7bc903c1756cd4b5aeff1c22d47d2dad743db4adedcee3b91803777e02a",
           "size": 45305
         },
@@ -2204,35 +2219,42 @@
       "group": "bin",
       "relative": "ChemDrawCtl.dll",
       "before": "234325d7a67ce2bf8aea54ceaab265fe1822f50e00a030203d7c8e0809e92c0d",
-      "after": "89bf2ca49643654270984e27779eb5e75331fa41ffe89f520006889217541356",
+      "after": "56c65127263ded1be0887e28930b9932a2335955cae9ca0fdf32ceb3b2fbe639",
       "before_size": 17515808,
       "after_size": 17453056,
       "routes": [
         {
           "source": "234325d7a67ce2bf8aea54ceaab265fe1822f50e00a030203d7c8e0809e92c0d",
-          "target": "89bf2ca49643654270984e27779eb5e75331fa41ffe89f520006889217541356",
+          "target": "56c65127263ded1be0887e28930b9932a2335955cae9ca0fdf32ceb3b2fbe639",
           "path": "patches/069-install.cdp",
-          "sha256": "dcf8badd1b06bf6e2663587d7a7240d8cbb7cd970a8df41c86041e3e5a47a1c2",
+          "sha256": "c910bf68f5c79198eaca8440dbecf2fbdcbfbab1b74c077c5d953ae30a0ef2e9",
           "size": 100618
         },
         {
-          "source": "89bf2ca49643654270984e27779eb5e75331fa41ffe89f520006889217541356",
+          "source": "56c65127263ded1be0887e28930b9932a2335955cae9ca0fdf32ceb3b2fbe639",
           "target": "234325d7a67ce2bf8aea54ceaab265fe1822f50e00a030203d7c8e0809e92c0d",
           "path": "patches/069-restore.cdp",
           "sha256": "ad4f500c932024353224218145a5e66d93b422bb7b7294ec996e6bd557d0a4fe",
           "size": 162243
         },
         {
+          "source": "89bf2ca49643654270984e27779eb5e75331fa41ffe89f520006889217541356",
+          "target": "234325d7a67ce2bf8aea54ceaab265fe1822f50e00a030203d7c8e0809e92c0d",
+          "path": "patches/069-previous-1-to-original.cdp",
+          "sha256": "ad4f500c932024353224218145a5e66d93b422bb7b7294ec996e6bd557d0a4fe",
+          "size": 162243
+        },
+        {
           "source": "c655944060ccb7e5af90239cda9bb17e58b5e4e28e4fb509109978f745d043a6",
           "target": "234325d7a67ce2bf8aea54ceaab265fe1822f50e00a030203d7c8e0809e92c0d",
-          "path": "patches/069-previous-2-to-original.cdp",
+          "path": "patches/069-previous-3-to-original.cdp",
           "sha256": "7cb51ffb7109ad5d8afa6232056d2a6ff896e1988015f8bba634a10cfc91f843",
           "size": 161482
         },
         {
           "source": "dac2185e069923fd862c94343fbe763815e94f2eeee5dd8e0e671e1653e2cf07",
           "target": "234325d7a67ce2bf8aea54ceaab265fe1822f50e00a030203d7c8e0809e92c0d",
-          "path": "patches/069-previous-3-to-original.cdp",
+          "path": "patches/069-previous-4-to-original.cdp",
           "sha256": "b5fedf755c70cf38ba5b095fcd7b72fd7746ad3aa99a518b7e9636e0bf480f77",
           "size": 161411
         },
@@ -2301,7 +2323,7 @@
         {
           "source": "ddc4ec5ea63d7bca93547b0b8b97c51c8994dfa76993106f0ff6389adb7444b3",
           "target": "c830576d245939b0a1491bee0f77720145a21e54258b621a973d995ce943dc96",
-          "path": "patches/071-previous-2-to-original.cdp",
+          "path": "patches/071-previous-3-to-original.cdp",
           "sha256": "379478c7c8d654a7ad852c7d7bd9fcce199eb9e0d711f48d9eead457d4d57a86",
           "size": 26142
         }
@@ -2383,31 +2405,45 @@
       "group": "bin",
       "relative": "Chem3D.exe",
       "before": "77c44dbf058bf2941e97f244cf13cf01434caff4a4dd7f2f600d1c7eb1379fc4",
-      "after": "bd451f7e9058f6335e08309c8031ab56cc82674bca53b1d90d1dc18b484f10fd",
+      "after": "2defd53d3be3a25d97d8b1c960cc3915028684f5bfda5ca286a739f90fd2da78",
       "optional_component": "chem3d",
       "before_size": 26189600,
       "after_size": 26156544,
       "routes": [
         {
           "source": "77c44dbf058bf2941e97f244cf13cf01434caff4a4dd7f2f600d1c7eb1379fc4",
-          "target": "bd451f7e9058f6335e08309c8031ab56cc82674bca53b1d90d1dc18b484f10fd",
+          "target": "2defd53d3be3a25d97d8b1c960cc3915028684f5bfda5ca286a739f90fd2da78",
           "path": "patches/075-install.cdp",
-          "sha256": "f4d720e1ed162b4f7520f6cebcdad5a89e4106f6da212a3d7fd6787916815539",
-          "size": 142830
+          "sha256": "a2516169a1d5fc3a207e6026ff1144bc61cf2e1cba2678e13cddcffa33ee8aee",
+          "size": 143447
+        },
+        {
+          "source": "2defd53d3be3a25d97d8b1c960cc3915028684f5bfda5ca286a739f90fd2da78",
+          "target": "77c44dbf058bf2941e97f244cf13cf01434caff4a4dd7f2f600d1c7eb1379fc4",
+          "path": "patches/075-restore.cdp",
+          "sha256": "56c126273793243191ca6acc80cb158a1a791b60a3e7df4b4cd02a6f96ccd3a5",
+          "size": 177755
         },
         {
           "source": "bd451f7e9058f6335e08309c8031ab56cc82674bca53b1d90d1dc18b484f10fd",
           "target": "77c44dbf058bf2941e97f244cf13cf01434caff4a4dd7f2f600d1c7eb1379fc4",
-          "path": "patches/075-restore.cdp",
+          "path": "patches/075-previous-1-to-original.cdp",
           "sha256": "a7237049a8e97085b9a1721ce4037f59e1b7defd82ec9d553d02a589b0a5f520",
           "size": 176455
         },
         {
           "source": "2fea5b1b832a516a6423da860131d18a1c469bbaa78e8750b690b31ea1058a25",
           "target": "77c44dbf058bf2941e97f244cf13cf01434caff4a4dd7f2f600d1c7eb1379fc4",
-          "path": "patches/075-previous-1-to-original.cdp",
+          "path": "patches/075-previous-2-to-original.cdp",
           "sha256": "5d33077bb855daa110bb1c681a69ce61584a68114697c4cf6cde39a0699bbf67",
           "size": 167565
+        },
+        {
+          "source": "73950c74f84ca2cc17a80c8ae2078d9be8f029d55a166b79202b13802f50176c",
+          "target": "77c44dbf058bf2941e97f244cf13cf01434caff4a4dd7f2f600d1c7eb1379fc4",
+          "path": "patches/075-previous-5-to-original.cdp",
+          "sha256": "56c126273793243191ca6acc80cb158a1a791b60a3e7df4b4cd02a6f96ccd3a5",
+          "size": 177755
         },
         {
           "source": "06707b6d11928b91b02b74432585ff27dc11f4c12ca3c24a366840f359d3d03c",
@@ -2422,31 +2458,45 @@
       "group": "bin",
       "relative": "Chem3DCtl.ocx",
       "before": "3feac54182e30d03b9b18df54e564c7a82e0227ff2a3168055a44a60d6b994a0",
-      "after": "5640c2afb72b5aa6d9f6e0d12d454da2a0d3aafc6ec5312a955d22c4a9b7108d",
+      "after": "0460d7c6b626f8a8406c53633ce1b0f0782a022c66723855eebc6239f4b84af6",
       "optional_component": "chem3d",
       "before_size": 17376032,
       "after_size": 17344512,
       "routes": [
         {
           "source": "3feac54182e30d03b9b18df54e564c7a82e0227ff2a3168055a44a60d6b994a0",
-          "target": "5640c2afb72b5aa6d9f6e0d12d454da2a0d3aafc6ec5312a955d22c4a9b7108d",
+          "target": "0460d7c6b626f8a8406c53633ce1b0f0782a022c66723855eebc6239f4b84af6",
           "path": "patches/076-install.cdp",
-          "sha256": "57f5907eea81d4421bd11ad8b083f8d89a428aefccbb870e46545bc96fdeb8cf",
-          "size": 119179
+          "sha256": "f347e35923fab3d790d7537ed917e71ef1b700554fe2fc11cd68b556ccdc9341",
+          "size": 119663
+        },
+        {
+          "source": "0460d7c6b626f8a8406c53633ce1b0f0782a022c66723855eebc6239f4b84af6",
+          "target": "3feac54182e30d03b9b18df54e564c7a82e0227ff2a3168055a44a60d6b994a0",
+          "path": "patches/076-restore.cdp",
+          "sha256": "09d0e8828fc5faf4ed04197e7bc306274754605f7e0ecb5d019b410198d60d12",
+          "size": 151921
         },
         {
           "source": "5640c2afb72b5aa6d9f6e0d12d454da2a0d3aafc6ec5312a955d22c4a9b7108d",
           "target": "3feac54182e30d03b9b18df54e564c7a82e0227ff2a3168055a44a60d6b994a0",
-          "path": "patches/076-restore.cdp",
+          "path": "patches/076-previous-1-to-original.cdp",
           "sha256": "f5aacfe0f611f0ffffbfabf315a080dbe3d89df2209e6f2827c52f632408bd75",
           "size": 152023
         },
         {
           "source": "cf97fe7d86fbfd1b82303350f01f4e651d6e0c55b9c5aac7d4d733edc7e71aaf",
           "target": "3feac54182e30d03b9b18df54e564c7a82e0227ff2a3168055a44a60d6b994a0",
-          "path": "patches/076-previous-1-to-original.cdp",
+          "path": "patches/076-previous-2-to-original.cdp",
           "sha256": "4998e93bfb6ac35cabc80a993dec3bc8e3938c9e05e5ec20130bee323526b99c",
           "size": 143385
+        },
+        {
+          "source": "123ae2e0fcab43e499a24b445ea57783bf5f0de1ff22782e2029abedd570482a",
+          "target": "3feac54182e30d03b9b18df54e564c7a82e0227ff2a3168055a44a60d6b994a0",
+          "path": "patches/076-previous-5-to-original.cdp",
+          "sha256": "09d0e8828fc5faf4ed04197e7bc306274754605f7e0ecb5d019b410198d60d12",
+          "size": 151921
         },
         {
           "source": "93ca103d75a2a4b4d02dd2b5aec26034d222254922cc86f53372010a27499490",
@@ -2528,6 +2578,185 @@
           "size": 5986
         }
       ]
+    },
+    {
+      "group": "bin",
+      "relative": "AutoDockUI.dll",
+      "before": "23a6c9252db3b870efaad26ec415010d47697d80f2c7d10880bd23ffbd786d76",
+      "after": "4be99f0c12d1d361b98a8872eda4cc7eb141dcab2c0e9589178aefb86f7faa28",
+      "optional_component": "chem3d_driver",
+      "before_size": 156448,
+      "after_size": 156448,
+      "routes": [
+        {
+          "source": "23a6c9252db3b870efaad26ec415010d47697d80f2c7d10880bd23ffbd786d76",
+          "target": "4be99f0c12d1d361b98a8872eda4cc7eb141dcab2c0e9589178aefb86f7faa28",
+          "path": "patches/080-install.cdp",
+          "sha256": "dc72a4155d0569f1b003cf19db41041b6c8c1e735faabd4e03eb8c0c89031a49",
+          "size": 8200
+        },
+        {
+          "source": "4be99f0c12d1d361b98a8872eda4cc7eb141dcab2c0e9589178aefb86f7faa28",
+          "target": "23a6c9252db3b870efaad26ec415010d47697d80f2c7d10880bd23ffbd786d76",
+          "path": "patches/080-restore.cdp",
+          "sha256": "8cac32423540f7a1ddf13b69f7440fc7c3e4d045627f82a40e898ccbb7b82321",
+          "size": 8200
+        }
+      ]
+    },
+    {
+      "group": "bin",
+      "relative": "CambridgeSoft.ChemOffice.ConflexDriver.dll",
+      "before": "86595f8430cbf2725fe8f4d827915c0dacebe59f30db1a016ab09eb40e13f27d",
+      "after": "9fc3f781463d03c132cc1fe3b79c58b646d74c772e8d48b2b1fb93158c5fdede",
+      "optional_component": "chem3d_driver",
+      "before_size": 57120,
+      "after_size": 57120,
+      "routes": [
+        {
+          "source": "86595f8430cbf2725fe8f4d827915c0dacebe59f30db1a016ab09eb40e13f27d",
+          "target": "9fc3f781463d03c132cc1fe3b79c58b646d74c772e8d48b2b1fb93158c5fdede",
+          "path": "patches/081-install.cdp",
+          "sha256": "d9f25a71c9348b81aa5ff2318f75a0bf6cb8e513c51a83030034306e50335835",
+          "size": 1697
+        },
+        {
+          "source": "9fc3f781463d03c132cc1fe3b79c58b646d74c772e8d48b2b1fb93158c5fdede",
+          "target": "86595f8430cbf2725fe8f4d827915c0dacebe59f30db1a016ab09eb40e13f27d",
+          "path": "patches/081-restore.cdp",
+          "sha256": "1100af08e5249f0a77ad3c8f20a7e021ee994e7c22f47eef59f33af0a6e7a142",
+          "size": 1854
+        },
+        {
+          "source": "95cc136a31bfddbdddb9032561df315cee9f6a84bf1fe5c8230f4df1a273e984",
+          "target": "86595f8430cbf2725fe8f4d827915c0dacebe59f30db1a016ab09eb40e13f27d",
+          "path": "patches/081-previous-5-to-original.cdp",
+          "sha256": "965442946389484044794966427a58b5b5eb9f01e56e303b6344ae28c2f4d86e",
+          "size": 1759
+        }
+      ]
+    },
+    {
+      "group": "bin",
+      "relative": "CambridgeSoft.ChemOffice.GamessDriver.dll",
+      "before": "635866edcd6b8f3d24ebe584bf6252e414899d59d0ff8a0fe915ef63d33b4092",
+      "after": "03d142adbab99241dea8273cb8fe87fed3243c615e43617b85f6867722a7f747",
+      "optional_component": "chem3d_driver",
+      "before_size": 917280,
+      "after_size": 917280,
+      "routes": [
+        {
+          "source": "635866edcd6b8f3d24ebe584bf6252e414899d59d0ff8a0fe915ef63d33b4092",
+          "target": "03d142adbab99241dea8273cb8fe87fed3243c615e43617b85f6867722a7f747",
+          "path": "patches/082-install.cdp",
+          "sha256": "f44fc3440a9cc0d2cbb59ebcf8391162e9104cb029d8bb8d687844897108420e",
+          "size": 7155
+        },
+        {
+          "source": "03d142adbab99241dea8273cb8fe87fed3243c615e43617b85f6867722a7f747",
+          "target": "635866edcd6b8f3d24ebe584bf6252e414899d59d0ff8a0fe915ef63d33b4092",
+          "path": "patches/082-restore.cdp",
+          "sha256": "3fc6286207039b353203523a8174d6f0233ccbf9ada619ad6839e877688497c8",
+          "size": 7312
+        },
+        {
+          "source": "45a3a0f2ce597e802a253595721b92954c5b4aac66544b13f55f6b7e719ed99e",
+          "target": "635866edcd6b8f3d24ebe584bf6252e414899d59d0ff8a0fe915ef63d33b4092",
+          "path": "patches/082-previous-5-to-original.cdp",
+          "sha256": "bb61b3c3edaad3da03ea393ae2fc06fb4a99e95c7fe32ff51071224f424f0a81",
+          "size": 7173
+        }
+      ]
+    },
+    {
+      "group": "bin",
+      "relative": "CambridgeSoft.ChemOffice.GaussianDriver.dll",
+      "before": "9844c9a7d55cdb1b7cecdc7711c11033fa8ce1c7342d82db63f6e5f514949f63",
+      "after": "79fa986af29414c193cc0c18fb9278a42825ed015033fa6f2ebc7b59feb00b8c",
+      "optional_component": "chem3d_driver",
+      "before_size": 622368,
+      "after_size": 622368,
+      "routes": [
+        {
+          "source": "9844c9a7d55cdb1b7cecdc7711c11033fa8ce1c7342d82db63f6e5f514949f63",
+          "target": "79fa986af29414c193cc0c18fb9278a42825ed015033fa6f2ebc7b59feb00b8c",
+          "path": "patches/083-install.cdp",
+          "sha256": "19b9ad120ff5036bd32f4b2997c6d39754f522c308103833e6884163bc2305b3",
+          "size": 29661
+        },
+        {
+          "source": "79fa986af29414c193cc0c18fb9278a42825ed015033fa6f2ebc7b59feb00b8c",
+          "target": "9844c9a7d55cdb1b7cecdc7711c11033fa8ce1c7342d82db63f6e5f514949f63",
+          "path": "patches/083-restore.cdp",
+          "sha256": "588a4f07a50f5a4328863494f80fa1c590a6b605dbf2298c5c12adb52f382efa",
+          "size": 29796
+        },
+        {
+          "source": "1d3cc062dc472ec1b4b1ce2aa80903d7e393ad5bdaef7b218a28fe15fe75d9f8",
+          "target": "9844c9a7d55cdb1b7cecdc7711c11033fa8ce1c7342d82db63f6e5f514949f63",
+          "path": "patches/083-previous-5-to-original.cdp",
+          "sha256": "588a4f07a50f5a4328863494f80fa1c590a6b605dbf2298c5c12adb52f382efa",
+          "size": 29796
+        }
+      ]
+    },
+    {
+      "group": "bin",
+      "relative": "CambridgeSoft.ChemOffice.MopacDriver.dll",
+      "before": "b1fabb46ec2db309d15c84cc04fa5892d874d845df0a8cc6589ab01a864b864d",
+      "after": "044ff9c4414c2b7f89418d83bd1b79120b70f95d9ab3a92b94bdecb81c00f25e",
+      "optional_component": "chem3d_driver",
+      "before_size": 511776,
+      "after_size": 511776,
+      "routes": [
+        {
+          "source": "b1fabb46ec2db309d15c84cc04fa5892d874d845df0a8cc6589ab01a864b864d",
+          "target": "044ff9c4414c2b7f89418d83bd1b79120b70f95d9ab3a92b94bdecb81c00f25e",
+          "path": "patches/084-install.cdp",
+          "sha256": "bdd7fcfcccd59514eae870b744d15bd879ba62e4bf8ef04e3d8d3a246aef96c5",
+          "size": 21301
+        },
+        {
+          "source": "044ff9c4414c2b7f89418d83bd1b79120b70f95d9ab3a92b94bdecb81c00f25e",
+          "target": "b1fabb46ec2db309d15c84cc04fa5892d874d845df0a8cc6589ab01a864b864d",
+          "path": "patches/084-restore.cdp",
+          "sha256": "6983e0a83bcbb51bf8b94ee1b402f5a844e38661f97562cff9a4f1808a93b02c",
+          "size": 21315
+        },
+        {
+          "source": "d01def98083569bfc0ea8389cf4dd79cbbe93e55cc2d0718bc786eaf771dacaa",
+          "target": "b1fabb46ec2db309d15c84cc04fa5892d874d845df0a8cc6589ab01a864b864d",
+          "path": "patches/084-previous-5-to-original.cdp",
+          "sha256": "6983e0a83bcbb51bf8b94ee1b402f5a844e38661f97562cff9a4f1808a93b02c",
+          "size": 21315
+        }
+      ]
+    },
+    {
+      "group": "bin",
+      "relative": "CambridgeSoft.ChemOffice.DriverShared.dll",
+      "before": "ce2c447bb38d1db1094a4ee2ae36fa04868c0b190a4b611303d439b1173f980e",
+      "after": "e4e68931377851cdf8731d0e9ec0ed97430de44dd7f182e82e269ba52f61fafe",
+      "optional_component": "chem3d_driver",
+      "before_size": 1892128,
+      "after_size": 1892128,
+      "routes": [
+        {
+          "source": "ce2c447bb38d1db1094a4ee2ae36fa04868c0b190a4b611303d439b1173f980e",
+          "target": "e4e68931377851cdf8731d0e9ec0ed97430de44dd7f182e82e269ba52f61fafe",
+          "path": "patches/085-install.cdp",
+          "sha256": "317d33c1b6a4fc84a2d45b1b8af58e2d3ceddf43d030d9986d230c5bc0fa0fb5",
+          "size": 25218
+        },
+        {
+          "source": "e4e68931377851cdf8731d0e9ec0ed97430de44dd7f182e82e269ba52f61fafe",
+          "target": "ce2c447bb38d1db1094a4ee2ae36fa04868c0b190a4b611303d439b1173f980e",
+          "path": "patches/085-restore.cdp",
+          "sha256": "59bd163459fa8ca24a53b18e052d00b6c8ca056ce502ea50ea64e9f93aa4c0df",
+          "size": 24952
+        }
+      ]
     }
-  ]
+  ],
+  "calculation_ansi_code_page": 936
 }

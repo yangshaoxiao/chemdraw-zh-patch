@@ -22,7 +22,7 @@
   "installer_version": "0.2.1",
   "installer_live_preflight": "Passed on current installation (read-only), all 78 files matched known state.",
   "v021_installation_scope": "Directory-copy integration tests; translation bytes identical to installed v0.2. No fresh v0.2.1 write to production was required.",
-  "current_patch": "0.2.3",
+  "current_patch": "0.2.4",
   "reviewed_at": "2026-10-14",
-  "current_runtime_scope": "2026-10-14: v0.2.3 installed; 80 file hashes verified. Chem3D started in a blank document; live 双键 tooltip and 双键工具 / 三键工具 status descriptions observed in Chinese. Earlier ChemDraw observations remain historical; no full software regression."
+  "current_runtime_scope": "2026-10-14: final v0.2.4 installed; 86 file hashes verified. Actual Chem3D menu displayed 计算性质 and Chinese 接口 names for CONFLEX, GAMESS, Gaussian, MOPAC, AutoDock. Dynamic Buy Online or Learn More and About remain English. No full dialog/engine regression; Windows ANSI code page 936 required."
 }

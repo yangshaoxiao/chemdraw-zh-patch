@@ -7,7 +7,7 @@ OLD = HERE.parent
 def norm(s):
     return re.sub(r'\s+', ' ', s.replace('&', '')).strip()
 D = {}
-for filename in ['base_dictionary.tsv', 'chem3d_dictionary.tsv']:
+for filename in ['base_dictionary.tsv', 'chem3d_dictionary.tsv', 'calculation_dictionary.tsv']:
     p = HERE / filename
     if p.exists():
         for line in p.read_text('utf-8-sig').splitlines():

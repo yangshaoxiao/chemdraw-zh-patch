@@ -1,11 +1,11 @@
-﻿param([Parameter(Mandatory=$true)][string]$BinPath)
+﻿param([Parameter(Mandatory=$true)][string]$BinPath, [string[]]$Files=@('ChemDrawManaged.dll','ChemDrawManaged.CDAX.dll','Revvity.ChemDraw.ChemDrawDotNET.dll'), [string]$OutputPath=(Join-Path $PSScriptRoot 'managed_string_uses.json'))
 # SPDX-License-Identifier: MIT
 $ErrorActionPreference='Stop'
 $root=$BinPath
 
 $codes=@{}
 [Reflection.Emit.OpCodes].GetFields([Reflection.BindingFlags]'Public,Static') | ForEach-Object { $v=$_.GetValue($null); $codes[([int]$v.Value -band 65535).ToString()]=$v }
-$result=@(); foreach($file in @('ChemDrawManaged.dll','ChemDrawManaged.CDAX.dll','Revvity.ChemDraw.ChemDrawDotNET.dll')) { $asm=[Reflection.Assembly]::LoadFrom((Join-Path $root $file))
+$result=@(); foreach($file in $Files) { $asm=[Reflection.Assembly]::LoadFrom((Join-Path $root $file))
 foreach($type in $asm.GetTypes()) {
  foreach($m in @(@($type.GetMethods([Reflection.BindingFlags]'Public,NonPublic,Instance,Static,DeclaredOnly')) + @($type.GetConstructors([Reflection.BindingFlags]'Public,NonPublic,Instance,Static,DeclaredOnly')))) {
   $body=$m.GetMethodBody(); if(-not $body){continue}; $b=$body.GetILAsByteArray();$ops=@();$i=0
@@ -25,5 +25,5 @@ foreach($type in $asm.GetTypes()) {
  }
 }
 }
-$result | ConvertTo-Json -Depth 5 | Set-Content -Encoding UTF8 (Join-Path $PSScriptRoot 'managed_string_uses.json')
+$result | ConvertTo-Json -Depth 5 | Set-Content -Encoding UTF8 $OutputPath
 Write-Output ("String references: " + $result.Count)

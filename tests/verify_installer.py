@@ -133,6 +133,16 @@ def verify(package,legacy_package=None,previous_package=None):
         stored[0][0].write_bytes(stored[0][1]);run('Install',False)
         stored[1][0].write_bytes(stored[1][1]);check('before')
         passed.append('reject incomplete Chem3D installation before writes')
+    drivers=[e for e in manifest['files'] if e.get('optional_component')=='chem3d_driver']
+    if drivers:
+        stored=[]
+        for e in drivers:
+            target=roots[e['group']]/e['relative'];stored.append((target,target.read_bytes()));target.unlink()
+        run('Validate');run('Install');run('Restore')
+        for e in manifest['files']:
+            if e not in drivers:assert sha((roots[e['group']]/e['relative']).read_bytes())==e['before']
+        for target,data in stored:target.write_bytes(data)
+        check('before');passed.append('absent calculation drivers skip safely; core install and restore remain valid')
     # Valid hash for invalid instructions: must fail reconstruction before software writes.
     entry=manifest['files'][0];route=entry['routes'][0];patch=fixture/route['path'];data=patch.read_bytes()
     bad_data=b'CDZHD1\0'+entry['after_size'].to_bytes(8,'little')+b'\x7f'
