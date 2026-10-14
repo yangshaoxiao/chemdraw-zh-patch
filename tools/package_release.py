@@ -1,4 +1,5 @@
 """MIT: curate and verify public source/release ZIPs using explicit allowlists."""
+import argparse
 import hashlib
 import json
 import pathlib
@@ -14,11 +15,11 @@ def collect(source=False):
              '一键安装汉化.cmd','一键还原英文.cmd','检查安装环境.cmd',
              'reset_chem3d_menu_cache.ps1','重置Chem3D菜单缓存.cmd']
     if source:
-        names += ['.gitignore']
+        names += ['.gitignore','.gitattributes']
     result = [ROOT / n for n in names]
     manifest=json.loads((ROOT/'manifest.json').read_text('utf-8'))
     result += sorted({ROOT/r['path'] for e in manifest['files'] for r in e['routes']})
-    result += sorted((ROOT / 'docs').glob('*'))
+    result += sorted(p for p in (ROOT / 'docs').rglob('*') if p.is_file())
     if source:
         catalogs={'xml_catalog.json','binary_catalog.json','extra_unique.json','managed_unique.json'}
         for folder in ('tools','tests','localization'):
@@ -34,6 +35,12 @@ def collect(source=False):
 def archive(name,files):
     path = DIST / name
     prefix = 'chemdraw-zh-patch/'
+    if path.exists():
+        with zipfile.ZipFile(path) as z:
+            expected={prefix+file.relative_to(ROOT).as_posix():file for file in files}
+            if set(z.namelist())==set(expected) and not z.testzip() and all(z.read(n)==file.read_bytes() for n,file in expected.items()):
+                return path
+        raise ValueError('Existing archive differs; keep published versions immutable. Use --output-dir for a separate snapshot or publish a new version: '+path.name)
     with zipfile.ZipFile(path,'w',zipfile.ZIP_DEFLATED,compresslevel=9) as z:
         for file in files:
             z.write(file,prefix+file.relative_to(ROOT).as_posix())
@@ -47,10 +54,14 @@ def archive(name,files):
 
 
 if __name__ == '__main__':
-    DIST.mkdir(exist_ok=True)
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--output-dir',type=pathlib.Path,help='Separate directory for a new source/documentation snapshot; existing different archives are never overwritten')
+    args=parser.parse_args()
+    if args.output_dir is not None:DIST=args.output_dir.resolve()
+    DIST.mkdir(parents=True,exist_ok=True)
     paths = [archive('chemdraw-zh-patch-v%s-windows-x64.zip'%VERSION,collect()),
              archive('chemdraw-zh-patch-v%s-source.zip'%VERSION,collect(True))]
     checksums = ''.join(hashlib.sha256(p.read_bytes()).hexdigest()+'  '+p.name+'\n' for p in paths)
-    (DIST/'SHA256.txt').write_text(checksums,'utf-8')
+    (DIST/'SHA256.txt').write_bytes(checksums.encode('utf-8'))
     for p in paths:
         print(p.name,p.stat().st_size,'bytes; verified')

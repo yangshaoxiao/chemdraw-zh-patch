@@ -4,6 +4,20 @@
 
 **当前支持 ChemDraw 26.0.0.6141 x64。尚未实现整个软件全部汉化。** 没有电脑数量限制，可复制到多台已正确安装同一受支持版本的电脑使用。其他版本、Mac、缺失组件或其他补丁修改过的文件不会被视为兼容安装。
 
+## 界面样图
+
+以下为用户提供的当前界面样图；部分动态英文项仍保留。
+
+ChemDraw：
+
+![ChemDraw 中文界面与分析面板](docs/screenshots/chemdraw-zh.png)
+
+Chem3D：
+
+![Chem3D 中文菜单与工具提示](docs/screenshots/chem3d-zh.png)
+
+版本记录与后续发布方式见 [版本管理](docs/版本管理.md)。
+
 ## 安装与还原
 
 1. 下载 Releases 中的 `chemdraw-zh-patch-v0.2.4-windows-x64.zip`，完整解压到可写目录。也可以在仓库页面选择 **Code → Download ZIP**，完整解压源码包后直接运行下面的 CMD 文件。

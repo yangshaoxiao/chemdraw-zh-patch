@@ -1,0 +1,6 @@
+# Preserve exact differential-patch and screenshot bytes on every platform.
+*.cdp binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
