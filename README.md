@@ -20,7 +20,7 @@ Chem3D：
 
 ![Chem3D 中文菜单与工具提示](docs/screenshots/chem3d-zh.png)
 
-版本记录与后续发布方式见 [版本管理](docs/版本管理.md)。
+逐版本新增功能、修复和验证范围见 [完整更新记录](docs/CHANGELOG.md)；源码标签与发布方式见 [版本管理](docs/版本管理.md)。
 
 ## 图形工具（推荐）
 
