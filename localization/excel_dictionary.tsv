@@ -1,0 +1,189 @@
+New ChemOffice Worksheet	新建 ChemOffice 工作表
+Convert Worksheet	转换工作表
+Upgrade Workbook	升级工作簿
+Sync Table with ChemFinder DB	与 ChemFinder 数据库同步
+Import/Export	导入/导出
+Molecule	分子
+Structure	结构
+Search	搜索
+Convert	转换
+Options	选项
+Reactions	反应
+Reactants	反应物
+Experiments	实验
+Plates	孔板
+Highlight	高亮
+General	常规
+Combi	组合化学
+CombiChem	组合化学
+Licensing…	许可证…
+Name Molecule	分子命名
+Name Molecule(s)	分子命名
+Name All Selected Molecules	命名所有选中分子
+Edit Molecule	编辑分子
+Load Molecule	载入分子
+Add Molecule	添加分子
+Save Molecule	保存分子
+Copy Molecule	复制分子
+Paste Molecule	粘贴分子
+Cut Molecule	剪切分子
+Show Structure(s)	显示结构
+Hide Structure(s)	隐藏结构
+Resize Structure(s)	调整结构大小
+Reset Structure(s)	重置结构
+Edit Structure	编辑结构
+Clear Structure	清除结构
+Control Well	对照孔
+Compound Well	化合物孔
+Empty Well	空孔
+Show	显示
+Hide	隐藏
+Show All	全部显示
+Hide All	全部隐藏
+Select ID Column...	选择 ID 列...
+New Reaction	新建反应
+Clear Reaction Map	清除反应映射
+SDF Export Version:	SDF 导出版本:
+Include Hits	包含命中项
+Exclude Hits	排除命中项
+Toggle Visibility	切换显示
+General Options	常规选项
+Help	帮助
+Format As Formula	格式设为分子式
+Use Filename in Load Molecule	载入分子时使用文件名
+Resize	调整大小
+Export Table...	导出表格...
+Save...	保存...
+Convert SMILES to Molecule	将 SMILES 转为分子
+SMILES to Molecule	SMILES 转分子
+R-Group Analysis	R 基团分析
+R-Group Analysis...	R 基团分析...
+Add...	添加...
+Create Plate Worksheets	创建孔板工作表
+Save Column Headers As Template	将列标题另存为模板
+Convert Name to Molecule	将名称转为分子
+Name to Molecule	名称转分子
+Preferences...	首选项...
+Remove Well Assignments	移除孔分配
+Edit...	编辑...
+ChemDraw for Excel	ChemDraw Excel 加载项
+Clear	清除
+Misc	其他
+Search Type	搜索类型
+Column:	列:
+Combi Options	组合化学选项
+Search in ChemFinder. Use Import Hitlist when finished.	在 ChemFinder 中搜索，完成后导入命中列表。
+Plate Row Label:	孔板行标签:
+Cut	剪切
+Make Reactant Worksheets	创建反应物工作表
+Copy	复制
+Properties	属性
+Sheet Type	工作表类型
+Clear Searches	清除搜索
+Name All Selected...	命名所有选中项...
+Cancel	取消
+Align Structure:	结构对齐:
+General Preferences	常规首选项
+Paste	粘贴
+Search Options	搜索选项
+Select worksheet(s) to process:	选择要处理的工作表:
+Select ID column:	选择 ID 列:
+Formula Query	分子式查询
+Import Table:	导入表格:
+Show Full Reaction for each product	为每个产物显示完整反应
+Full Structure	完整结构
+Browse...	浏览...
+Molecule Structures	分子与结构
+Excel Column:	Excel 列:
+Structure Name	结构名称
+Style...	样式...
+Similarity...	相似性...
+Automatically generate structures while importing a table	导入表格时自动生成结构
+Configure	配置
+Plate Column Label:	孔板列标签:
+Copy as Microsoft Word Table	复制为 Word 表格
+Search Directly. Import is automatic.	直接搜索并自动导入。
+Copy As	复制为
+Functions	函数
+Default Style Sheet:	默认样式表:
+Delete	删除
+Name...	命名...
+ChemDraw Functions...	ChemDraw 函数...
+Similarity	相似性
+Function Name	函数名称
+Sort Results	结果排序
+Convert InChI to Molecule	将 InChI 转为分子
+InChI to Molecule	InChI 转分子
+Import Table...	导入表格...
+Sheet Name	工作表名称
+Import ChemFinder Hitlist	导入 ChemFinder 命中列表
+Browse	浏览
+Select All	全选
+Convert Upgrade Worksheets	转换及升级工作表
+OK	确定
+Normal	常规
+Map Reaction Atoms	映射反应原子
+Plate:	孔板:
+Reactant Search	反应物搜索
+Copy Structures to MS Word As:	复制到 Word 时的结构格式:
+Select Table	选择表格
+InChI Key	InChIKey
+Decrease column width if required	必要时缩小列宽
+No Properties to display	没有可显示的属性
+Resize structures and click OK when finished.	调整结构大小后单击“确定”。
+Combi Preferences	组合化学首选项
+Configure Plates	配置孔板
+Unhighlight All	取消全部高亮
+New	新建
+New Experiment	新建实验
+Reaction Atom Map	反应原子映射
+Use Default	使用默认值
+Defaults	默认值
+Highlight Related Records	高亮相关记录
+Add Instructions To Every Sheet	为每个工作表添加说明
+Load...	载入...
+Delete Plate Worksheets	删除孔板工作表
+Double Click To Add Molecule	双击添加分子
+Ask If Record Import Count Exceeds:	导入记录超过此数量时询问:
+Sub Structure	子结构
+of total {0} plates	共 {0} 块孔板
+Previous Searches	历史搜索
+Similarity Search	相似性搜索
+Assign to Wells	分配至孔
+Assign Compounds From:	化合物来源:
+Rows:	行数:
+Select Database File:	选择数据库文件:
+Select fields for matching	选择匹配字段
+Similarity Percent:	相似度百分比:
+{0} Plates	{0} 块孔板
+Done	完成
+Dont show this dialog again	不再显示此对话框
+Experiments:	实验:
+Resize Structures	调整结构大小
+Search Results:	搜索结果:
+Filter Type	筛选类型
+Choose fields to update	选择要更新的字段
+Action	操作
+To synchronize the worksheet with the database, we need to know the fields to use in matching a worksheet row to a database record.	同步前，请指定匹配工作表行与数据库记录的字段。
+Import ChemFinder List	导入 ChemFinder 列表
+Reset	重置
+Configuration Of:	配置对象:
+Experiments...	实验...
+Normal...	常规搜索...
+Ask Before Adding Molecule	添加分子前询问
+Copy All	全部复制
+Paste from a CS Table	从 CS 表格粘贴
+Search for Reactants...	搜索反应物...
+Ask Before Clearing Cells	清除单元格前询问
+Decrease row height if required	必要时缩小行高
+Import Table	导入表格
+About ChemDraw for Excel	关于 ChemDraw Excel 加载项
+Export Table	导出表格
+Sheet Progress	工作表进度
+ChemFinder Field:	ChemFinder 字段:
+Working...	处理中...
+Select ID Header	选择 ID 列标题
+Discard duplicate reactions in experiment	去除实验中的重复反应
+Please note that to make search faster the "Display in a new worksheet" option does not show structures by default. You can use the "Show Structure" command to make structures visible.	“在新工作表中显示”默认隐藏结构以加快搜索；可用“显示结构”命令显示。
+Browse Plates	浏览孔板
+Normal Search	常规搜索

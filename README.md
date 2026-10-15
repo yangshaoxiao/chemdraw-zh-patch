@@ -1,6 +1,8 @@
 # ChemDraw 简体中文扩展补丁
 
-免费、开源的 Windows ChemDraw 界面汉化工具。当前翻译覆盖 86 个文件、8341 处文字替换。v0.2.4 补充 Chem3D 计算接口的菜单、窗口标题及设置控件，保留既有汉化及安装保护功能。
+> 当前分支为 v0.2.5 开发构建，尚未发布。已公开的下载版本仍是 [v0.2.4 预发布包](https://github.com/yangshaoxiao/chemdraw-zh-patch/releases/tag/v0.2.4)。
+
+免费、开源的 Windows ChemDraw 界面汉化工具。当前翻译覆盖 87 个文件、8646 处文字替换。v0.2.5 补充 ChemOffice Excel 加载项功能区、下拉菜单及设置窗口标签，保留既有汉化及安装保护功能。
 
 **当前支持 ChemDraw 26.0.0.6141 x64。尚未实现整个软件全部汉化。** 没有电脑数量限制，可复制到多台已正确安装同一受支持版本的电脑使用。其他版本、Mac、缺失组件或其他补丁修改过的文件不会被视为兼容安装。
 
@@ -20,7 +22,7 @@ Chem3D：
 
 ## 安装与还原
 
-1. 下载 Releases 中的 `chemdraw-zh-patch-v0.2.4-windows-x64.zip`，完整解压到可写目录。也可以在仓库页面选择 **Code → Download ZIP**，完整解压源码包后直接运行下面的 CMD 文件。
+1. 下载 Releases 中的 `chemdraw-zh-patch-v0.2.5-windows-x64.zip`，完整解压到可写目录。也可以在仓库页面选择 **Code → Download ZIP**，完整解压源码包后直接运行下面的 CMD 文件。
 2. 保存文档并关闭 ChemDraw 和 Chem3D，双击 `一键安装汉化.cmd`。
 3. 安装器自动查询标准安装目录与注册表。找不到安装时，按提示粘贴含 `ChemDraw.exe` 的文件夹路径。默认数据目录来自 Windows 的 ProgramData；若数据安装在其他位置，按提示填写含 `GUI` 的数据目录。
 4. Windows 弹出管理员权限提示时选择“是”。显示全部文件校验通过后启动 ChemDraw。
@@ -49,13 +51,13 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\install.ps1 -Mode Inst
 
 ## 覆盖与局限
 
-替换次数：XML 2073、原生对话框 2230、字符串资源 2401、原生菜单 1108、ChemACX 插件 13、托管界面 139、计算接口界面 377。数字不是独立词条数或覆盖百分比。
+替换次数：XML 2073、原生对话框 2230、字符串资源 2401、原生菜单 1108、ChemACX 插件 13、托管界面 139、计算接口界面 377、ChemOffice Excel 界面 305。数字不是独立词条数或覆盖百分比。
 
 上述统计包含可选的 Chem3D；只安装 ChemDraw 时会跳过两个 Chem3D 文件，实际处理 78 个文件。
 
 仍有英文：动态生成的 Search、Add-ins 等菜单和标题、部分首选项分类与表格状态、在线插件说明、模板内部名称，以及尚未确认运行时编码的自定义资源。化学数据、外部网站和 PDF 手册未全面翻译；个别短标签仍需调整布局。
 
-真实机器先前已完成 v0.2 的启动/部分窗口检查，以及 2026-10-13 的 Analysis 初版布局检查。本次进一步修改的布局、Chem3D 窗口和新增菜单尚未做完整人工检查；v0.2.4 安装与还原采用隔离目录测试，结果见 `docs/verification_report.json`。尚未进行全部绘图、计算、打印、云服务和模块回归测试。
+真实机器先前已完成 v0.2 的启动/部分窗口检查，以及 2026-10-13 的 Analysis 初版布局检查。本次进一步修改的布局、Chem3D 窗口和新增菜单尚未做完整人工检查；v0.2.5 安装与还原采用隔离目录测试，结果见 `docs/verification_report.json`。尚未进行全部绘图、计算、打印、云服务和模块回归测试。
 
 ## 开源与开发
 
@@ -63,10 +65,16 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\install.ps1 -Mode Inst
 
 开发流程见 [docs/开发与发布.md](docs/开发与发布.md)，GitHub 上传步骤见 [docs/GitHub上传步骤.md](docs/GitHub上传步骤.md)。欢迎提交界面翻译修正、兼容版本测试及控件布局改进。
 
-## v0.2.4 验证范围与已知限制
+## v0.2.4 既有验证范围与已知限制
 
-- 本机已安装并校验全部 86 个文件，实际菜单中的“计算性质”和 CONFLEX、GAMESS、Gaussian、MOPAC、AutoDock“接口”名称显示中文。
+- 此前 v0.2.4 在本机已安装并校验全部 86 个文件，实际菜单中的“计算性质”和 CONFLEX、GAMESS、Gaussian、MOPAC、AutoDock“接口”名称显示中文。
 - 计算窗口的控件文字完成静态资源及引用检查；没有逐一检查全部窗口，也没有运行第三方计算引擎做完整功能回归。
 - `Buy Online or Learn More`、`About` 等动态子菜单项暂保留英文，后续再处理。
 - Chem3D 计算菜单使用旧式 ANSI 接口，当前构建要求 Windows ANSI 代码页 936。安装器检查此要求，不兼容时停止安装；还原英文不受此限制。不修改系统区域设置。
 - 没有电脑数量限制，但每台电脑都必须满足版本、文件状态及编码要求。
+
+## ChemOffice Excel 汉化（v0.2.5）
+
+新增 Excel 加载项 305 处界面翻译，保持原有 86 个模块字节不变。品牌名 ChemOffice、ChemFinder、SMILES、InChI 等保留。加载项的功能区 XML、命令 ID、回调、字段名称及工作簿公式不变。
+
+安装或还原前请保存全部工作簿并完全退出 Excel；缺少加载项时自动跳过，只接受经核验的 AddIn 文件版本/哈希。3 个资源容量不足的通用按钮文字暂保留英文。当前构建的安装与实际界面检查状态见 [Excel 检查记录](docs/excel_report.json)。

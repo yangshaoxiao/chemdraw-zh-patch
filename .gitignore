@@ -28,3 +28,6 @@ config.local.json
 
 localization/calculation_string_uses.json
 localization/calculation_translation_audit.json
+
+localization/excel_string_uses.json
+localization/excel_translation_audit.json

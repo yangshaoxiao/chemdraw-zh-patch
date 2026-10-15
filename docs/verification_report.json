@@ -1,9 +1,10 @@
 {
-  "checked_at": "2026-10-14",
-  "patch": "0.2.4",
-  "files": 86,
+  "checked_at": "2026-10-15",
+  "patch": "0.2.5",
+  "files": 87,
   "passed": [
     "custom Unicode and space paths; full reconstruction preflight",
+    "Excel running blocks pending add-in writes while read-only validate remains allowed",
     "install all manifest files using local source plus deltas",
     "idempotent install",
     "restore English through reverse deltas",
@@ -15,24 +16,16 @@
     "reject delta path traversal",
     "reject duplicate destinations",
     "reject wrong software version",
-    "upgrade known v0.1 states through two differential routes",
-    "restore English after v0.1 upgrade",
     "upgrade prior v0.2/v0.2.1 state to current manifest",
     "restore English after analysis-layout upgrade",
     "partial transaction rollback restores all before hashes",
     "ChemDraw-only installation skips absent Chem3D and restores all core files",
     "reject incomplete Chem3D installation before writes",
     "absent calculation drivers skip safely; core install and restore remain valid",
+    "absent ChemOffice Excel add-in skips safely and core restore remains valid",
     "reject invalid delta opcode before software writes"
   ],
   "fixture_scope": "isolated custom Unicode/space paths; no production file writes",
   "production_files_changed": false,
-  "version": "26.0.0.6141",
-  "final_encoding_adjustment_checks": {
-    "unit_tests": 17,
-    "installed_hashes": 86,
-    "forward_reverse_delta_roundtrips": 172,
-    "incompatible_code_page_guard": "simulated CP1252 rejected before writes; isolated fixture hashes unchanged"
-  },
-  "control_flow_scope": "21 installer checks completed before final wire-encoding adjustment; final bytes separately checked by round trips, live install and menu observation."
+  "version": "26.0.0.6141"
 }

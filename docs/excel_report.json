@@ -1,0 +1,39 @@
+{
+  "patch": "0.2.5",
+  "checked_at": "2026-10-15",
+  "module": "CambridgeSoft.ChemOffice.ChemDrawExcel.AddIn.dll",
+  "module_file_version": "26.0.0.0",
+  "source_sha256": "227420b860810c5fae02b5646689ccc102f4c4f56be8c37599c5eedfde2b64f2",
+  "target_sha256": "5feb65edda9511603899f817cd191db68925999455535617c0a922c1a6d57190",
+  "ui_changes": 305,
+  "deferred": [
+    {
+      "key": "BaseCancelButton.Text",
+      "source": "&Cancel",
+      "reason": "deferred_insufficient_resource_capacity"
+    },
+    {
+      "key": "BaseHelp.Text",
+      "source": "&Help",
+      "reason": "deferred_insufficient_resource_capacity"
+    },
+    {
+      "key": "BaseOKButton.Text",
+      "source": "&OK",
+      "reason": "deferred_insufficient_resource_capacity"
+    }
+  ],
+  "windows_resource_reader_keys_verified": 550,
+  "ribbon_xml_unchanged": true,
+  "non_ui_resource_values_unchanged": true,
+  "existing_86_modules_unchanged": true,
+  "unit_checks": 22,
+  "runtime": "Pending saved/closed Excel, installation and actual UI inspection",
+  "limitations": [
+    "Three generic base-dialog captions retained because the original resource stream cannot safely fit the longer translations",
+    "No spreadsheet data, formulas, worksheet field schemas or chemical computation keywords changed",
+    "Only supported AddIn file hash accepted; missing add-in skipped"
+  ],
+  "installer_checks_passed": 21,
+  "production_preflight": "Passed read-only Validate for all 87 files; no installed file writes"
+}

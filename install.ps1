@@ -96,6 +96,8 @@ function Check-Package($manifest,$roots) {
                 if (-not $chem3dPresent.Count) { continue }
             } elseif ($entry.optional_component -eq 'chem3d_driver' -and $entry.relative -in $driverNames) {
                 if (-not (Test-Path -LiteralPath $target -PathType Leaf)) { continue }
+            } elseif ($entry.optional_component -eq 'chemoffice_excel' -and $entry.relative -eq 'CambridgeSoft.ChemOffice.ChemDrawExcel.AddIn.dll') {
+                if (-not (Test-Path -LiteralPath $target -PathType Leaf)) { continue }
             } else { throw '未知可选组件。' }
         }
         if (-not (Test-Path -LiteralPath $target -PathType Leaf)) { throw "目标文件缺失：$target" }
@@ -146,6 +148,8 @@ try {
     }
     if ($Mode -ne 'Validate' -and $pending.Count) {
         if (Get-Process -Name 'ChemDraw','ChemDraw64','ChemDrawCtl','CAWPROP','Chem3D' -ErrorAction SilentlyContinue) { throw '请保存文档并退出 ChemDraw、Chem3D 和化学性质窗口。' }
+        $excelPending = @($pending | Where-Object { $_.Entry.optional_component -eq 'chemoffice_excel' })
+        if ($excelPending.Count -and (Get-Process -Name 'EXCEL' -ErrorAction SilentlyContinue)) { throw '请先保存全部 Excel 工作簿并完全退出 Excel，再安装或还原 ChemOffice Excel 汉化。' }
         $admin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
         if (-not $admin -and -not $Elevated) {
             Write-Host '预检查通过，请在 Windows 管理员权限提示中选择“是”。'

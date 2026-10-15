@@ -1,6 +1,6 @@
 # 上传 GitHub 开源共享
 
-只上传 `github开源版` 这个整理后的目录，或解压 `chemdraw-zh-patch-v0.2.4-source.zip` 后的 `chemdraw-zh-patch` 目录。不要上传上一级原项目或旧完整发布包。
+只上传 `github开源版` 这个整理后的目录，或解压 `chemdraw-zh-patch-v0.2.5-source.zip` 后的 `chemdraw-zh-patch` 目录。不要上传上一级原项目或旧完整发布包。
 
 ## 网页上传
 
@@ -19,7 +19,7 @@
 git init -b main
 git add .
 git status --short
-git commit -m "Release ChemDraw Chinese patch tools v0.2.4"
+git commit -m "Release ChemDraw Chinese patch tools v0.2.5"
 git remote add origin https://github.com/你的用户名/chemdraw-zh-patch.git
 git push -u origin main
 ```
@@ -29,9 +29,9 @@ git push -u origin main
 ## 发布下载包
 
 1. 在仓库页面进入 **Releases → Draft a new release**。
-2. 新建 tag `v0.2.4`，标题 `v0.2.4 - 通用差分汉化补丁`。
+2. 新建 tag `v0.2.5`，标题 `v0.2.5 - 通用差分汉化补丁`。
 3. 说明支持版本 `26.0.0.6141 x64`、免费 MIT 项目代码、尚未全部汉化，并列出测试范围。
-4. 上传 `chemdraw-zh-patch-v0.2.4-windows-x64.zip` 和 `SHA256.txt` 作为附件。
+4. 上传 `chemdraw-zh-patch-v0.2.5-windows-x64.zip` 和 `SHA256.txt` 作为附件。
 5. 当前尚未完成全部功能回归，建议勾选 **This is a pre-release**，检查附件后发布。
 
 源码仓库与下载包分开：仓库放可审阅源码与差分；Releases 放完整解压即可运行的 CMD 安装包。未指定你的 GitHub 仓库地址和登录账户前，本地准备不会自动向网上发布。

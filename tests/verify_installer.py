@@ -25,6 +25,9 @@ def verify(package,legacy_package=None,previous_package=None):
     guard="if (Get-Process -Name 'ChemDraw','ChemDraw64','ChemDrawCtl','CAWPROP','Chem3D' -ErrorAction SilentlyContinue)"
     assert guard in script
     script=script.replace(guard,'if ($false)')
+    excel_guard="if ($excelPending.Count -and (Get-Process -Name 'EXCEL' -ErrorAction SilentlyContinue))"
+    assert excel_guard in script
+    script=script.replace(excel_guard,'if ($false)')
     root_assignment="$roots = @{bin=$BinPath; data=$DataPath; gui=(Join-Path $DataPath 'GUI')}"
     assert root_assignment in script
     boundary=str(fixture)+'\\'
@@ -63,6 +66,12 @@ def verify(package,legacy_package=None,previous_package=None):
         for entry in manifest['files']:
             assert sha((roots[entry['group']]/entry['relative']).read_bytes())==entry[state],entry['relative']
     run('Validate');check('before');passed.append('custom Unicode and space paths; full reconstruction preflight')
+    if any(e.get('optional_component')=='chemoffice_excel' for e in manifest['files']):
+        marker="if ($false) { throw '请先保存全部 Excel 工作簿并完全退出 Excel，再安装或还原 ChemOffice Excel 汉化。' }"
+        assert marker in script
+        simulated=script.replace(marker,marker.replace('if ($false)','if ($excelPending.Count)'))
+        write_script(simulated);run('Install',False);check('before');run('Validate');check('before');write_script()
+        passed.append('Excel running blocks pending add-in writes while read-only validate remains allowed')
     run('Install');check('after');passed.append('install all manifest files using local source plus deltas')
     run('Install');check('after');passed.append('idempotent install')
     run('Restore');check('before');passed.append('restore English through reverse deltas')
@@ -143,6 +152,16 @@ def verify(package,legacy_package=None,previous_package=None):
             if e not in drivers:assert sha((roots[e['group']]/e['relative']).read_bytes())==e['before']
         for target,data in stored:target.write_bytes(data)
         check('before');passed.append('absent calculation drivers skip safely; core install and restore remain valid')
+    excel_entries=[e for e in manifest['files'] if e.get('optional_component')=='chemoffice_excel']
+    if excel_entries:
+        stored=[]
+        for e in excel_entries:
+            target=roots[e['group']]/e['relative'];stored.append((target,target.read_bytes()));target.unlink()
+        run('Validate');run('Install');run('Restore')
+        for e in manifest['files']:
+            if e not in excel_entries:assert sha((roots[e['group']]/e['relative']).read_bytes())==e['before']
+        for target,data in stored:target.write_bytes(data)
+        check('before');passed.append('absent ChemOffice Excel add-in skips safely and core restore remains valid')
     # Valid hash for invalid instructions: must fail reconstruction before software writes.
     entry=manifest['files'][0];route=entry['routes'][0];patch=fixture/route['path'];data=patch.read_bytes()
     bad_data=b'CDZHD1\0'+entry['after_size'].to_bytes(8,'little')+b'\x7f'
@@ -150,7 +169,7 @@ def verify(package,legacy_package=None,previous_package=None):
     bad=json.loads(json.dumps(manifest));r=bad['files'][0]['routes'][0];r['size']=len(bad_data);r['sha256']=sha(bad_data)
     write_manifest(bad);run('Install',False);check('before');patch.write_bytes(data);write_manifest()
     passed.append('reject invalid delta opcode before software writes')
-    report={'checked_at':'2026-10-14','patch':manifest['patch'],'files':len(manifest['files']),'passed':passed,
+    report={'checked_at':'2026-10-15','patch':manifest['patch'],'files':len(manifest['files']),'passed':passed,
             'fixture_scope':'isolated custom Unicode/space paths; no production file writes',
             'production_files_changed':False,'version':manifest['version']}
     (ROOT/'docs'/'verification_report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),'utf-8')

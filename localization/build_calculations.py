@@ -20,13 +20,15 @@ def compressed(n):
     if n<128:return bytes([n])
     if n<16384:return bytes([128|(n>>8),n&255])
     return bytes([192|(n>>24),(n>>16)&255,(n>>8)&255,n&255])
-def patch(original,refs):
+def patch(original,refs,resource_selector=None,text_translator=None,skip_oversized_resources=False):
+    tr=text_translator or translate
+    selected=resource_selector or (lambda key: key.endswith('.Text') or key.endswith('.ToolTip') or key in MENU_KEYS)
     b=bytearray(original);changes=[];audit=[];holes=[];deferred=[]
     rows=list(user_strings(original));heap=rows[0][3]-1
     by=collections.defaultdict(list)
     for r in refs:by[r['Text']].append(r)
     for pos,n,s,start in rows:
-        t=translate(s);uses=by[s];safe=[r for r in uses if ui_reference(r)]
+        t=tr(s);uses=by[s];safe=[r for r in uses if ui_reference(r)]
         if t==s or not safe or len(s.strip())<=1:continue
         wire=[r for r in safe if r['Type'].endswith('.Driver') and r['Method']=='get_Name']
         normal=[r for r in safe if r not in wire]
@@ -50,6 +52,7 @@ def patch(original,refs):
         audit.append(dict(source=s,target=t,kind='CLR UI operand only',start=at,end=at+len(rep)))
     values={a-1:(key,source) for key,source,a,z,*_ in string_records(original)}
     for data,end,entries in resource_sets(original):
+        audit_start=len(audit)
         starts=sorted(set(at for key,q,at in entries));limits=dict(zip(starts,starts[1:]+[end]))
         packed=bytearray();offsets={};modified=False
         for at in starts:
@@ -57,7 +60,7 @@ def patch(original,refs):
             source_info=values.get(at)
             if source_info:
                 key,source=source_info
-                target=translate(source) if (key.endswith('.Text') or key.endswith('.ToolTip') or key in MENU_KEYS) and len(source.strip())>1 else source
+                target=tr(source) if selected(key) and len(source.strip())>1 else source
                 assert tokens(source)==tokens(target)
                 encoded=target.encode('utf-8');block=b'\x01'+write7(len(encoded))+encoded
                 if target!=source:
@@ -65,7 +68,12 @@ def patch(original,refs):
                 packed.extend(block)
             else:packed.extend(original[at:limits[at]])
         if not modified:continue
-        if len(packed)>end-data:raise ValueError(('Resource UI data exceeds original stream',end-data,len(packed)))
+        if len(packed)>end-data:
+            if skip_oversized_resources:
+                pending=audit[audit_start:];del audit[audit_start:]
+                audit.extend(dict(row,status='deferred_insufficient_resource_capacity') for row in pending)
+                continue
+            raise ValueError(('Resource UI data exceeds original stream',end-data,len(packed)))
         b[data:end]=packed+b'\0'*(end-data-len(packed));changes.append((data,end))
         for key,q,at in entries:
             struct.pack_into('<I',b,q,offsets[at]-data);changes.append((q,q+4))
@@ -74,7 +82,7 @@ def patch(original,refs):
     assert bytes(masked)==original and len(b)==len(original)
     # Parsing must still recover identical names and every unaffected value.
     before=list(string_values(original));after=list(string_values(b));assert len(before)==len(after)
-    for old,new in zip(before,after):assert old[0]==new[0] and (new[1]==old[1] or new[1]==translate(old[1]))
+    for old,new in zip(before,after):assert old[0]==new[0] and (new[1]==old[1] or new[1]==tr(old[1]))
     return bytes(b),audit
 if __name__=='__main__':
     refs=json.loads((HERE/'calculation_string_uses.json').read_text('utf-8-sig'))

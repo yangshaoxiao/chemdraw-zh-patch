@@ -42,6 +42,8 @@ def export(package, output, legacy_package=None, previous_packages=(), patch_ver
             item['optional_component']='chem3d'
         if entry['group']=='bin' and entry.get('kind')=='reviewed_calculation_ui':
             item['optional_component']='chem3d_driver'
+        if entry['group']=='bin' and entry.get('kind')=='reviewed_excel_ui':
+            item['optional_component']='chemoffice_excel'
         item['before_size'], item['after_size'] = len(before), len(after)
         item['routes'] = []
         pairs = [('install', before, after), ('restore', after, before)]

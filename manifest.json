@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "patch": "0.2.4",
+  "patch": "0.2.5",
   "version": "26.0.0.6141",
   "architecture": "x64",
   "statistics": {
@@ -10,7 +10,8 @@
     "addin": 13,
     "menu": 1108,
     "managed_ui_strings": 139,
-    "calculation_ui_strings": 377
+    "calculation_ui_strings": 377,
+    "excel_ui_strings": 305
   },
   "files": [
     {
@@ -38,7 +39,7 @@
         {
           "source": "7090f4f30bad2d551a54c176f3744714b10d6519851bda99236ecd3ceb28d233",
           "target": "8caee6899b770f889ad6fc2931d1d9fcfd6a98d090ea71462f50496f7fbd6770",
-          "path": "patches/000-legacy-to-original.cdp",
+          "path": "patches/000-compatible-7090f4f30bad2d551a54c176f3744714b10d6519851bda99236ecd3ceb28d233-to-original.cdp",
           "sha256": "c3ced7c4747eacc321c9cfbdb40c1f48dde44dd8b3c7e74f70f27c9b35190e06",
           "size": 277
         }
@@ -69,7 +70,7 @@
         {
           "source": "3c384277ea0a6354cc53967f1bb0ed7b87bc7cd560796d74adf07ce6baa99f55",
           "target": "64c0fd411e98ee7cf98010a8f9c330bf2a1d9aa1a59a6953b8e4e2530786f1c6",
-          "path": "patches/001-legacy-to-original.cdp",
+          "path": "patches/001-compatible-3c384277ea0a6354cc53967f1bb0ed7b87bc7cd560796d74adf07ce6baa99f55-to-original.cdp",
           "sha256": "6b95c6df73a1c8f4e5c6a1ccf906932a69c229ff7f90f8191d8ccb0f1e16638d",
           "size": 277
         }
@@ -100,7 +101,7 @@
         {
           "source": "03d9ff6fea561a7938f786b3031e58c8dfa57d97bba39f5cf26a835f70f3fd9d",
           "target": "d006ecf318e5b8277616dbe44ce1ff867d033654e55e416d45bf80f12c648f78",
-          "path": "patches/002-legacy-to-original.cdp",
+          "path": "patches/002-compatible-03d9ff6fea561a7938f786b3031e58c8dfa57d97bba39f5cf26a835f70f3fd9d-to-original.cdp",
           "sha256": "3ffaa08a5776081b05438e3253ea0b1fa20050df3b9f368f91140584c0f8d295",
           "size": 260
         }
@@ -131,14 +132,14 @@
         {
           "source": "8d67eb22671cb0191ad5eab61ecf9625b3e71ddc2fe2aa6b4da97491a80c1427",
           "target": "4da8ed77e9b9569e4825835110deff6d0425b14ed8827ab849716255a4dd1b19",
-          "path": "patches/003-legacy-to-original.cdp",
+          "path": "patches/003-compatible-8d67eb22671cb0191ad5eab61ecf9625b3e71ddc2fe2aa6b4da97491a80c1427-to-original.cdp",
           "sha256": "6edc24f4ee2b6f8d0493196d5c2b9329c15638964b34bc71137041db6b4e0e1f",
           "size": 580
         },
         {
           "source": "aab3537827ffeb03b26f898925229765d69817161dcb033b6bc299a58a98490f",
           "target": "4da8ed77e9b9569e4825835110deff6d0425b14ed8827ab849716255a4dd1b19",
-          "path": "patches/003-previous-3-to-original.cdp",
+          "path": "patches/003-compatible-aab3537827ffeb03b26f898925229765d69817161dcb033b6bc299a58a98490f-to-original.cdp",
           "sha256": "62f3714653f8555e0067a1ac2150d3cdf088485508418b003b35e4e0e163637a",
           "size": 798
         }
@@ -193,7 +194,7 @@
         {
           "source": "8cd5b8706e1b6d45516fbb1c2b188a87dfb3d37fd10390d579faf4e96ce1e546",
           "target": "3004c21da23f7909093ba8659db79c32f9fc767c559b7a9f6ca800df62d81ab5",
-          "path": "patches/005-legacy-to-original.cdp",
+          "path": "patches/005-compatible-8cd5b8706e1b6d45516fbb1c2b188a87dfb3d37fd10390d579faf4e96ce1e546-to-original.cdp",
           "sha256": "14d20672f30149a7e8e8bdff456b12d3dc6db57937aa39a7771c9099211b6f6c",
           "size": 460
         }
@@ -224,14 +225,14 @@
         {
           "source": "85e6d4109abeda6cc69fb553fb678b4034ab8c9ce2ce07e0d2daef9cd7b88ec1",
           "target": "04904f00500564cb1be5135181c92381e87fad60a6e21fc69f9a9dbd79645ec9",
-          "path": "patches/006-legacy-to-original.cdp",
+          "path": "patches/006-compatible-85e6d4109abeda6cc69fb553fb678b4034ab8c9ce2ce07e0d2daef9cd7b88ec1-to-original.cdp",
           "sha256": "c14a27ae1b4adec17039f1745e1b5d6b8a7355497c3ccef089bd8b3204a87d6a",
           "size": 191
         },
         {
           "source": "adabd175730f35e168840522b9b67202cb6b82d287e884377baaa98e9e6edf4f",
           "target": "04904f00500564cb1be5135181c92381e87fad60a6e21fc69f9a9dbd79645ec9",
-          "path": "patches/006-previous-3-to-original.cdp",
+          "path": "patches/006-compatible-adabd175730f35e168840522b9b67202cb6b82d287e884377baaa98e9e6edf4f-to-original.cdp",
           "sha256": "3d4741ce53f424b8fe23b2b3ffacf9a00f834ba03450af55f36b3ef4e4e1f75b",
           "size": 313
         }
@@ -262,7 +263,7 @@
         {
           "source": "461f2977a288bfad77fd057584c456e057d27350b4a8e6141959087f8313fec7",
           "target": "557403fe075e214033ce77588c44e8db0f5ecb25bf8f35648f4f7c145214ee6b",
-          "path": "patches/007-legacy-to-original.cdp",
+          "path": "patches/007-compatible-461f2977a288bfad77fd057584c456e057d27350b4a8e6141959087f8313fec7-to-original.cdp",
           "sha256": "71210ad733459ad796922ea61e9139537d2ed37a6f7ce346a5bc5dca39ac9f36",
           "size": 252
         }
@@ -293,7 +294,7 @@
         {
           "source": "bdb72244919586a1d41814d689b3beae7cd93690b3c47a7814d194c497f438bb",
           "target": "c4a070b1771fdd76aed25af140e669566637aab211d14fc1fa7da690a7b0b193",
-          "path": "patches/008-legacy-to-original.cdp",
+          "path": "patches/008-compatible-bdb72244919586a1d41814d689b3beae7cd93690b3c47a7814d194c497f438bb-to-original.cdp",
           "sha256": "9aae03395eda0872628918d29c2bab507487996a89d7944e32206d3ecfa30b0e",
           "size": 277
         }
@@ -324,7 +325,7 @@
         {
           "source": "567c1fada636267a325e996b53b11399fad8e425009527e18df77c744d5b81b2",
           "target": "162730fff28df865082a0d902792e6c2b4cdb42da3718c3b499f3b0ef4ad6166",
-          "path": "patches/009-legacy-to-original.cdp",
+          "path": "patches/009-compatible-567c1fada636267a325e996b53b11399fad8e425009527e18df77c744d5b81b2-to-original.cdp",
           "sha256": "9aae03395eda0872628918d29c2bab507487996a89d7944e32206d3ecfa30b0e",
           "size": 277
         }
@@ -355,7 +356,7 @@
         {
           "source": "03d9ff6fea561a7938f786b3031e58c8dfa57d97bba39f5cf26a835f70f3fd9d",
           "target": "d006ecf318e5b8277616dbe44ce1ff867d033654e55e416d45bf80f12c648f78",
-          "path": "patches/010-legacy-to-original.cdp",
+          "path": "patches/010-compatible-03d9ff6fea561a7938f786b3031e58c8dfa57d97bba39f5cf26a835f70f3fd9d-to-original.cdp",
           "sha256": "3ffaa08a5776081b05438e3253ea0b1fa20050df3b9f368f91140584c0f8d295",
           "size": 260
         }
@@ -386,14 +387,14 @@
         {
           "source": "6ddd09d53b3f364f1626bcbb57a220473677e542a514d499773e2cd6c26ae1ba",
           "target": "ee454e807414382408f2ff793065310dfcafd20c3a25e80e4a07ecadf527c9ef",
-          "path": "patches/011-legacy-to-original.cdp",
+          "path": "patches/011-compatible-6ddd09d53b3f364f1626bcbb57a220473677e542a514d499773e2cd6c26ae1ba-to-original.cdp",
           "sha256": "8b02ee637519edbd873d89ec0ffad5043ba552d0cb8250a8629b6b6ecb35a157",
           "size": 658
         },
         {
           "source": "8c335ba854becf65da35fe80edacf712c2e2165e20c055346a1915bd0fa3696e",
           "target": "ee454e807414382408f2ff793065310dfcafd20c3a25e80e4a07ecadf527c9ef",
-          "path": "patches/011-previous-3-to-original.cdp",
+          "path": "patches/011-compatible-8c335ba854becf65da35fe80edacf712c2e2165e20c055346a1915bd0fa3696e-to-original.cdp",
           "sha256": "579a1277cf847a03387416c803227c583e1d9053017f15bbb8c10c43e2f1e009",
           "size": 842
         }
@@ -448,7 +449,7 @@
         {
           "source": "8cd5b8706e1b6d45516fbb1c2b188a87dfb3d37fd10390d579faf4e96ce1e546",
           "target": "3004c21da23f7909093ba8659db79c32f9fc767c559b7a9f6ca800df62d81ab5",
-          "path": "patches/013-legacy-to-original.cdp",
+          "path": "patches/013-compatible-8cd5b8706e1b6d45516fbb1c2b188a87dfb3d37fd10390d579faf4e96ce1e546-to-original.cdp",
           "sha256": "14d20672f30149a7e8e8bdff456b12d3dc6db57937aa39a7771c9099211b6f6c",
           "size": 460
         }
@@ -479,7 +480,7 @@
         {
           "source": "c530447ba93e64edc5ebf2011f35a84c73a8ac522bcdd551c62b8c5f3882a1f8",
           "target": "cb00643ed208414c253831f4c84a7fa113bd6eec18703ac0fafcefb4140a6386",
-          "path": "patches/014-legacy-to-original.cdp",
+          "path": "patches/014-compatible-c530447ba93e64edc5ebf2011f35a84c73a8ac522bcdd551c62b8c5f3882a1f8-to-original.cdp",
           "sha256": "031d34b32d97076880612a039dad6eecb3e6362a8a123b7a8cfa9cd6359419e0",
           "size": 278
         }
@@ -510,14 +511,14 @@
         {
           "source": "85e6d4109abeda6cc69fb553fb678b4034ab8c9ce2ce07e0d2daef9cd7b88ec1",
           "target": "04904f00500564cb1be5135181c92381e87fad60a6e21fc69f9a9dbd79645ec9",
-          "path": "patches/015-legacy-to-original.cdp",
+          "path": "patches/015-compatible-85e6d4109abeda6cc69fb553fb678b4034ab8c9ce2ce07e0d2daef9cd7b88ec1-to-original.cdp",
           "sha256": "c14a27ae1b4adec17039f1745e1b5d6b8a7355497c3ccef089bd8b3204a87d6a",
           "size": 191
         },
         {
           "source": "adabd175730f35e168840522b9b67202cb6b82d287e884377baaa98e9e6edf4f",
           "target": "04904f00500564cb1be5135181c92381e87fad60a6e21fc69f9a9dbd79645ec9",
-          "path": "patches/015-previous-3-to-original.cdp",
+          "path": "patches/015-compatible-adabd175730f35e168840522b9b67202cb6b82d287e884377baaa98e9e6edf4f-to-original.cdp",
           "sha256": "3d4741ce53f424b8fe23b2b3ffacf9a00f834ba03450af55f36b3ef4e4e1f75b",
           "size": 313
         }
@@ -548,7 +549,7 @@
         {
           "source": "461f2977a288bfad77fd057584c456e057d27350b4a8e6141959087f8313fec7",
           "target": "557403fe075e214033ce77588c44e8db0f5ecb25bf8f35648f4f7c145214ee6b",
-          "path": "patches/016-legacy-to-original.cdp",
+          "path": "patches/016-compatible-461f2977a288bfad77fd057584c456e057d27350b4a8e6141959087f8313fec7-to-original.cdp",
           "sha256": "71210ad733459ad796922ea61e9139537d2ed37a6f7ce346a5bc5dca39ac9f36",
           "size": 252
         }
@@ -579,7 +580,7 @@
         {
           "source": "bdb72244919586a1d41814d689b3beae7cd93690b3c47a7814d194c497f438bb",
           "target": "c4a070b1771fdd76aed25af140e669566637aab211d14fc1fa7da690a7b0b193",
-          "path": "patches/017-legacy-to-original.cdp",
+          "path": "patches/017-compatible-bdb72244919586a1d41814d689b3beae7cd93690b3c47a7814d194c497f438bb-to-original.cdp",
           "sha256": "9aae03395eda0872628918d29c2bab507487996a89d7944e32206d3ecfa30b0e",
           "size": 277
         }
@@ -610,7 +611,7 @@
         {
           "source": "567c1fada636267a325e996b53b11399fad8e425009527e18df77c744d5b81b2",
           "target": "162730fff28df865082a0d902792e6c2b4cdb42da3718c3b499f3b0ef4ad6166",
-          "path": "patches/018-legacy-to-original.cdp",
+          "path": "patches/018-compatible-567c1fada636267a325e996b53b11399fad8e425009527e18df77c744d5b81b2-to-original.cdp",
           "sha256": "9aae03395eda0872628918d29c2bab507487996a89d7944e32206d3ecfa30b0e",
           "size": 277
         }
@@ -641,7 +642,7 @@
         {
           "source": "50519e622a648d4c31bac4b98a643da1240e7f31fcd95ffc8e3927a2c7e8bc99",
           "target": "3461dde34eab83756cce644dacc6c3d2641cc2b74563ebd60718fd3dff20ac8a",
-          "path": "patches/019-legacy-to-original.cdp",
+          "path": "patches/019-compatible-50519e622a648d4c31bac4b98a643da1240e7f31fcd95ffc8e3927a2c7e8bc99-to-original.cdp",
           "sha256": "13279f32213d12b6a72e320e1c8fe311cf5f50dc9d3807ed4045f115c4553c86",
           "size": 358
         }
@@ -672,7 +673,7 @@
         {
           "source": "5c7e222af7caa69e08ae6e360687e1154fe564247c940e7e76a14d3d638250a9",
           "target": "d2d63de6436f77c31d7d2dc716fc87453e469253007b9a0ce632d8ee0ed79636",
-          "path": "patches/020-legacy-to-original.cdp",
+          "path": "patches/020-compatible-5c7e222af7caa69e08ae6e360687e1154fe564247c940e7e76a14d3d638250a9-to-original.cdp",
           "sha256": "322d6976f031f910f963a327588df9bf2d3de5fc9d883d3225f7e75b38e264a9",
           "size": 1031
         }
@@ -727,7 +728,7 @@
         {
           "source": "c530447ba93e64edc5ebf2011f35a84c73a8ac522bcdd551c62b8c5f3882a1f8",
           "target": "cb00643ed208414c253831f4c84a7fa113bd6eec18703ac0fafcefb4140a6386",
-          "path": "patches/022-legacy-to-original.cdp",
+          "path": "patches/022-compatible-c530447ba93e64edc5ebf2011f35a84c73a8ac522bcdd551c62b8c5f3882a1f8-to-original.cdp",
           "sha256": "031d34b32d97076880612a039dad6eecb3e6362a8a123b7a8cfa9cd6359419e0",
           "size": 278
         }
@@ -758,7 +759,7 @@
         {
           "source": "072cece5dc0c3fe0e64e4500334fa182d92bf04d75a1be5b2d9b105a4fcf12ff",
           "target": "03afa143529472e04a25e1e5142f894abc60bdafe12264871aef0eb561a34727",
-          "path": "patches/023-legacy-to-original.cdp",
+          "path": "patches/023-compatible-072cece5dc0c3fe0e64e4500334fa182d92bf04d75a1be5b2d9b105a4fcf12ff-to-original.cdp",
           "sha256": "22bd134a54af6d1635dea82e9f546902a5a8c3d6cee239ffc4141f2111b0f4c4",
           "size": 269
         }
@@ -789,7 +790,7 @@
         {
           "source": "3c384277ea0a6354cc53967f1bb0ed7b87bc7cd560796d74adf07ce6baa99f55",
           "target": "d7a752f53d395189a909fe0d9a3b2542387bddc097eb07e3222fba952ec14631",
-          "path": "patches/024-legacy-to-original.cdp",
+          "path": "patches/024-compatible-3c384277ea0a6354cc53967f1bb0ed7b87bc7cd560796d74adf07ce6baa99f55-to-original.cdp",
           "sha256": "22bd134a54af6d1635dea82e9f546902a5a8c3d6cee239ffc4141f2111b0f4c4",
           "size": 269
         }
@@ -820,7 +821,7 @@
         {
           "source": "50519e622a648d4c31bac4b98a643da1240e7f31fcd95ffc8e3927a2c7e8bc99",
           "target": "3461dde34eab83756cce644dacc6c3d2641cc2b74563ebd60718fd3dff20ac8a",
-          "path": "patches/025-legacy-to-original.cdp",
+          "path": "patches/025-compatible-50519e622a648d4c31bac4b98a643da1240e7f31fcd95ffc8e3927a2c7e8bc99-to-original.cdp",
           "sha256": "13279f32213d12b6a72e320e1c8fe311cf5f50dc9d3807ed4045f115c4553c86",
           "size": 358
         }
@@ -851,7 +852,7 @@
         {
           "source": "2226ce464a1a0b21cbc90a46a305eb28671f09d1c48dfa1ae01f12f7fc276645",
           "target": "82b7ea1c299080f5fde31929a74de5979ff4143c6d9a0f27ec814429defed8e9",
-          "path": "patches/026-legacy-to-original.cdp",
+          "path": "patches/026-compatible-2226ce464a1a0b21cbc90a46a305eb28671f09d1c48dfa1ae01f12f7fc276645-to-original.cdp",
           "sha256": "0ef1b149a8b17bedb9f7ba346970690ced7fbb86a25957d3de8499725aa9b5b9",
           "size": 1115
         },
@@ -937,7 +938,7 @@
         {
           "source": "7788c0adbd5a8150b5406d1f75ec5a2dd2d516bc78e95cc2b153ac49faafebdf",
           "target": "b603b44bc2d3c968c0ff15e11546d5f4e1b574363ca667cd2e3e2fecb6b85f9e",
-          "path": "patches/029-legacy-to-original.cdp",
+          "path": "patches/029-compatible-7788c0adbd5a8150b5406d1f75ec5a2dd2d516bc78e95cc2b153ac49faafebdf-to-original.cdp",
           "sha256": "065ea17230b50094ee8a9e019050502055b4fe90514b428a104b15198cef6c93",
           "size": 410
         }
@@ -968,7 +969,7 @@
         {
           "source": "6016c332acbfba0b673a0ff138ffc575bcbb0f41e8e3c931702ce815d31bd87b",
           "target": "84a14ffefdffa44db4d0e30ec608da6288b0962be74440a5da61023e8fe2ac30",
-          "path": "patches/030-legacy-to-original.cdp",
+          "path": "patches/030-compatible-6016c332acbfba0b673a0ff138ffc575bcbb0f41e8e3c931702ce815d31bd87b-to-original.cdp",
           "sha256": "a0fe60271e87d9004aed63b19b07c280acf8f9659ed6ad41be7b5103deb865a5",
           "size": 325
         }
@@ -999,14 +1000,14 @@
         {
           "source": "ae675de6ae258d81fd1942a57653e5ae96c187c6cc7287d88d108ec7ccc0ec54",
           "target": "9a719a01c3b63edd5eb781d5a77420c5973169f5262935295360f1a6a149a5bd",
-          "path": "patches/031-legacy-to-original.cdp",
+          "path": "patches/031-compatible-ae675de6ae258d81fd1942a57653e5ae96c187c6cc7287d88d108ec7ccc0ec54-to-original.cdp",
           "sha256": "1badfa5a306e865025a8744f5d39cfaa0bb3a63739f94f7831697318ad5a3f76",
           "size": 438
         },
         {
           "source": "81546021a55c791128d24a927f02702121efed87782806fc24fb02735d3ed309",
           "target": "9a719a01c3b63edd5eb781d5a77420c5973169f5262935295360f1a6a149a5bd",
-          "path": "patches/031-previous-3-to-original.cdp",
+          "path": "patches/031-compatible-81546021a55c791128d24a927f02702121efed87782806fc24fb02735d3ed309-to-original.cdp",
           "sha256": "ea595e9dfeb8bdbc530d7c62a6769bf008fb4c1411cce923ae005598121282fe",
           "size": 547
         }
@@ -1037,14 +1038,14 @@
         {
           "source": "37e83d8b53fbbc5c0df579dbea68d49a5673b33a6d406420b623a1adb588ac3d",
           "target": "0dd5313f0ac44ce5518ab9e16be49c3ceecdb9d59b0bb391be0a47dc9c57b5f7",
-          "path": "patches/032-legacy-to-original.cdp",
+          "path": "patches/032-compatible-37e83d8b53fbbc5c0df579dbea68d49a5673b33a6d406420b623a1adb588ac3d-to-original.cdp",
           "sha256": "fed2d0c57944f9532726e666601c7907d7d454317c34b998072b471f796ccfa4",
           "size": 494
         },
         {
           "source": "ef6563c5c6c77559ba6298187c7e4c5464f3d9110d19c695eb3701ddf0a1509d",
           "target": "0dd5313f0ac44ce5518ab9e16be49c3ceecdb9d59b0bb391be0a47dc9c57b5f7",
-          "path": "patches/032-previous-3-to-original.cdp",
+          "path": "patches/032-compatible-ef6563c5c6c77559ba6298187c7e4c5464f3d9110d19c695eb3701ddf0a1509d-to-original.cdp",
           "sha256": "ab42152b96dc8fea451b0540d7e989387e4ce7eef8dc125ce11041553dc73348",
           "size": 631
         }
@@ -1075,14 +1076,14 @@
         {
           "source": "0cb5ab22fe657c40fe2ddee3a4d026e2e8e30b65194d68d13e24bf8695927e22",
           "target": "90d86b2087838e928e92c77206b2f5e358f45888c663a53e8b409c17a8aab6db",
-          "path": "patches/033-legacy-to-original.cdp",
+          "path": "patches/033-compatible-0cb5ab22fe657c40fe2ddee3a4d026e2e8e30b65194d68d13e24bf8695927e22-to-original.cdp",
           "sha256": "2dd2ccb2040876124618d09e4cf00ea63d8f4ca0be85e631f25c31fba7ed19bf",
           "size": 502
         },
         {
           "source": "a4fe243819cca7369d498f19320e072e370bc9313e88cdca2fcd6c68ffb52db4",
           "target": "90d86b2087838e928e92c77206b2f5e358f45888c663a53e8b409c17a8aab6db",
-          "path": "patches/033-previous-3-to-original.cdp",
+          "path": "patches/033-compatible-a4fe243819cca7369d498f19320e072e370bc9313e88cdca2fcd6c68ffb52db4-to-original.cdp",
           "sha256": "a79ccca880d250a31309394e51762275d67d1ad8b14d52e9905dbb20e8843e6b",
           "size": 643
         }
@@ -1113,7 +1114,7 @@
         {
           "source": "3baf0b4aa7e046eaec1136c5fc452094b53b2dcf3c27cf497a2c721a83eef824",
           "target": "a633e034109358e8f306023831cc6c8d1e3826a3edbc885655dd0685bc38f65d",
-          "path": "patches/034-legacy-to-original.cdp",
+          "path": "patches/034-compatible-3baf0b4aa7e046eaec1136c5fc452094b53b2dcf3c27cf497a2c721a83eef824-to-original.cdp",
           "sha256": "5bb5eed5e88ea076633e4697aeb9df2045c55b4ad048cbccf7a38ca4d5f41e6b",
           "size": 252
         }
@@ -1144,14 +1145,14 @@
         {
           "source": "c7599664696fce2728068eee971318ffc84fb21e3f5aa5ef91f422244c654c32",
           "target": "683d422aede5e8bc29c69b37735dddf85edbb669049d3fa10c236700dbaa4e4a",
-          "path": "patches/035-legacy-to-original.cdp",
+          "path": "patches/035-compatible-c7599664696fce2728068eee971318ffc84fb21e3f5aa5ef91f422244c654c32-to-original.cdp",
           "sha256": "00bbea47dc99f6176e45e19fdb6ada91fecedb075d58e6ce70aceff71aba773d",
           "size": 5639
         },
         {
           "source": "fa7da950caaf892c6585bdeefef718bb800890348d86cfc4127542fe158fc1fa",
           "target": "683d422aede5e8bc29c69b37735dddf85edbb669049d3fa10c236700dbaa4e4a",
-          "path": "patches/035-previous-3-to-original.cdp",
+          "path": "patches/035-compatible-fa7da950caaf892c6585bdeefef718bb800890348d86cfc4127542fe158fc1fa-to-original.cdp",
           "sha256": "a615e1a12fd5004068573c2ed0c9429744346310f6e8f5ec79faee2638d01883",
           "size": 128464
         }
@@ -1206,7 +1207,7 @@
         {
           "source": "e6e09986032f95638ce60420c7664e381babb0443ca6a4474bc3b6a39e3e822c",
           "target": "a989b097e4bdaeb7ad81359c310963875e6e9f436039683ebbab6bdb60ac072c",
-          "path": "patches/037-legacy-to-original.cdp",
+          "path": "patches/037-compatible-e6e09986032f95638ce60420c7664e381babb0443ca6a4474bc3b6a39e3e822c-to-original.cdp",
           "sha256": "c18d3430f0639835670c9682ebbc12b3961760e44934ffabadba4442dc6b0283",
           "size": 151
         }
@@ -1237,14 +1238,14 @@
         {
           "source": "b39761f8e2dfb9ab8a534b1f3bd3e0c8208a0fd2a651ef845e806ca5dccc8514",
           "target": "d13ae67e559919814ef7026958652d7c4466ace12933a47799f562345fdaf8be",
-          "path": "patches/038-legacy-to-original.cdp",
+          "path": "patches/038-compatible-b39761f8e2dfb9ab8a534b1f3bd3e0c8208a0fd2a651ef845e806ca5dccc8514-to-original.cdp",
           "sha256": "f9817694b2b2bc932fa0a01df898fb680e0f5a999f8e0efa026f055897bb44a1",
           "size": 4324
         },
         {
           "source": "2614a46713be54e7d946a4e77f68b10f321d2fe7a0d09a15b336ba784dfc3d5a",
           "target": "d13ae67e559919814ef7026958652d7c4466ace12933a47799f562345fdaf8be",
-          "path": "patches/038-previous-3-to-original.cdp",
+          "path": "patches/038-compatible-2614a46713be54e7d946a4e77f68b10f321d2fe7a0d09a15b336ba784dfc3d5a-to-original.cdp",
           "sha256": "065d152d26b74d34711f0faf1d3ebdfffda134a767e9ccbb6324de3073a67822",
           "size": 6113
         },
@@ -1282,14 +1283,14 @@
         {
           "source": "2de7afa02b103984d374f203c22e44db2d10216d0bef25c662df96394dd6576d",
           "target": "02938871b524e2e57c9793fb2f0a1f5fc860cb25285032709299162c9d2b340e",
-          "path": "patches/039-legacy-to-original.cdp",
+          "path": "patches/039-compatible-2de7afa02b103984d374f203c22e44db2d10216d0bef25c662df96394dd6576d-to-original.cdp",
           "sha256": "05ec990f969d609620d3b3444302f3c3f6a9b5506faba5e72eb86ffaf5b0fb52",
           "size": 43080
         },
         {
           "source": "10b6fcee570ef3fe134e48e459b414c51d2a930e9c2d6f9bd20e02dbefa2a746",
           "target": "02938871b524e2e57c9793fb2f0a1f5fc860cb25285032709299162c9d2b340e",
-          "path": "patches/039-previous-3-to-original.cdp",
+          "path": "patches/039-compatible-10b6fcee570ef3fe134e48e459b414c51d2a930e9c2d6f9bd20e02dbefa2a746-to-original.cdp",
           "sha256": "04d6005eddbf7632e3589e5f6091084c23f0f9739c678e83710d098a4fddfaa4",
           "size": 61513
         },
@@ -1423,7 +1424,7 @@
         {
           "source": "5fc3ca927b8bd273a9b47bf13fce089f3af8fb05f9afcf80de1ab768fdfb127e",
           "target": "67e79080b183fc411a5a7ad0bc9b3d57f2231d5f3828635956d8e6d69fb98dd7",
-          "path": "patches/044-legacy-to-original.cdp",
+          "path": "patches/044-compatible-5fc3ca927b8bd273a9b47bf13fce089f3af8fb05f9afcf80de1ab768fdfb127e-to-original.cdp",
           "sha256": "be8ddbf3c9c82e17156496032d362de1eef650346e0c2ee37b0d52f49da93dbe",
           "size": 105
         }
@@ -1454,7 +1455,7 @@
         {
           "source": "6c2e71775c4a828f95d28bd016b5860005d164d6ed57c08e65367f933a8c5156",
           "target": "c0a256360878bcccbd8d7bf48d112beb3d80c85e26ddabba5548b8e730c200d6",
-          "path": "patches/045-legacy-to-original.cdp",
+          "path": "patches/045-compatible-6c2e71775c4a828f95d28bd016b5860005d164d6ed57c08e65367f933a8c5156-to-original.cdp",
           "sha256": "aa00e84e9d2b875ca5a19f12c06bbd9496a969637e144f46961ac9d2a3d7cadf",
           "size": 100
         }
@@ -1533,7 +1534,7 @@
         {
           "source": "aa1cb6234a6c6f62729d8094caceb7fbcd0f260f5b0a21f8377bf5e0b8a6043e",
           "target": "aaca8ea8c557b10ff5a5bc674de6c197c674ab9322145919785211466ecd65d0",
-          "path": "patches/048-legacy-to-original.cdp",
+          "path": "patches/048-compatible-aa1cb6234a6c6f62729d8094caceb7fbcd0f260f5b0a21f8377bf5e0b8a6043e-to-original.cdp",
           "sha256": "573e7a9a4e94aef46cc3d937255b8a1946855fc5bd4c0f3c82cac470931c15f1",
           "size": 288
         }
@@ -1564,7 +1565,7 @@
         {
           "source": "d6366472e42efb5913cfd813e50af60e6de8e49b2c387d5b094f57425db94d68",
           "target": "41f04bc44e7899f538f6c0b41f7fd76ef77affb525edbeabbfc334607fe9e88e",
-          "path": "patches/049-legacy-to-original.cdp",
+          "path": "patches/049-compatible-d6366472e42efb5913cfd813e50af60e6de8e49b2c387d5b094f57425db94d68-to-original.cdp",
           "sha256": "518326b664c72e13d74e1c00309eee1ee0ba8dbde23cdf865bafaec3d4ac1083",
           "size": 277
         }
@@ -1619,7 +1620,7 @@
         {
           "source": "b325840f245fda0d24b49cf06fbe470262ba4b4e48d809e557bc85e3a8a68e68",
           "target": "8ec932eb9f0d986d6dfb4dfed43c3de87f66c6273e0fb299dc699804235a2480",
-          "path": "patches/051-legacy-to-original.cdp",
+          "path": "patches/051-compatible-b325840f245fda0d24b49cf06fbe470262ba4b4e48d809e557bc85e3a8a68e68-to-original.cdp",
           "sha256": "8fc4a25fcf66eb384fd271e56f6ff6949f23129b549a7971ea3c3a9882dc9077",
           "size": 173
         }
@@ -1650,7 +1651,7 @@
         {
           "source": "4463ba2cd733fc2c010d43f2b2d9ecf27bc285ed1fbbb98445360acf91dcd872",
           "target": "dc3fb1dd3f60e8fe2b9c012488ae9ad5daae91c6bd7e640fa597b9859a2fc705",
-          "path": "patches/052-legacy-to-original.cdp",
+          "path": "patches/052-compatible-4463ba2cd733fc2c010d43f2b2d9ecf27bc285ed1fbbb98445360acf91dcd872-to-original.cdp",
           "sha256": "f205f9308457274dea514c7755e6e5f2ea4d2991d618efc206b71282b5dc56ca",
           "size": 292
         }
@@ -1705,7 +1706,7 @@
         {
           "source": "a6aec649855a886979af7447b8ce779b35b061357730cae9e62ca71440b81c40",
           "target": "2cd924fa0835feb40f24f0dc647696424a76badbf81a718170f866ef984bf95c",
-          "path": "patches/054-legacy-to-original.cdp",
+          "path": "patches/054-compatible-a6aec649855a886979af7447b8ce779b35b061357730cae9e62ca71440b81c40-to-original.cdp",
           "sha256": "111c78243d4799c368a910ee1f32cfa838a4b0aacc6bc6dddd537bfd5c764a5c",
           "size": 357
         }
@@ -1736,14 +1737,14 @@
         {
           "source": "0cb5ab22fe657c40fe2ddee3a4d026e2e8e30b65194d68d13e24bf8695927e22",
           "target": "90d86b2087838e928e92c77206b2f5e358f45888c663a53e8b409c17a8aab6db",
-          "path": "patches/055-legacy-to-original.cdp",
+          "path": "patches/055-compatible-0cb5ab22fe657c40fe2ddee3a4d026e2e8e30b65194d68d13e24bf8695927e22-to-original.cdp",
           "sha256": "2dd2ccb2040876124618d09e4cf00ea63d8f4ca0be85e631f25c31fba7ed19bf",
           "size": 502
         },
         {
           "source": "a4fe243819cca7369d498f19320e072e370bc9313e88cdca2fcd6c68ffb52db4",
           "target": "90d86b2087838e928e92c77206b2f5e358f45888c663a53e8b409c17a8aab6db",
-          "path": "patches/055-previous-3-to-original.cdp",
+          "path": "patches/055-compatible-a4fe243819cca7369d498f19320e072e370bc9313e88cdca2fcd6c68ffb52db4-to-original.cdp",
           "sha256": "a79ccca880d250a31309394e51762275d67d1ad8b14d52e9905dbb20e8843e6b",
           "size": 643
         }
@@ -1774,7 +1775,7 @@
         {
           "source": "a28b0864b7038dfecb8e788d1438ae83428199e4b618df5b1350de7816125495",
           "target": "323eb76448f19c2b1bd9bb847a865299acb3003cffd729555c265bfaa38f8579",
-          "path": "patches/056-legacy-to-original.cdp",
+          "path": "patches/056-compatible-a28b0864b7038dfecb8e788d1438ae83428199e4b618df5b1350de7816125495-to-original.cdp",
           "sha256": "c1cd87ca96820a3a73eacac16cc04c3e180f2c1b54fc9028b41daf4923d2f0da",
           "size": 192
         }
@@ -1805,7 +1806,7 @@
         {
           "source": "39a85e3c03d803f1fc55447e8a459bcb7c1278058e9bcb0bb8ec5e9639646514",
           "target": "71ca76cae8bcc067d8ffcfe23f7c568a3af8bffd239753e26667b692a9a467d0",
-          "path": "patches/057-legacy-to-original.cdp",
+          "path": "patches/057-compatible-39a85e3c03d803f1fc55447e8a459bcb7c1278058e9bcb0bb8ec5e9639646514-to-original.cdp",
           "sha256": "b132c187db11ca9b41d06f274df82a2966ad454c7f7d0ea62e259273d0f1d3f8",
           "size": 278
         }
@@ -1836,7 +1837,7 @@
         {
           "source": "5969cf08856f7c1242701af0939359940fb65b73c83c0d28181317fdd445e4e1",
           "target": "0b2eac602d54641f89197a6d97be7ca5321bb6bd321a2c7c34bde6dd9cdeb655",
-          "path": "patches/058-legacy-to-original.cdp",
+          "path": "patches/058-compatible-5969cf08856f7c1242701af0939359940fb65b73c83c0d28181317fdd445e4e1-to-original.cdp",
           "sha256": "b186dfc02b4df001ede975334c158d35c705915400a52e0ad2a38f786ef317ae",
           "size": 194
         }
@@ -1867,7 +1868,7 @@
         {
           "source": "61273397d5710a8ce0a827330f9dac1f159bd4d8764c1978c63de82ece75124f",
           "target": "e5f484af26d3a19f2b3faba994726b6dcc80f2954bd35a13a71e34f97980dfb5",
-          "path": "patches/059-legacy-to-original.cdp",
+          "path": "patches/059-compatible-61273397d5710a8ce0a827330f9dac1f159bd4d8764c1978c63de82ece75124f-to-original.cdp",
           "sha256": "4f5ea069c3901c88a1e72dee667ff097f6e4aa4b2877ef2787391514ab2d0460",
           "size": 288
         }
@@ -1922,7 +1923,7 @@
         {
           "source": "9165a142266f7298d6b8ee24f4471fc38f257ff64b88be03286cdaf0c42807e3",
           "target": "1f903c56c5add5ce5181530ce31f93d1ba48db5a185bd922d6a8657c57655284",
-          "path": "patches/061-legacy-to-original.cdp",
+          "path": "patches/061-compatible-9165a142266f7298d6b8ee24f4471fc38f257ff64b88be03286cdaf0c42807e3-to-original.cdp",
           "sha256": "b0c6ae7cdc3a8c0938b9fd5238922e296004ef7c48509f90434a8efe623f4d0d",
           "size": 202
         }
@@ -1953,7 +1954,7 @@
         {
           "source": "c749cf214d67f301be85ffd28b98cade34df185b873d6dc3ad249e882e611ff0",
           "target": "148d9610d6d34c573ee7c58038322843d64198253899908d1465a5fd19ec44bc",
-          "path": "patches/062-legacy-to-original.cdp",
+          "path": "patches/062-compatible-c749cf214d67f301be85ffd28b98cade34df185b873d6dc3ad249e882e611ff0-to-original.cdp",
           "sha256": "7fd1b0e71dcaa2f11d6f1126ea6f7103d2e583edeb5290437ae30a17218c6c41",
           "size": 351
         }
@@ -1984,14 +1985,14 @@
         {
           "source": "9f9c844098dfa664d9e2861514d97a0593dd1b8b7d9ee57ff6bf9c09b30c6469",
           "target": "2fbbe500ef7bc1f81402244549871c439a848c9e2505a8738de2e291088559e1",
-          "path": "patches/063-legacy-to-original.cdp",
+          "path": "patches/063-compatible-9f9c844098dfa664d9e2861514d97a0593dd1b8b7d9ee57ff6bf9c09b30c6469-to-original.cdp",
           "sha256": "9569c23fc37dc6ac4b8ac06308d92010882b3ebda6859e826ce040edd2d21dc7",
           "size": 190
         },
         {
           "source": "ff7f7a05f95fa087295402702509ef0ff79af17c19a911bbd636eb21d8f208d6",
           "target": "2fbbe500ef7bc1f81402244549871c439a848c9e2505a8738de2e291088559e1",
-          "path": "patches/063-previous-3-to-original.cdp",
+          "path": "patches/063-compatible-ff7f7a05f95fa087295402702509ef0ff79af17c19a911bbd636eb21d8f208d6-to-original.cdp",
           "sha256": "4a8bb37e45d833bac40d515aa225b40e0c27898cfe868155b21954b357085767",
           "size": 312
         }
@@ -2022,7 +2023,7 @@
         {
           "source": "4cd43d3dabc778434c9970a7045f0e8f65e2aaa3d5807a0909dcd26b1b7cda8a",
           "target": "f2d3552fe2c2c21425ec965a5050f54377c45608525a294ad4c6bafe29b02c64",
-          "path": "patches/064-legacy-to-original.cdp",
+          "path": "patches/064-compatible-4cd43d3dabc778434c9970a7045f0e8f65e2aaa3d5807a0909dcd26b1b7cda8a-to-original.cdp",
           "sha256": "ffd555ff3a34bf7eec0c849f56f9d0b8798cfe65eafeb457498126f169094923",
           "size": 252
         }
@@ -2053,7 +2054,7 @@
         {
           "source": "ee78d48625ebbab2885b1b15b5032eb248dff66f7ebc99eadea3fbe954a40b04",
           "target": "a2544a4ef34ae276933721efd49b7242252e090836246774e6c7955e9b9f1db5",
-          "path": "patches/065-legacy-to-original.cdp",
+          "path": "patches/065-compatible-ee78d48625ebbab2885b1b15b5032eb248dff66f7ebc99eadea3fbe954a40b04-to-original.cdp",
           "sha256": "c86a68ec2d11db1a1e3fc4cd5d1233b7ba9b9e1ae953bb6ab0e0aadaa2bc7ff0",
           "size": 170
         }
@@ -2084,21 +2085,21 @@
         {
           "source": "38ff96511a9eb9cce233823ccc45fb781eaa98d16f69d9b274d53fc50dcf80bf",
           "target": "fef346f6cd145224d46389ff3f35a620e45f5d7ca8e1bcf05392a133b973723a",
-          "path": "patches/066-previous-1-to-original.cdp",
+          "path": "patches/066-compatible-38ff96511a9eb9cce233823ccc45fb781eaa98d16f69d9b274d53fc50dcf80bf-to-original.cdp",
           "sha256": "0400cf05e597cdac261b89506c658c61d6968307c4cc8b0ea2148fd7582ce963",
           "size": 162432
         },
         {
           "source": "5e5a3c39e5b65602e901737fe60b8167bea86cd4674c314d9b39331d2c70366a",
           "target": "fef346f6cd145224d46389ff3f35a620e45f5d7ca8e1bcf05392a133b973723a",
-          "path": "patches/066-previous-3-to-original.cdp",
+          "path": "patches/066-compatible-5e5a3c39e5b65602e901737fe60b8167bea86cd4674c314d9b39331d2c70366a-to-original.cdp",
           "sha256": "bb2613236ddb80e0039fc7588e1dfb4c45054a1028a9e6bb84b3bb154906f861",
           "size": 162548
         },
         {
           "source": "230100a8d539a47c23d9fa7d3a77d13a98fc0c5eaa68dafa321a38283a130bed",
           "target": "fef346f6cd145224d46389ff3f35a620e45f5d7ca8e1bcf05392a133b973723a",
-          "path": "patches/066-previous-4-to-original.cdp",
+          "path": "patches/066-compatible-230100a8d539a47c23d9fa7d3a77d13a98fc0c5eaa68dafa321a38283a130bed-to-original.cdp",
           "sha256": "7ed9f811d3d0d74dc95358f31c0e0c1090ef32aebd34e07257d8ef24962d9357",
           "size": 162380
         },
@@ -2143,7 +2144,7 @@
         {
           "source": "57436a878cf84ff76d69f4fc9ffa09dfba43c56e7a2578631ce7035a9857bc6b",
           "target": "0bf203d7ddf0c700bf9d44fd156425d8df274277fdaea58fa511cfbddc51861a",
-          "path": "patches/067-previous-3-to-original.cdp",
+          "path": "patches/067-compatible-57436a878cf84ff76d69f4fc9ffa09dfba43c56e7a2578631ce7035a9857bc6b-to-original.cdp",
           "sha256": "53f706d5f81eefc9d925bff438b0d31d5018f17df23c7f1d6404d840aab8c49c",
           "size": 130679
         },
@@ -2181,21 +2182,21 @@
         {
           "source": "2b443c6e0e7bbe3048bc137a4a0dd6932f3f4af8d16db31051570da9eb4d4cd1",
           "target": "6e2eceeb304de74635a10f99d1d67519487e53af56976da5f60e388ef629e0d9",
-          "path": "patches/068-previous-1-to-original.cdp",
+          "path": "patches/068-compatible-2b443c6e0e7bbe3048bc137a4a0dd6932f3f4af8d16db31051570da9eb4d4cd1-to-original.cdp",
           "sha256": "eb14901e3659b81df4ee27a0886edcbae5e11dad060c8b847a2aebdd0c41579d",
           "size": 45511
         },
         {
           "source": "80e0c8a8633ac6d99bf59f792f34b1c233eec85e69eac1d8fa2fd7a03be2a813",
           "target": "6e2eceeb304de74635a10f99d1d67519487e53af56976da5f60e388ef629e0d9",
-          "path": "patches/068-previous-3-to-original.cdp",
+          "path": "patches/068-compatible-80e0c8a8633ac6d99bf59f792f34b1c233eec85e69eac1d8fa2fd7a03be2a813-to-original.cdp",
           "sha256": "20a9983199df91d9785931dd00b5252f958fd54a2c0bb1fe2d2102a1ec0f33ae",
           "size": 45345
         },
         {
           "source": "b1db769944b666a71f19e0bed4ce0c4d2fdac7aa0e091a0dee12a05c7a8bdbc2",
           "target": "6e2eceeb304de74635a10f99d1d67519487e53af56976da5f60e388ef629e0d9",
-          "path": "patches/068-previous-4-to-original.cdp",
+          "path": "patches/068-compatible-b1db769944b666a71f19e0bed4ce0c4d2fdac7aa0e091a0dee12a05c7a8bdbc2-to-original.cdp",
           "sha256": "e269c7bc903c1756cd4b5aeff1c22d47d2dad743db4adedcee3b91803777e02a",
           "size": 45305
         },
@@ -2240,21 +2241,21 @@
         {
           "source": "89bf2ca49643654270984e27779eb5e75331fa41ffe89f520006889217541356",
           "target": "234325d7a67ce2bf8aea54ceaab265fe1822f50e00a030203d7c8e0809e92c0d",
-          "path": "patches/069-previous-1-to-original.cdp",
+          "path": "patches/069-compatible-89bf2ca49643654270984e27779eb5e75331fa41ffe89f520006889217541356-to-original.cdp",
           "sha256": "ad4f500c932024353224218145a5e66d93b422bb7b7294ec996e6bd557d0a4fe",
           "size": 162243
         },
         {
           "source": "c655944060ccb7e5af90239cda9bb17e58b5e4e28e4fb509109978f745d043a6",
           "target": "234325d7a67ce2bf8aea54ceaab265fe1822f50e00a030203d7c8e0809e92c0d",
-          "path": "patches/069-previous-3-to-original.cdp",
+          "path": "patches/069-compatible-c655944060ccb7e5af90239cda9bb17e58b5e4e28e4fb509109978f745d043a6-to-original.cdp",
           "sha256": "7cb51ffb7109ad5d8afa6232056d2a6ff896e1988015f8bba634a10cfc91f843",
           "size": 161482
         },
         {
           "source": "dac2185e069923fd862c94343fbe763815e94f2eeee5dd8e0e671e1653e2cf07",
           "target": "234325d7a67ce2bf8aea54ceaab265fe1822f50e00a030203d7c8e0809e92c0d",
-          "path": "patches/069-previous-4-to-original.cdp",
+          "path": "patches/069-compatible-dac2185e069923fd862c94343fbe763815e94f2eeee5dd8e0e671e1653e2cf07-to-original.cdp",
           "sha256": "b5fedf755c70cf38ba5b095fcd7b72fd7746ad3aa99a518b7e9636e0bf480f77",
           "size": 161411
         },
@@ -2323,7 +2324,7 @@
         {
           "source": "ddc4ec5ea63d7bca93547b0b8b97c51c8994dfa76993106f0ff6389adb7444b3",
           "target": "c830576d245939b0a1491bee0f77720145a21e54258b621a973d995ce943dc96",
-          "path": "patches/071-previous-3-to-original.cdp",
+          "path": "patches/071-compatible-ddc4ec5ea63d7bca93547b0b8b97c51c8994dfa76993106f0ff6389adb7444b3-to-original.cdp",
           "sha256": "379478c7c8d654a7ad852c7d7bd9fcce199eb9e0d711f48d9eead457d4d57a86",
           "size": 26142
         }
@@ -2427,21 +2428,21 @@
         {
           "source": "bd451f7e9058f6335e08309c8031ab56cc82674bca53b1d90d1dc18b484f10fd",
           "target": "77c44dbf058bf2941e97f244cf13cf01434caff4a4dd7f2f600d1c7eb1379fc4",
-          "path": "patches/075-previous-1-to-original.cdp",
+          "path": "patches/075-compatible-bd451f7e9058f6335e08309c8031ab56cc82674bca53b1d90d1dc18b484f10fd-to-original.cdp",
           "sha256": "a7237049a8e97085b9a1721ce4037f59e1b7defd82ec9d553d02a589b0a5f520",
           "size": 176455
         },
         {
           "source": "2fea5b1b832a516a6423da860131d18a1c469bbaa78e8750b690b31ea1058a25",
           "target": "77c44dbf058bf2941e97f244cf13cf01434caff4a4dd7f2f600d1c7eb1379fc4",
-          "path": "patches/075-previous-2-to-original.cdp",
+          "path": "patches/075-compatible-2fea5b1b832a516a6423da860131d18a1c469bbaa78e8750b690b31ea1058a25-to-original.cdp",
           "sha256": "5d33077bb855daa110bb1c681a69ce61584a68114697c4cf6cde39a0699bbf67",
           "size": 167565
         },
         {
           "source": "73950c74f84ca2cc17a80c8ae2078d9be8f029d55a166b79202b13802f50176c",
           "target": "77c44dbf058bf2941e97f244cf13cf01434caff4a4dd7f2f600d1c7eb1379fc4",
-          "path": "patches/075-previous-5-to-original.cdp",
+          "path": "patches/075-compatible-73950c74f84ca2cc17a80c8ae2078d9be8f029d55a166b79202b13802f50176c-to-original.cdp",
           "sha256": "56c126273793243191ca6acc80cb158a1a791b60a3e7df4b4cd02a6f96ccd3a5",
           "size": 177755
         },
@@ -2480,21 +2481,21 @@
         {
           "source": "5640c2afb72b5aa6d9f6e0d12d454da2a0d3aafc6ec5312a955d22c4a9b7108d",
           "target": "3feac54182e30d03b9b18df54e564c7a82e0227ff2a3168055a44a60d6b994a0",
-          "path": "patches/076-previous-1-to-original.cdp",
+          "path": "patches/076-compatible-5640c2afb72b5aa6d9f6e0d12d454da2a0d3aafc6ec5312a955d22c4a9b7108d-to-original.cdp",
           "sha256": "f5aacfe0f611f0ffffbfabf315a080dbe3d89df2209e6f2827c52f632408bd75",
           "size": 152023
         },
         {
           "source": "cf97fe7d86fbfd1b82303350f01f4e651d6e0c55b9c5aac7d4d733edc7e71aaf",
           "target": "3feac54182e30d03b9b18df54e564c7a82e0227ff2a3168055a44a60d6b994a0",
-          "path": "patches/076-previous-2-to-original.cdp",
+          "path": "patches/076-compatible-cf97fe7d86fbfd1b82303350f01f4e651d6e0c55b9c5aac7d4d733edc7e71aaf-to-original.cdp",
           "sha256": "4998e93bfb6ac35cabc80a993dec3bc8e3938c9e05e5ec20130bee323526b99c",
           "size": 143385
         },
         {
           "source": "123ae2e0fcab43e499a24b445ea57783bf5f0de1ff22782e2029abedd570482a",
           "target": "3feac54182e30d03b9b18df54e564c7a82e0227ff2a3168055a44a60d6b994a0",
-          "path": "patches/076-previous-5-to-original.cdp",
+          "path": "patches/076-compatible-123ae2e0fcab43e499a24b445ea57783bf5f0de1ff22782e2029abedd570482a-to-original.cdp",
           "sha256": "09d0e8828fc5faf4ed04197e7bc306274754605f7e0ecb5d019b410198d60d12",
           "size": 151921
         },
@@ -2630,7 +2631,7 @@
         {
           "source": "95cc136a31bfddbdddb9032561df315cee9f6a84bf1fe5c8230f4df1a273e984",
           "target": "86595f8430cbf2725fe8f4d827915c0dacebe59f30db1a016ab09eb40e13f27d",
-          "path": "patches/081-previous-5-to-original.cdp",
+          "path": "patches/081-compatible-95cc136a31bfddbdddb9032561df315cee9f6a84bf1fe5c8230f4df1a273e984-to-original.cdp",
           "sha256": "965442946389484044794966427a58b5b5eb9f01e56e303b6344ae28c2f4d86e",
           "size": 1759
         }
@@ -2662,7 +2663,7 @@
         {
           "source": "45a3a0f2ce597e802a253595721b92954c5b4aac66544b13f55f6b7e719ed99e",
           "target": "635866edcd6b8f3d24ebe584bf6252e414899d59d0ff8a0fe915ef63d33b4092",
-          "path": "patches/082-previous-5-to-original.cdp",
+          "path": "patches/082-compatible-45a3a0f2ce597e802a253595721b92954c5b4aac66544b13f55f6b7e719ed99e-to-original.cdp",
           "sha256": "bb61b3c3edaad3da03ea393ae2fc06fb4a99e95c7fe32ff51071224f424f0a81",
           "size": 7173
         }
@@ -2694,7 +2695,7 @@
         {
           "source": "1d3cc062dc472ec1b4b1ce2aa80903d7e393ad5bdaef7b218a28fe15fe75d9f8",
           "target": "9844c9a7d55cdb1b7cecdc7711c11033fa8ce1c7342d82db63f6e5f514949f63",
-          "path": "patches/083-previous-5-to-original.cdp",
+          "path": "patches/083-compatible-1d3cc062dc472ec1b4b1ce2aa80903d7e393ad5bdaef7b218a28fe15fe75d9f8-to-original.cdp",
           "sha256": "588a4f07a50f5a4328863494f80fa1c590a6b605dbf2298c5c12adb52f382efa",
           "size": 29796
         }
@@ -2726,7 +2727,7 @@
         {
           "source": "d01def98083569bfc0ea8389cf4dd79cbbe93e55cc2d0718bc786eaf771dacaa",
           "target": "b1fabb46ec2db309d15c84cc04fa5892d874d845df0a8cc6589ab01a864b864d",
-          "path": "patches/084-previous-5-to-original.cdp",
+          "path": "patches/084-compatible-d01def98083569bfc0ea8389cf4dd79cbbe93e55cc2d0718bc786eaf771dacaa-to-original.cdp",
           "sha256": "6983e0a83bcbb51bf8b94ee1b402f5a844e38661f97562cff9a4f1808a93b02c",
           "size": 21315
         }
@@ -2754,6 +2755,31 @@
           "path": "patches/085-restore.cdp",
           "sha256": "59bd163459fa8ca24a53b18e052d00b6c8ca056ce502ea50ea64e9f93aa4c0df",
           "size": 24952
+        }
+      ]
+    },
+    {
+      "group": "bin",
+      "relative": "CambridgeSoft.ChemOffice.ChemDrawExcel.AddIn.dll",
+      "before": "227420b860810c5fae02b5646689ccc102f4c4f56be8c37599c5eedfde2b64f2",
+      "after": "5feb65edda9511603899f817cd191db68925999455535617c0a922c1a6d57190",
+      "optional_component": "chemoffice_excel",
+      "before_size": 603424,
+      "after_size": 603424,
+      "routes": [
+        {
+          "source": "227420b860810c5fae02b5646689ccc102f4c4f56be8c37599c5eedfde2b64f2",
+          "target": "5feb65edda9511603899f817cd191db68925999455535617c0a922c1a6d57190",
+          "path": "patches/086-install.cdp",
+          "sha256": "4198b04e0bbdfee5b24b4d85770b03b331ba7e583e105c868f57188f877e3c93",
+          "size": 44726
+        },
+        {
+          "source": "5feb65edda9511603899f817cd191db68925999455535617c0a922c1a6d57190",
+          "target": "227420b860810c5fae02b5646689ccc102f4c4f56be8c37599c5eedfde2b64f2",
+          "path": "patches/086-restore.cdp",
+          "sha256": "605f0276b29bc7b929065e3e46fd95db7e16d0d2bf9aa322bd89e47680cf26d5",
+          "size": 44791
         }
       ]
     }
