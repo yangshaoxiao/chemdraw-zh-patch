@@ -7,5 +7,6 @@
   "full_proprietary_binaries_embedded": false,
   "translations_equal_v025": true,
   "ui_observation": "Main window layout observed; Excel-running failure displayed safely in an earlier preview. Final confirmation and real application auto-close not end-to-end UI verified.",
-  "auto_close_tests": "Mock processes only: normal close, refusal/unsaved, background process not killed, Excel omitted without pending add-in update."
+  "auto_close_tests": "Mock processes only: normal close, refusal/unsaved, background process not killed, Excel omitted without pending add-in update.",
+  "isolated_installer_checks_passed": 24
 }

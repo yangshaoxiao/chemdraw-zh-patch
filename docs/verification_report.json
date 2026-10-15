@@ -1,9 +1,12 @@
 {
   "checked_at": "2026-10-15",
-  "patch": "0.2.5",
+  "patch": "0.2.6",
   "files": 87,
   "passed": [
     "custom Unicode and space paths; full reconstruction preflight",
+    "GUI-mode install preserves full hash verification",
+    "GUI-mode restore preserves full hash verification",
+    "GUI-mode read-only validation",
     "Excel running blocks pending add-in writes while read-only validate remains allowed",
     "install all manifest files using local source plus deltas",
     "idempotent install",
