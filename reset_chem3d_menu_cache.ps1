@@ -1,5 +1,13 @@
 ﻿# SPDX-License-Identifier: MIT
 $ErrorActionPreference = 'Stop'
+# Keep source and free-download notice visible for direct and elevated launches.
+try { $Host.UI.RawUI.WindowTitle = '免费开源 - 谨防付费转卖 - https://github.com/yangshaoxiao/chemdraw-zh-patch' } catch { }
+Write-Host '============================================================' -ForegroundColor Cyan
+Write-Host '本汉化补丁免费开源，无收费激活，无设备绑定。' -ForegroundColor Cyan
+Write-Host '谨防付费转卖，请优先从 GitHub 项目免费下载：' -ForegroundColor Yellow
+Write-Host 'https://github.com/yangshaoxiao/chemdraw-zh-patch' -ForegroundColor Cyan
+Write-Host 'ChemDraw 软件本身仍须另行取得有效授权。'
+Write-Host '============================================================' -ForegroundColor Cyan
 try {
     if (Get-Process -Name 'Chem3D' -ErrorAction SilentlyContinue) { throw '请保存文档并关闭 Chem3D 后重试。' }
     Write-Host '此操作会重置 Chem3D 的菜单和工具栏自定义布局，先导出备份。'

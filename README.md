@@ -2,6 +2,8 @@
 
 > 当前分支为 v0.2.5 开发构建，尚未发布。已公开的下载版本仍是 [v0.2.4 预发布包](https://github.com/yangshaoxiao/chemdraw-zh-patch/releases/tag/v0.2.4)。
 
+**本补丁免费开源，谨防付费转卖。官方下载与源码：https://github.com/yangshaoxiao/chemdraw-zh-patch 。全部 CMD 入口的窗口标题及启动、结束提示均显示免费声明和项目地址；直接运行 PowerShell 工具时也会显示来源提示。**
+
 免费、开源的 Windows ChemDraw 界面汉化工具。当前翻译覆盖 87 个文件、8646 处文字替换。v0.2.5 补充 ChemOffice Excel 加载项功能区、下拉菜单及设置窗口标签，保留既有汉化及安装保护功能。
 
 **当前支持 ChemDraw 26.0.0.6141 x64。尚未实现整个软件全部汉化。** 没有电脑数量限制，可复制到多台已正确安装同一受支持版本的电脑使用。其他版本、Mac、缺失组件或其他补丁修改过的文件不会被视为兼容安装。
