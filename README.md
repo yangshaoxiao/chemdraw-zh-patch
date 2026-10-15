@@ -1,6 +1,6 @@
 # ChemDraw 简体中文扩展补丁
 
-> 当前版本为 [v0.2.5 预发布包](https://github.com/yangshaoxiao/chemdraw-zh-patch/releases/tag/v0.2.5)。本机安装及 87 个文件校验通过，用户已于 2026-10-15 反馈完成 Excel 新增界面测试。
+> 当前版本为 [v0.2.6 预发布版](https://github.com/yangshaoxiao/chemdraw-zh-patch/releases/tag/v0.2.6)。新增只有“汉化”和“还原”两个操作的图形工具。
 
 **本补丁免费开源，谨防付费转卖。官方下载与源码：https://github.com/yangshaoxiao/chemdraw-zh-patch 。全部 CMD 入口的窗口标题及启动、结束提示均显示免费声明和项目地址；直接运行 PowerShell 工具时也会显示来源提示。**
 
@@ -22,9 +22,20 @@ Chem3D：
 
 版本记录与后续发布方式见 [版本管理](docs/版本管理.md)。
 
-## 安装与还原
+## 图形工具（推荐）
 
-1. 下载 Releases 中的 `chemdraw-zh-patch-v0.2.5-windows-x64.zip`，完整解压到可写目录。也可以在仓库页面选择 **Code → Download ZIP**，完整解压源码包后直接运行下面的 CMD 文件。
+从 [v0.2.6 Releases](https://github.com/yangshaoxiao/chemdraw-zh-patch/releases/tag/v0.2.6) 下载 `ChemDraw-ZH-v0.2.6.exe`，双击即可使用，无需 Python 或额外解压。
+
+1. 点击“汉化”或“还原”，阅读准备事项并保存全部相关文档。
+2. 二次确认默认选择“否”。选择“是”后才会请求关闭相关程序；管理员身份也不跳过确认。
+3. 未提权时由 Windows 请求管理员授权。仅正常请求退出，不强制结束进程；若未保存文档提示尚未处理或程序仍在运行，将停止补丁操作。
+4. 在主窗口查看结果。找不到安装目录时可用文件夹选择框指定目录。
+
+兼容 Windows 10/11 x64，使用系统自带的 .NET Framework 和 Windows PowerShell。日志及备份保存在 `%LOCALAPPDATA%\ChemDrawZhPatch\runs`。图形主窗口已查看；最终二次确认和真实自动关闭流程尚未完成端到端界面复核，详见 [图形版说明](docs/图形版说明.md)。
+
+## CMD 安装与还原
+
+1. 下载 Releases 中的 `chemdraw-zh-patch-v0.2.6-windows-x64.zip`，完整解压到可写目录。也可以在仓库页面选择 **Code → Download ZIP**，完整解压源码包后直接运行下面的 CMD 文件。
 2. 保存文档并完全退出 Excel、ChemDraw 和 Chem3D，双击 `一键安装汉化.cmd`。
 3. 安装器自动查询标准安装目录与注册表。找不到安装时，按提示粘贴含 `ChemDraw.exe` 的文件夹路径。默认数据目录来自 Windows 的 ProgramData；若数据安装在其他位置，按提示填写含 `GUI` 的数据目录。
 4. Windows 弹出管理员权限提示时选择“是”。显示全部文件校验通过后启动 ChemDraw。

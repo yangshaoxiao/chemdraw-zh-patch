@@ -45,7 +45,7 @@ def verify(package,legacy_package=None,previous_package=None):
         (fixture/'manifest.json').write_text(json.dumps(value,ensure_ascii=False,indent=2),'utf-8')
     write_script();write_manifest()
     passed=[]
-    def run(mode,ok=True,auto=False):
+    def run(mode,ok=True,auto=False,gui=False):
         args=['powershell.exe','-NoProfile','-ExecutionPolicy','Bypass','-File',str(fixture/'install.ps1'),'-Mode',mode,'-Elevated']
         env=os.environ.copy()
         if auto:
@@ -59,6 +59,7 @@ def verify(package,legacy_package=None,previous_package=None):
             args=['powershell.exe','-NoProfile','-ExecutionPolicy','Bypass','-Command',setup]
         else:
             args+=['-BinPath',str(binpath),'-DataPath',str(datapath)]
+        if gui: args+=['-Gui']
         result=subprocess.run(args,input=b'\n',capture_output=True,timeout=180,env=env)
         if (result.returncode==0)!=ok:
             raise AssertionError((mode,result.returncode,result.stdout.decode('utf-8',errors='replace'),result.stderr.decode('utf-8',errors='replace')))
@@ -66,6 +67,9 @@ def verify(package,legacy_package=None,previous_package=None):
         for entry in manifest['files']:
             assert sha((roots[entry['group']]/entry['relative']).read_bytes())==entry[state],entry['relative']
     run('Validate');check('before');passed.append('custom Unicode and space paths; full reconstruction preflight')
+    run('Install',gui=True);check('after');passed.append('GUI-mode install preserves full hash verification')
+    run('Restore',gui=True);check('before');passed.append('GUI-mode restore preserves full hash verification')
+    run('Validate',gui=True);check('before');passed.append('GUI-mode read-only validation')
     if any(e.get('optional_component')=='chemoffice_excel' for e in manifest['files']):
         marker="if ($false) { throw '请先保存全部 Excel 工作簿并完全退出 Excel，再安装或还原 ChemOffice Excel 汉化。' }"
         assert marker in script

@@ -22,8 +22,8 @@ def collect(source=False):
     result += sorted(p for p in (ROOT / 'docs').rglob('*') if p.is_file())
     if source:
         catalogs={'xml_catalog.json','binary_catalog.json','extra_unique.json','managed_unique.json'}
-        for folder in ('tools','tests','localization'):
-            result += sorted(p for p in (ROOT/folder).glob('*') if p.is_file() and (p.suffix in ('.py','.ps1','.tsv') or p.name in catalogs))
+        for folder in ('tools','tests','localization','gui'):
+            result += sorted(p for p in (ROOT/folder).glob('*') if p.is_file() and (p.suffix in ('.py','.ps1','.tsv','.cs','.manifest') or p.name in catalogs))
     for file in result:
         if file.suffix.lower() in ('.dll','.exe','.ocx','.pdb','.zip') or file.name in ('managed_string_uses.json','managed_user_strings.json','baseline_manifest.json'):
             raise ValueError('Private artifact in export: ' + str(file))

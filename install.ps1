@@ -3,10 +3,13 @@
     [string]$BinPath,
     [string]$DataPath,
     [switch]$Elevated,
-    [string]$LogPath
+    [string]$LogPath,
+    [switch]$Gui,
+    [switch]$CloseApplications
 )
 # SPDX-License-Identifier: MIT
 $ErrorActionPreference = 'Stop'
+if ($Gui) { [Console]::OutputEncoding = [Text.UTF8Encoding]::new($false) }
 # Keep source and free-download notice visible for direct and elevated launches.
 try { $Host.UI.RawUI.WindowTitle = '免费开源 - 谨防付费转卖 - https://github.com/yangshaoxiao/chemdraw-zh-patch' } catch { }
 Write-Host '============================================================' -ForegroundColor Cyan
@@ -16,6 +19,23 @@ Write-Host 'https://github.com/yangshaoxiao/chemdraw-zh-patch' -ForegroundColor 
 Write-Host 'ChemDraw 软件本身仍须另行取得有效授权。'
 Write-Host '============================================================' -ForegroundColor Cyan
 $packageRoot = $PSScriptRoot
+function Select-InstallFolder([string]$description) {
+    Add-Type -AssemblyName System.Windows.Forms
+    $dialog = New-Object System.Windows.Forms.FolderBrowserDialog
+    $dialog.Description = $description
+    $dialog.ShowNewFolderButton = $false
+    $owner = New-Object System.Windows.Forms.Form
+    $owner.TopMost = $true
+    $owner.ShowInTaskbar = $false
+    $owner.StartPosition = 'CenterScreen'
+    $owner.Size = New-Object Drawing.Size(1,1)
+    $owner.Show()
+    try {
+        if ($dialog.ShowDialog($owner) -ne [Windows.Forms.DialogResult]::OK) { throw '已取消选择文件夹，未修改软件。' }
+        return $dialog.SelectedPath
+    } finally { $dialog.Dispose(); $owner.Close(); $owner.Dispose() }
+}
+
 
 function Digest([string]$path) {
     $stream = [IO.File]::OpenRead($path)
@@ -70,7 +90,7 @@ function Find-Bin([string]$version) {
     if ($valid.Count -eq 1) { return $valid[0] }
     if ($valid.Count -gt 1) { Write-Host "检测到多个同版本安装：`n$($valid -join "`n")" }
     else { Write-Host "未自动找到 ChemDraw $version x64。" }
-    $manual = (Read-Host '请粘贴含 ChemDraw.exe 的安装文件夹路径（留空退出）').Trim().Trim('"')
+    $manual = if ($Gui) { Select-InstallFolder '选择包含 ChemDraw.exe 的安装文件夹（仅支持 26.0.0.6141 x64）' } else { (Read-Host '请粘贴含 ChemDraw.exe 的安装文件夹路径（留空退出）').Trim().Trim('"') }
     if (-not $manual -or -not (Version-OK $manual $version)) { throw '安装路径不存在或版本不匹配。' }
     return [IO.Path]::GetFullPath($manual).TrimEnd('\')
 }
@@ -141,7 +161,7 @@ try {
     if (-not $DataPath) {
         $DataPath = Join-Path $env:ProgramData 'RevvitySignalsSoftware\ChemDrawApplications\ChemDraw'
         if (-not (Test-Path -LiteralPath (Join-Path $DataPath 'GUI') -PathType Container)) {
-            $DataPath = (Read-Host '请粘贴 ChemDraw 数据文件夹路径（其内应有 GUI 和 ChemDraw Items）').Trim().Trim('"')
+            $DataPath = if ($Gui) { Select-InstallFolder '选择 ChemDraw 数据文件夹（其中应包含 GUI 和 ChemDraw Items）' } else { (Read-Host '请粘贴 ChemDraw 数据文件夹路径（其内应有 GUI 和 ChemDraw Items）').Trim().Trim('"') }
         }
     }
     if (-not $DataPath -or -not (Test-Path -LiteralPath (Join-Path $DataPath 'GUI') -PathType Container)) { throw '未找到 ChemDraw 数据文件夹。' }
@@ -155,17 +175,38 @@ try {
         $LogPath = Join-Path $logs ((Get-Date -Format 'yyyyMMdd-HHmmss')+'-'+[guid]::NewGuid().ToString('N').Substring(0,8)+'.txt')
     }
     if ($Mode -ne 'Validate' -and $pending.Count) {
+        if (-not $CloseApplications) {
         if (Get-Process -Name 'ChemDraw','ChemDraw64','ChemDrawCtl','CAWPROP','Chem3D' -ErrorAction SilentlyContinue) { throw '请保存文档并退出 ChemDraw、Chem3D 和化学性质窗口。' }
         $excelPending = @($pending | Where-Object { $_.Entry.optional_component -eq 'chemoffice_excel' })
         if ($excelPending.Count -and (Get-Process -Name 'EXCEL' -ErrorAction SilentlyContinue)) { throw '请先保存全部 Excel 工作簿并完全退出 Excel，再安装或还原 ChemOffice Excel 汉化。' }
+        }
         $admin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
         if (-not $admin -and -not $Elevated) {
             Write-Host '预检查通过，请在 Windows 管理员权限提示中选择“是”。'
             $childArgs = @('-NoProfile','-ExecutionPolicy','Bypass','-File',('"'+$PSCommandPath+'"'),'-Mode',$Mode,'-Elevated','-LogPath',('"'+$LogPath+'"'),'-BinPath',('"'+$BinPath+'"'),'-DataPath',('"'+$DataPath+'"'))
+            if ($Gui) { $childArgs += '-Gui' }
+            if ($CloseApplications) { $childArgs += '-CloseApplications' }
             $child = Start-Process -FilePath 'powershell.exe' -ArgumentList $childArgs -Verb RunAs -WindowStyle Hidden -Wait -PassThru
             if (Test-Path -LiteralPath $LogPath) { Get-Content -LiteralPath $LogPath -Encoding UTF8 | Write-Host }
             exit $child.ExitCode
         }
+        if ($CloseApplications) {
+            Write-Host '已确认操作，正在请求相关程序正常退出；如有保存提示，请先处理。'
+            $closeNames = @('ChemDraw','ChemDraw64','ChemDrawCtl','CAWPROP','Chem3D')
+            if (@($pending | Where-Object { $_.Entry.optional_component -eq 'chemoffice_excel' }).Count) { $closeNames += 'EXCEL' }
+            $targets = @(Get-Process -Name $closeNames -ErrorAction SilentlyContinue)
+            foreach ($target in $targets) {
+                if ($target.MainWindowHandle -ne [IntPtr]::Zero) { [void]$target.CloseMainWindow() }
+            }
+            # Normal close only: never kill processes or dismiss unsaved-document prompts.
+            $deadline = [DateTime]::UtcNow.AddSeconds(20)
+            while ([DateTime]::UtcNow -lt $deadline -and @(Get-Process -Name $closeNames -ErrorAction SilentlyContinue).Count) { Start-Sleep -Milliseconds 250 }
+            $remaining = @(Get-Process -Name $closeNames -ErrorAction SilentlyContinue)
+            if ($remaining.Count) { throw ('程序尚未退出，未修改软件。请处理保存提示或手动退出后重试：' + (($remaining.ProcessName | Sort-Object -Unique) -join '、')) }
+        }
+        if (Get-Process -Name 'ChemDraw','ChemDraw64','ChemDrawCtl','CAWPROP','Chem3D' -ErrorAction SilentlyContinue) { throw '请保存文档并退出 ChemDraw、Chem3D 和化学性质窗口。' }
+        $excelPending = @($pending | Where-Object { $_.Entry.optional_component -eq 'chemoffice_excel' })
+        if ($excelPending.Count -and (Get-Process -Name 'EXCEL' -ErrorAction SilentlyContinue)) { throw '请先保存全部 Excel 工作簿并完全退出 Excel，再安装或还原 ChemOffice Excel 汉化。' }
     }
     Start-Transcript -LiteralPath $LogPath -Force | Out-Null
     $transcribing = $true
@@ -283,6 +324,12 @@ public static class ChemDrawDelta {
         if ($Mode -eq 'Restore') { Write-Host '已恢复英文。' } else { Write-Host '已安装汉化，请启动 ChemDraw 和 Chem3D。' }
         $exitCode=0
     }
-} catch { Write-Host "操作失败：$_" -ForegroundColor Red }
+} catch {
+    $failure = "操作失败：$_"
+    Write-Host $failure -ForegroundColor Red
+    if ($LogPath -and -not $transcribing) {
+        try { Add-Content -LiteralPath $LogPath -Value $failure -Encoding UTF8 } catch { }
+    }
+}
 finally { if ($transcribing) { Stop-Transcript | Out-Null } }
 exit $exitCode

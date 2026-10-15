@@ -1,0 +1,11 @@
+{
+  "patch": "0.2.6",
+  "checked_at": "2026-10-15",
+  "unit_checks_passed": 26,
+  "embedded_public_files": 274,
+  "exe_extraction_byte_equality": true,
+  "full_proprietary_binaries_embedded": false,
+  "translations_equal_v025": true,
+  "ui_observation": "Main window layout observed; Excel-running failure displayed safely in an earlier preview. Final confirmation and real application auto-close not end-to-end UI verified.",
+  "auto_close_tests": "Mock processes only: normal close, refusal/unsaved, background process not killed, Excel omitted without pending add-in update."
+}

@@ -9,7 +9,7 @@ HERE=pathlib.Path(__file__).resolve().parent
 BASE=HERE/'baseline';OUT=HERE/'package';OUT.mkdir(exist_ok=True)
 sha=lambda b:hashlib.sha256(b).hexdigest()
 base=json.loads((HERE/'baseline_manifest.json').read_text('utf-8'))
-manifest=dict(version=base['version'],patch='0.2.5',roots=base['roots'],files=[])
+manifest=dict(version=base['version'],patch='0.2.6',roots=base['roots'],files=[])
 log=[];stats=collections.Counter();custom=[]
 def tr(s,entry,resource,kind):
     target=translate(s)

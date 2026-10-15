@@ -36,7 +36,7 @@ if __name__=='__main__':
     assert actual
     (pack/'payload/bin'/NAME).write_bytes(out);(pack/'originals/bin'/NAME).write_bytes(original)
     sha=lambda b:hashlib.sha256(b).hexdigest()
-    m['patch']='0.2.5';m['files']=[e for e in m['files'] if e['relative']!=NAME]
+    m['patch']='0.2.6';m['files']=[e for e in m['files'] if e['relative']!=NAME]
     m['files'].append(dict(group='bin',relative=NAME,payload='bin/'+NAME,before=sha(original),after=sha(out),legacy=None,kind='reviewed_excel_ui'))
     m['statistics']['excel_ui_strings']=len(actual)
     (pack/'manifest.json').write_text(json.dumps(m,ensure_ascii=False,indent=2),'utf-8')
