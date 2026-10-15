@@ -28,12 +28,13 @@
   "non_ui_resource_values_unchanged": true,
   "existing_86_modules_unchanged": true,
   "unit_checks": 22,
-  "runtime": "Pending saved/closed Excel, installation and actual UI inspection",
+  "runtime": "Installed successfully on 2026-10-15; all 87 target file hashes verified. Actual Excel UI inspection pending user testing.",
   "limitations": [
     "Three generic base-dialog captions retained because the original resource stream cannot safely fit the longer translations",
     "No spreadsheet data, formulas, worksheet field schemas or chemical computation keywords changed",
     "Only supported AddIn file hash accepted; missing add-in skipped"
   ],
   "installer_checks_passed": 21,
-  "production_preflight": "Passed read-only Validate for all 87 files; no installed file writes"
+  "production_preflight": "Passed read-only Validate for all 87 files; no installed file writes",
+  "production_installation": "Install exit code 0; all 87 files verified, pre-operation backups retained locally"
 }
