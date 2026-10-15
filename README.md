@@ -1,6 +1,6 @@
 # ChemDraw 简体中文扩展补丁
 
-> 当前版本为 [v0.2.5 预发布包](https://github.com/yangshaoxiao/chemdraw-zh-patch/releases/tag/v0.2.5)。本机安装及 87 个文件校验通过，新增 Excel 界面的实际显示仍待用户测试。
+> 当前版本为 [v0.2.5 预发布包](https://github.com/yangshaoxiao/chemdraw-zh-patch/releases/tag/v0.2.5)。本机安装及 87 个文件校验通过，用户已于 2026-10-15 反馈完成 Excel 新增界面测试。
 
 **本补丁免费开源，谨防付费转卖。官方下载与源码：https://github.com/yangshaoxiao/chemdraw-zh-patch 。全部 CMD 入口的窗口标题及启动、结束提示均显示免费声明和项目地址；直接运行 PowerShell 工具时也会显示来源提示。**
 

@@ -28,7 +28,7 @@
   "non_ui_resource_values_unchanged": true,
   "existing_86_modules_unchanged": true,
   "unit_checks": 22,
-  "runtime": "Installed successfully on 2026-10-15; all 87 target file hashes verified. Actual Excel UI inspection pending user testing.",
+  "runtime": "Installed successfully on 2026-10-15; all 87 target file hashes verified. User reported completing tests of the new Excel UI on 2026-10-15; no detailed test checklist supplied.",
   "limitations": [
     "Three generic base-dialog captions retained because the original resource stream cannot safely fit the longer translations",
     "No spreadsheet data, formulas, worksheet field schemas or chemical computation keywords changed",
@@ -36,5 +36,10 @@
   ],
   "installer_checks_passed": 21,
   "production_preflight": "Passed read-only Validate for all 87 files; no installed file writes",
-  "production_installation": "Install exit code 0; all 87 files verified, pre-operation backups retained locally"
+  "production_installation": "Install exit code 0; all 87 files verified, pre-operation backups retained locally",
+  "user_runtime_feedback": {
+    "date": "2026-10-15",
+    "message": "Excel 新增界面测试完全",
+    "scope": "User-reported completion; not an independent full functionality regression"
+  }
 }

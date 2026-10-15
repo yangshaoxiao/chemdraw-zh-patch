@@ -40,4 +40,4 @@ v0.2.3 补齐 106 组 Chem3D 状态栏说明/悬停提示，保留换行结构�
 本版计算菜单需要 Windows ANSI 代码页 936；安装器发现不兼容环境会停止安装，不修改区域设置。部分动态英文子菜单（Buy Online or Learn More、About 等）暂保留。第三方引擎计算及所有对话框尚未全面回归。
 
 本补丁免费开源，谨防付费转卖。免费来源：https://github.com/yangshaoxiao/chemdraw-zh-patch
-v0.2.5 新增 ChemOffice Excel 界面 305 处替换。安装或还原前须保存并完全退出 Excel；本机安装校验通过，实际 Excel 界面显示待测试。
+v0.2.5 新增 ChemOffice Excel 界面 305 处替换。安装或还原前须保存并完全退出 Excel；本机安装校验通过，用户于 2026-10-15 反馈已完成 Excel 新增界面测试。

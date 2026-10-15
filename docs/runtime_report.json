@@ -25,5 +25,5 @@
   "current_patch": "0.2.5",
   "reviewed_at": "2026-10-15",
   "current_runtime_scope": "2026-10-14: final v0.2.4 installed; 86 file hashes verified. Actual Chem3D menu displayed 计算性质 and Chinese 接口 names for CONFLEX, GAMESS, Gaussian, MOPAC, AutoDock. Dynamic Buy Online or Learn More and About remain English. No full dialog/engine regression; Windows ANSI code page 936 required.",
-  "v025_installation": "Installed successfully; all 87 target file hashes verified. Excel UI inspection pending; earlier runtime checks below remain historical."
+  "v025_installation": "Installed successfully; all 87 target file hashes verified. User reported completing tests of the new Excel UI on 2026-10-15; earlier runtime checks remain historical."
 }
